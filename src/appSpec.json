@@ -1,0 +1,1093 @@
+{
+  "id": "d08d9228-e419-453e-b257-25093ea31b4d",
+  "siteName": "Mr. KNIFE GUY",
+  "domainUrl": "mrknifeguys.com",
+  "brandingPresets": [
+    {
+      "presetId": "00000000-cff9-4a33-8b43-286356cf29e8",
+      "brandIdentity": {
+        "designSummary": "**Zen Knife: Minimalist Precision**\n\nThe Vision: A website that embodies the precision and artistry of hand-sharpened knives through a minimalist design. The focus is on clarity, functionality, and the beauty of simplicity, creating a serene and trustworthy digital experience.\n\n**Execution Blueprint:**\n1. Strict Grid System: A 12-column grid provides the underlying structure, ensuring perfect alignment and visual order.\n2. Monochromatic Palette with Gold Accent: A warm, earthy palette of neutral grays is accented with polished gold for CTAs, evoking craftsmanship and reliability.\n3. Typography as Hierarchy: A single sans-serif font family is used, with hierarchy established through size, weight, and case variations.\n4. Negative Space Emphasis: Generous use of negative space allows each element to breathe, enhancing clarity and focus.\n5. Functional Animations: Subtle animations, such as fades and transitions, are used sparingly to enhance user experience without distracting from the content.",
+        "toneOfVoice": "Professional, artisan, educational, and customer-focused.",
+        "tones": [
+          "Expert",
+          "Reliable",
+          "Artisan",
+          "Helpful"
+        ],
+        "designStyle": {
+          "primaryStyle": [
+            "Minimalist",
+            "Modern",
+            "Clean"
+          ],
+          "supportingStyles": [
+            "Professional",
+            "Artisan"
+          ]
+        },
+        "palette": {
+          "colors": {
+            "primary": "#A52A2A",
+            "primaryForeground": "#FFFFFF",
+            "secondary": "#B8860B",
+            "secondaryForeground": "#000000",
+            "background": "#F5F5F5",
+            "foreground": "#333333",
+            "customColors": [
+              {
+                "name": "lightGray",
+                "value": "#E0E0E0"
+              },
+              {
+                "name": "darkGray",
+                "value": "#666666"
+              },
+              {
+                "name": "destructive",
+                "value": "#FF4136"
+              },
+              {
+                "name": "destructive-foreground",
+                "value": "#FFFFFF"
+              }
+            ]
+          },
+          "paletteUsageGuide": "Primary color (deep crimson) is used for main headings and key elements. Secondary color (polished gold) is used for CTAs and accents. Neutral grays are used for backgrounds and body text.",
+          "paletteAccessibilityNotes": "Ensure sufficient contrast between text and background colors for readability. Use colorblindness simulators to verify accessibility."
+        },
+        "typography": {
+          "headings": {
+            "font": {
+              "role": "headings",
+              "fontFamily": "roboto-bold",
+              "fontJustification": ""
+            },
+            "headingsSimilarFonts": [],
+            "headingsUsageGuide": "Use for all main headings and subheadings. Maintain consistent hierarchy through size and weight.",
+            "headingsAccessibilityNotes": "Ensure headings are properly nested (H1, H2, H3, etc.) for semantic structure and screen reader compatibility."
+          },
+          "paragraphs": {
+            "font": {
+              "role": "paragraphs",
+              "fontFamily": "roboto",
+              "fontJustification": ""
+            },
+            "paragraphsSimilarFonts": [],
+            "paragraphsUsageGuide": "Use for all body text and paragraph content. Maintain consistent line height and letter spacing for readability.",
+            "paragraphsAccessibilityNotes": "Ensure sufficient contrast between text and background colors. Use appropriate font size for readability on different devices."
+          },
+          "welcomeSectionTypography": {
+            "placement": "",
+            "implementation": ""
+          },
+          "fontSizes": [
+            {
+              "name": "xs",
+              "size": "0.75rem",
+              "lineHeight": "1",
+              "letterSpacing": "0.05em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "sm",
+              "size": "0.875rem",
+              "lineHeight": "1.25",
+              "letterSpacing": "0.025em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "base",
+              "size": "1rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "lg",
+              "size": "1.125rem",
+              "lineHeight": "1.75",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "xl",
+              "size": "1.25rem",
+              "lineHeight": "1.75",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "2xl",
+              "size": "1.5rem",
+              "lineHeight": "2",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "500"
+            },
+            {
+              "name": "3xl",
+              "size": "1.875rem",
+              "lineHeight": "2.25",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "500"
+            },
+            {
+              "name": "4xl",
+              "size": "2.25rem",
+              "lineHeight": "2.5",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "600"
+            },
+            {
+              "name": "5xl",
+              "size": "3rem",
+              "lineHeight": "1",
+              "letterSpacing": "-0.035em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "6xl",
+              "size": "3.75rem",
+              "lineHeight": "1",
+              "letterSpacing": "-0.04em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "7xl",
+              "size": "4.5rem",
+              "lineHeight": "1",
+              "letterSpacing": "-0.045em",
+              "fontWeight": "800"
+            },
+            {
+              "name": "8xl",
+              "size": "6rem",
+              "lineHeight": "1",
+              "letterSpacing": "-0.05em",
+              "fontWeight": "800"
+            },
+            {
+              "name": "9xl",
+              "size": "8rem",
+              "lineHeight": "1",
+              "letterSpacing": "-0.05em",
+              "fontWeight": "900"
+            }
+          ]
+        },
+        "layout": {
+          "layoutDna": {
+            "densitySpectrum": "Sparse",
+            "contrastSpectrum": "Moderate",
+            "gridAlignmentSpectrum": "Strictly Aligned",
+            "negativeSpaceUsage": "Extensive",
+            "textVsImageEmphasis": "Balanced",
+            "complexitySpectrum": "Simple"
+          },
+          "grid": {
+            "compositionApproach": "Strict 12-Column Grid with Typographic Hierarchy",
+            "spacing": {
+              "columns": "12",
+              "rows": "Auto",
+              "gaps": "Base unit: 8px. All grid gaps are 24px (3x base unit)."
+            },
+            "margins": "8px increments",
+            "padding": "8px increments"
+          },
+          "heroSectionLayout": "**The Knife's Edge Reveal**\nComposition (Tailwind Spec): Full-screen container (h-screen grid place-items-center). Headline 'Experience the Art of Precision' (text-7xl font-bold text-white). A blurred background image of a knife edge (absolute inset-0 object-cover w-full h-full filter blur-3xl).\nSignature Hook (Framer Motion Spec): The headline uses `clip-path` to reveal from the center outwards on page load. Initial state `clip-path: circle(0% at 50% 50%)`. Animate state `clip-path: circle(150% at 50% 50%)` with `transition: { duration: 1.5, ease: 'easeInOut' }`."
+        },
+        "components": {
+          "containers": "Method: Whitespace, Style: 40px vertical margin",
+          "images": "Layout Role: Full-bleed background with a fixed position to create a window effect on scroll. | Gallery Type: Horizontal Scroll Filmstrip: A single-row gallery driven by horizontal scroll, where oversized items create a 'peek-a-boo' effect.",
+          "buttons": "Primary: background-color: #B8860B, color: #000000, border-radius: 8px, padding: 12px 24px. Secondary: background-color: transparent, color: #A52A2A, border: 1px solid #A52A2A, border-radius: 8px."
+        },
+        "graphicElements": {
+          "icons": "",
+          "illustrations": "",
+          "stickers": ""
+        }
+      },
+      "originImagesUrls": []
+    },
+    {
+      "presetId": "8c1f00d1-54b0-4242-9350-3759663ab6c8",
+      "brandIdentity": {
+        "designSummary": "The design features a minimalistic and modern aesthetic with a neutral, earthy color palette dominated by soft beige and warm taupe backgrounds. Accent colors in muted terracotta provide subtle warmth and sophistication. Typography is clean and geometric sans-serif, with bold headings and clear, readable body text that enhances clarity and elegance. The layout employs a modular grid with generous negative space, balancing text and imagery in well-defined blocks. Graphic elements are understated, including subtle horizontal lines that add structure without clutter. UI components such as buttons and icons are minimal and monochrome, supporting the overall clean and premium feel. This visual language conveys a sense of natural authenticity, calm confidence, and upscale simplicity, suitable for a variety of lifestyle and wellness brands.",
+        "toneOfVoice": "Calm, refined, and approachable with a professional and authentic personality that emphasizes natural beauty and premium quality.",
+        "tones": [
+          "Calm",
+          "Refined",
+          "Natural",
+          "Sophisticated",
+          "Minimal",
+          "Warm",
+          "Authentic",
+          "Premium",
+          "Clean",
+          "Approachable"
+        ],
+        "designStyle": {
+          "primaryStyle": [
+            "Minimalism",
+            "Modern"
+          ],
+          "supportingStyles": [
+            "Organic",
+            "Editorial"
+          ]
+        },
+        "palette": {
+          "colors": {
+            "primary": "#8B5A45",
+            "primaryForeground": "#FFFFFF",
+            "secondary": "#DCD9D0",
+            "secondaryForeground": "#1C1C1C",
+            "background": "#F2F2F2",
+            "customColors": [
+              {
+                "name": "gridborder",
+                "value": "#FFFFFF"
+              },
+              {
+                "name": "foreground",
+                "value": "#1C1C1C"
+              },
+              {
+                "name": "destructive",
+                "value": "#DF3131"
+              },
+              {
+                "name": "destructiveforeground",
+                "value": "#FFFFFF"
+              }
+            ]
+          },
+          "paletteUsageGuide": "The color system relies on a foundation of subtle neutrals punctuated by earthy warmth. Use the 'background' color as the canvas for the majority of the page to maintain a light, airy feel. The 'secondary' color is specifically reserved for content blocks, cards, or sections within the modular grid, creating a soft contrast against the main background. Text should almost exclusively use the 'foreground' color (or 'secondaryForeground' when on beige blocks) to ensure sharp legibility. The 'primary' color is an accent used sparingly but effectively for graphic anchors (like horizontal separator lines), active states, or key call-to-action links. Avoid using the 'primary' color for large background areas; keep it as a refined highlight.",
+          "paletteAccessibilityNotes": "The palette is designed to meet WCAG AA standards. The combination of 'primary' (terracotta) and 'primaryForeground' (white) passes accessibility checks, as does 'primary' against the 'background'. The 'secondary' beige background provides high contrast for the 'secondaryForeground' dark text, ensuring content within grid blocks is easily readable. The main 'background' and 'foreground' pairing offers excellent contrast for body copy."
+        },
+        "typography": {
+          "headings": {
+            "font": {
+              "role": "Primary Heading Font",
+              "fontFamily": "work-sans-v2",
+              "fontJustification": ""
+            },
+            "headingsSimilarFonts": [
+              "rubik-v2",
+              "poppins-v2",
+              "raleway"
+            ],
+            "headingsUsageGuide": "Use the heading font in bold weights for primary titles and section headers to establish hierarchy and focus. Pair with the paragraph font for contrast, ensuring ample spacing and line height for readability. Headings should use the 'primary' color for emphasis or 'primaryForeground' on colored backgrounds. Maintain consistent letter spacing and avoid overly tight kerning to preserve clarity.",
+            "headingsAccessibilityNotes": "Headings in 'primary' color on 'background' or 'secondary' backgrounds meet WCAG AA contrast requirements. Use sufficient font size and weight to ensure legibility across devices."
+          },
+          "paragraphs": {
+            "font": {
+              "role": "Main Body Text Font",
+              "fontFamily": "work-sans-v2",
+              "fontJustification": ""
+            },
+            "paragraphsSimilarFonts": [
+              "open sans",
+              "nunito sans",
+              "raleway"
+            ],
+            "paragraphsUsageGuide": "Use the paragraph font in regular or medium weights for body text, captions, and secondary information. Text color should primarily be 'primaryForeground' or 'secondaryForeground' depending on background. Maintain comfortable line height and letter spacing to enhance readability. Combine with headings to create a clear typographic hierarchy and balanced page flow.",
+            "paragraphsAccessibilityNotes": "Body text in 'primaryForeground' on 'background' or 'secondary' backgrounds meets WCAG AA contrast standards. Ensure font sizes are not too small to maintain accessibility."
+          },
+          "welcomeSectionTypography": {
+            "placement": "Modular Grid Block",
+            "implementation": "The welcome section uses a large, bold heading placed prominently in a modular grid block with ample negative space around it. The heading is left-aligned with supporting text below, creating a clear visual hierarchy. This placement emphasizes clarity and calmness, allowing the typography to breathe and draw attention without distraction."
+          },
+          "fontSizes": [
+            {
+              "name": "xs",
+              "size": "0.75rem",
+              "lineHeight": "1.2",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "sm",
+              "size": "0.875rem",
+              "lineHeight": "1.3",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "base",
+              "size": "1rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0.025em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "lg",
+              "size": "1.125rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0.025em",
+              "fontWeight": "500"
+            },
+            {
+              "name": "xl",
+              "size": "1.25rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0.03em",
+              "fontWeight": "600"
+            },
+            {
+              "name": "2xl",
+              "size": "1.5rem",
+              "lineHeight": "1.4",
+              "letterSpacing": "0.03em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "3xl",
+              "size": "1.875rem",
+              "lineHeight": "1.3",
+              "letterSpacing": "0.035em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "4xl",
+              "size": "2.25rem",
+              "lineHeight": "1.2",
+              "letterSpacing": "0.04em",
+              "fontWeight": "800"
+            },
+            {
+              "name": "5xl",
+              "size": "3rem",
+              "lineHeight": "1.1",
+              "letterSpacing": "0.04em",
+              "fontWeight": "800"
+            },
+            {
+              "name": "6xl",
+              "size": "3.75rem",
+              "lineHeight": "1.1",
+              "letterSpacing": "0.05em",
+              "fontWeight": "900"
+            },
+            {
+              "name": "7xl",
+              "size": "4.5rem",
+              "lineHeight": "1.1",
+              "letterSpacing": "0.05em",
+              "fontWeight": "900"
+            },
+            {
+              "name": "8xl",
+              "size": "6rem",
+              "lineHeight": "1",
+              "letterSpacing": "0.06em",
+              "fontWeight": "900"
+            },
+            {
+              "name": "9xl",
+              "size": "8rem",
+              "lineHeight": "1",
+              "letterSpacing": "0.07em",
+              "fontWeight": "900"
+            }
+          ]
+        },
+        "layout": {
+          "layoutDna": {
+            "densitySpectrum": "Balanced",
+            "contrastSpectrum": "Subtle",
+            "gridAlignmentSpectrum": "Modular",
+            "negativeSpaceUsage": "Generous",
+            "textVsImageEmphasis": "Balanced",
+            "complexitySpectrum": "Simple & Clean"
+          },
+          "grid": {
+            "compositionApproach": "Modular",
+            "spacing": {
+              "columns": "12-column grid",
+              "rows": "Defined content rows",
+              "gaps": "Consistent medium gaps"
+            },
+            "margins": "Generous page margins",
+            "padding": "Consistent padding within containers"
+          }
+        },
+        "components": {
+          "containers": "Containers use soft, neutral backgrounds with consistent padding and subtle borders or lines in 'lineSeparator' color to define sections without heavy visual weight. They maintain a clean and open feel, supporting content hierarchy and readability.",
+          "images": "Images are presented without borders or shadows, integrated seamlessly into the grid. They maintain natural proportions and are balanced with text blocks to create visual interest while preserving the minimal aesthetic.",
+          "buttons": "Buttons are minimal with subtle outlines or solid fills in 'warmAccent' color. Text on buttons uses 'primaryForeground' for clarity. Hover states may invert colors or increase saturation to indicate interactivity while maintaining elegance."
+        },
+        "graphicElements": {
+          "icons": "Icons are simple, monochrome, and line-based, consistent with the minimal and modern style. They use 'primaryForeground' or 'warmAccent' colors to maintain visual harmony.",
+          "illustrations": "No illustrations are present, supporting the clean and photographic focus of the design.",
+          "stickers": "No stickers or badges are used, preserving the understated and sophisticated brand image."
+        }
+      },
+      "originImagesUrls": [
+        "https://wixmp-fe53c9ff592a4da924211f23.wixmp.com/uploads/1750851661912-Screenshot%202025-06-25%20at%2014.40.55.png"
+      ]
+    },
+    {
+      "presetId": "50b01882-46af-4a9c-b79d-7b336f2b312f",
+      "brandIdentity": {
+        "designSummary": "This brand design embodies a modern, minimalistic aesthetic with a focus on clarity, professionalism, and natural sophistication. The color palette is restrained, featuring a deep dark green as the primary color for impactful backgrounds and text blocks, complemented by a soft, muted greenish-beige background that evokes calmness and sustainability. White and black are used strategically for text and navigation elements to ensure high contrast and readability. Typography is clean and geometric, with a sans-serif font family that balances bold headings and readable body text, creating a clear hierarchy and an approachable yet authoritative tone. The layout is grid-based and modular, emphasizing spaciousness and balance with generous negative space and well-defined content areas. Iconography is minimal and line-based, reinforcing the architectural and professional theme. Overall, the design communicates trust, expertise, and a commitment to quality, making it versatile for various professional service industries.",
+        "toneOfVoice": "Professional, trustworthy, refined, and approachable with a focus on expertise and sustainability.",
+        "tones": [
+          "calm",
+          "sophisticated",
+          "minimal",
+          "trustworthy",
+          "natural",
+          "balanced",
+          "modern",
+          "clean",
+          "authoritative",
+          "approachable"
+        ],
+        "designStyle": {
+          "primaryStyle": [
+            "Minimalism",
+            "Modern"
+          ],
+          "supportingStyles": [
+            "Professional",
+            "Architectural",
+            "Natural"
+          ]
+        },
+        "palette": {
+          "colors": {
+            "primary": "#152F23",
+            "primaryForeground": "#FFFFFF",
+            "secondary": "#E7EBD8",
+            "secondaryForeground": "#000000",
+            "background": "#FFFFFF",
+            "customColors": [
+              {
+                "name": "foreground",
+                "value": "#152F23"
+              },
+              {
+                "name": "destructive",
+                "value": "#DF3131"
+              },
+              {
+                "name": "destructiveforeground",
+                "value": "#FFFFFF"
+              }
+            ]
+          },
+          "paletteUsageGuide": "Use the 'primary' color as the main background for key text sections to create strong visual impact and ensure readability with text in 'primaryForeground'. The 'secondary' color serves as a calm, natural background for supporting content areas, paired with text in 'secondaryForeground' for clear contrast. The 'background' color is used for general page backgrounds and navigation areas to maintain a clean and open feel. This palette supports accessibility by providing high contrast combinations between 'primary' and 'primaryForeground' as well as 'secondary' and 'secondaryForeground'. Avoid mixing 'primary' and 'secondary' backgrounds directly to maintain visual clarity. The restrained palette allows for a professional and trustworthy brand presence while evoking natural and sustainable values.",
+          "paletteAccessibilityNotes": "The 'primary' color (#152F23) against 'primaryForeground' (#FFFFFF) achieves excellent contrast exceeding WCAG AA standards for text and UI elements. The 'secondary' color (#E7EBD8) with 'secondaryForeground' (#000000) also meets WCAG AA contrast requirements for body text and smaller UI elements. The 'background' color (#FFFFFF) with black text ensures maximum readability. This palette is optimized for accessibility across all text and interface components."
+        },
+        "typography": {
+          "headings": {
+            "font": {
+              "role": "Primary Heading Font",
+              "fontFamily": "space grotesk",
+              "fontJustification": ""
+            },
+            "headingsSimilarFonts": [
+              "work-sans-v2",
+              "rubik-v2",
+              "open sans"
+            ],
+            "headingsUsageGuide": "Use the heading font for all major titles and section headers to establish a clear visual hierarchy. Pair with the paragraph font for body text to maintain readability and balance. Headings should have ample spacing above and below to separate content blocks and improve scanability. Use 'primaryForeground' color on 'primary' backgrounds or black on lighter backgrounds for optimal contrast.",
+            "headingsAccessibilityNotes": "Headings using the 'primary' color background with 'primaryForeground' text meet WCAG AA contrast standards. On lighter backgrounds, black text ensures excellent readability and accessibility."
+          },
+          "paragraphs": {
+            "font": {
+              "role": "Main Body Text Font",
+              "fontFamily": "work-sans-v2",
+              "fontJustification": ""
+            },
+            "paragraphsSimilarFonts": [
+              "open sans",
+              "poppins-v2",
+              "rubik-v2"
+            ],
+            "paragraphsUsageGuide": "Use the paragraph font for all body text, descriptions, and smaller informational content. Maintain sufficient line height and letter spacing to enhance readability. Combine with heading fonts to create a balanced typographic system. Text color should be 'secondaryForeground' on 'secondary' backgrounds or black on white backgrounds to ensure clarity.",
+            "paragraphsAccessibilityNotes": "Body text colors meet WCAG AA contrast ratios against their respective backgrounds, ensuring accessibility for all users."
+          },
+          "welcomeSectionTypography": {
+            "placement": "Weighted Quadrant",
+            "implementation": "The welcome section uses a split layout with a large image occupying the left half and text content on the right half. This placement creates a visual balance that draws attention to both imagery and messaging. The text is aligned left with generous padding, ensuring readability and a clean presentation. The quadrant weighting emphasizes the image while allowing the text to anchor the message clearly, supporting user engagement and brand storytelling."
+          },
+          "fontSizes": [
+            {
+              "name": "xs",
+              "size": "0.75rem",
+              "lineHeight": "1.25",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "sm",
+              "size": "0.875rem",
+              "lineHeight": "1.35",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "base",
+              "size": "1rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "lg",
+              "size": "1.125rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0.01em",
+              "fontWeight": "500"
+            },
+            {
+              "name": "xl",
+              "size": "1.25rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            },
+            {
+              "name": "2xl",
+              "size": "1.5rem",
+              "lineHeight": "1.4",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            },
+            {
+              "name": "3xl",
+              "size": "1.875rem",
+              "lineHeight": "1.3",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "4xl",
+              "size": "2.25rem",
+              "lineHeight": "1.2",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "5xl",
+              "size": "3rem",
+              "lineHeight": "1.1",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            },
+            {
+              "name": "6xl",
+              "size": "3.75rem",
+              "lineHeight": "1.1",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "800"
+            },
+            {
+              "name": "7xl",
+              "size": "4.5rem",
+              "lineHeight": "1",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "900"
+            },
+            {
+              "name": "8xl",
+              "size": "6rem",
+              "lineHeight": "1",
+              "letterSpacing": "-0.035em",
+              "fontWeight": "900"
+            },
+            {
+              "name": "9xl",
+              "size": "8rem",
+              "lineHeight": "1",
+              "letterSpacing": "-0.04em",
+              "fontWeight": "900"
+            }
+          ]
+        },
+        "layout": {
+          "layoutDna": {
+            "densitySpectrum": "Balanced",
+            "contrastSpectrum": "High-Contrast",
+            "gridAlignmentSpectrum": "Strict Grid",
+            "negativeSpaceUsage": "Generous",
+            "textVsImageEmphasis": "Balanced",
+            "complexitySpectrum": "Simple & Clean"
+          },
+          "grid": {
+            "compositionApproach": "Column-based",
+            "spacing": {
+              "columns": "12-column grid",
+              "rows": "Defined content rows",
+              "gaps": "Consistent medium gaps"
+            },
+            "margins": "Generous page margins",
+            "padding": "Consistent padding within containers"
+          }
+        },
+        "components": {
+          "containers": "Containers use solid backgrounds in 'primary' or 'secondary' colors to separate content areas clearly. They have consistent padding and margins to maintain spatial balance and readability. Borders are minimal or absent, relying on color contrast and spacing for separation.",
+          "images": "Images are large, high-quality architectural photographs with natural lighting and neutral tones. They are placed prominently, often occupying half or full sections, balanced with text content. Images have no borders or shadows, maintaining a clean and modern look.",
+          "buttons": "Buttons are minimal with clear outlines or solid fills in 'primary' color, with text in 'primaryForeground'. They have subtle hover states to indicate interactivity. Secondary buttons use 'secondary' color outlines with 'secondaryForeground' text. Button shapes are rectangular with slight rounding for a modern feel."
+        },
+        "graphicElements": {
+          "icons": "Icons are line-based, minimal, and architectural in style, using black or 'primaryForeground' colors depending on background. They are simple and clear, supporting content without distraction.",
+          "illustrations": "No illustrations are used, maintaining a clean and professional aesthetic.",
+          "stickers": "No stickers or badges are present, reinforcing the minimal and serious tone."
+        }
+      },
+      "originImagesUrls": [
+        "https://wixmp-fe53c9ff592a4da924211f23.wixmp.com/uploads/1750667891656-Screenshot%202025-06-23%20at%2011.38.05.png"
+      ]
+    },
+    {
+      "presetId": "3e2b0707-eb12-4fcd-8aee-39422ed26a57",
+      "brandIdentity": {
+        "designSummary": "This brand design features a modern, minimalistic aesthetic with a restrained neutral color palette dominated by light gray and dark charcoal backgrounds, complemented by a pale yellow highlight color. The layout is grid-based and modular, emphasizing clarity and organization with generous spacing and subtle dividing lines. Typography is clean, sans-serif, and highly legible, with a clear hierarchy between bold headings and regular body text. Iconography is minimal and line-based, reinforcing the professional and approachable tone. The overall visual personality is functional, trustworthy, and user-friendly, suitable for service-oriented websites requiring clear communication and easy navigation.",
+        "toneOfVoice": "Professional, clear, approachable, and trustworthy with a modern and minimalistic personality.",
+        "tones": [
+          "clean",
+          "minimal",
+          "professional",
+          "trustworthy",
+          "approachable",
+          "modern",
+          "functional",
+          "organized",
+          "accessible",
+          "neutral",
+          "calm",
+          "balanced",
+          "subtle",
+          "warm",
+          "user-friendly"
+        ],
+        "designStyle": {
+          "primaryStyle": [
+            "Minimalism",
+            "Modern"
+          ],
+          "supportingStyles": [
+            "Functional",
+            "Grid-Based",
+            "Neutral"
+          ]
+        },
+        "palette": {
+          "colors": {
+            "primary": "#2B2B2B",
+            "primaryForeground": "#FFFFFF",
+            "secondary": "#F7F9A7",
+            "secondaryForeground": "#333333",
+            "background": "#E6E6E6",
+            "customColors": [
+              {
+                "name": "highlight",
+                "value": "#F7F9A7"
+              },
+              {
+                "name": "foreground",
+                "value": "#2B2B2B"
+              },
+              {
+                "name": "destructive",
+                "value": "#DF3131"
+              },
+              {
+                "name": "destructiveforeground",
+                "value": "#FFFFFF"
+              }
+            ]
+          },
+          "paletteUsageGuide": "Use the 'primary' color as the main background for dark-themed sections and for text/icons on light backgrounds. The 'primaryForeground' color is used for text and icons on the 'primary' background to ensure high contrast and readability. The 'background' color serves as the base background for most content areas, with 'secondaryForeground' used for primary text and icons on this background. The 'highlight' color is reserved for emphasizing selected or important UI elements such as active cards, headings, and icons, providing a warm and inviting accent that contrasts well with 'primary'. This palette ensures a balanced visual hierarchy and accessibility across different sections of the website.",
+          "paletteAccessibilityNotes": "The 'primaryForeground' on 'primary' background and 'secondaryForeground' on 'secondary' background combinations meet WCAG AA standards for text contrast, ensuring readability. The 'highlight' color on 'primary' backgrounds provides sufficient contrast for headings and icons, supporting accessibility for users with visual impairments."
+        },
+        "typography": {
+          "headings": {
+            "font": {
+              "role": "Primary Heading Font",
+              "fontFamily": "open sans",
+              "fontJustification": ""
+            },
+            "headingsSimilarFonts": [
+              "work-sans-v2",
+              "raleway",
+              "poppins-v2"
+            ],
+            "headingsUsageGuide": "Use the heading font for all major titles and section headers to establish clear content hierarchy. Pair with the paragraph font for body text to maintain readability and visual balance. Maintain generous spacing above and below headings to enhance clarity. Headings should be in 'primaryForeground' color on dark backgrounds and 'secondaryForeground' on light backgrounds for optimal contrast.",
+            "headingsAccessibilityNotes": "Headings using the 'primaryForeground' color on 'primary' background and 'secondaryForeground' on 'secondary' background meet WCAG AA contrast requirements, ensuring accessibility."
+          },
+          "paragraphs": {
+            "font": {
+              "role": "Main Body Text Font",
+              "fontFamily": "open sans",
+              "fontJustification": ""
+            },
+            "paragraphsSimilarFonts": [
+              "work-sans-v2",
+              "raleway",
+              "poppins-v2"
+            ],
+            "paragraphsUsageGuide": "Use the paragraph font for all body text and descriptive content. Maintain consistent line height and letter spacing for readability. Text should appear in 'secondaryForeground' on 'secondary' backgrounds and 'primaryForeground' on 'primary' backgrounds. Avoid using both the 'highlight' and 'secondary' color for body text to preserve legibility.",
+            "paragraphsAccessibilityNotes": "Paragraph text colors on their respective backgrounds meet WCAG AA contrast standards, supporting accessibility."
+          },
+          "welcomeSectionTypography": {
+            "placement": "Top-Third Anchor",
+            "implementation": "The welcome section typography is anchored in the top third of the layout, creating a natural focal point for users. Large, bold headings are placed with ample margin above and below, paired with smaller body text for context. This placement balances visual weight and guides the user’s eye downward through the content. The use of the 'highlight' color for key headings adds emphasis without overwhelming the neutral background, maintaining a clean and inviting introduction."
+          },
+          "fontSizes": [
+            {
+              "name": "xs",
+              "size": "0.75rem",
+              "lineHeight": "1.2",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "sm",
+              "size": "0.875rem",
+              "lineHeight": "1.3",
+              "letterSpacing": "0.02em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "base",
+              "size": "1rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0.025em",
+              "fontWeight": "400"
+            },
+            {
+              "name": "lg",
+              "size": "1.125rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0.025em",
+              "fontWeight": "600"
+            },
+            {
+              "name": "xl",
+              "size": "1.25rem",
+              "lineHeight": "1.5",
+              "letterSpacing": "0.03em",
+              "fontWeight": "600"
+            },
+            {
+              "name": "2xl",
+              "size": "1.5rem",
+              "lineHeight": "1.4",
+              "letterSpacing": "0.03em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "3xl",
+              "size": "1.875rem",
+              "lineHeight": "1.3",
+              "letterSpacing": "0.035em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "4xl",
+              "size": "2.25rem",
+              "lineHeight": "1.2",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            },
+            {
+              "name": "5xl",
+              "size": "3rem",
+              "lineHeight": "1.1",
+              "letterSpacing": "0.04em",
+              "fontWeight": "800"
+            },
+            {
+              "name": "6xl",
+              "size": "3.75rem",
+              "lineHeight": "1.1",
+              "letterSpacing": "0.05em",
+              "fontWeight": "800"
+            },
+            {
+              "name": "7xl",
+              "size": "4.5rem",
+              "lineHeight": "1",
+              "letterSpacing": "0.05em",
+              "fontWeight": "900"
+            },
+            {
+              "name": "8xl",
+              "size": "6rem",
+              "lineHeight": "1",
+              "letterSpacing": "0.06em",
+              "fontWeight": "900"
+            },
+            {
+              "name": "9xl",
+              "size": "8rem",
+              "lineHeight": "1",
+              "letterSpacing": "0.07em",
+              "fontWeight": "900"
+            }
+          ]
+        },
+        "layout": {
+          "layoutDna": {
+            "densitySpectrum": "Balanced",
+            "contrastSpectrum": "High-Contrast",
+            "gridAlignmentSpectrum": "Strict Grid",
+            "negativeSpaceUsage": "Generous",
+            "textVsImageEmphasis": "Balanced",
+            "complexitySpectrum": "Simple & Clean"
+          },
+          "grid": {
+            "compositionApproach": "Modular",
+            "spacing": {
+              "columns": "6-column grid for service cards",
+              "rows": "Implicit rows with consistent vertical spacing",
+              "gaps": "Consistent medium gaps between grid items"
+            },
+            "margins": "Generous page margins to frame content",
+            "padding": "Consistent padding within cards and containers"
+          }
+        },
+        "components": {
+          "containers": "Containers use subtle borders and background fills to separate content areas. The highlighted container uses the 'highlight' color as background to draw attention. Padding is consistent to maintain visual balance and readability.",
+          "images": "Images are used sparingly and placed alongside text in balanced two-column layouts. They have natural proportions and no heavy framing, blending seamlessly with the background.",
+          "buttons": "Buttons are minimal with subtle borders and use the 'highlight' color for text or background on hover states. They maintain the clean and functional aesthetic without heavy decoration."
+        },
+        "graphicElements": {
+          "icons": "Icons are simple line drawings with consistent stroke weight, using 'secondaryForeground' color on light backgrounds and 'highlight' color for emphasis. They are functional and minimal, supporting content without distraction.",
+          "illustrations": "No illustrations are present, maintaining the minimal and professional tone.",
+          "stickers": "No stickers or badges are used, preserving the clean and uncluttered design."
+        }
+      },
+      "originImagesUrls": [
+        "https://wixmp-fe53c9ff592a4da924211f23.wixmp.com/uploads/1752412079307-Screenshot%202025-06-05%20at%2010.42.05.jpg"
+      ]
+    }
+  ],
+  "brandBook": {
+    "tones": [
+      "Expert",
+      "Reliable",
+      "Artisan",
+      "Helpful"
+    ],
+    "designStyle": {
+      "primaryStyle": [
+        "Minimalist",
+        "Modern",
+        "Clean"
+      ],
+      "supportingStyles": [
+        "Professional",
+        "Artisan"
+      ]
+    },
+    "toneOfVoice": "Professional, artisan, educational, and customer-focused.",
+    "components": {
+      "images": "Layout Role: Full-bleed background with a fixed position to create a window effect on scroll. | Gallery Type: Horizontal Scroll Filmstrip: A single-row gallery driven by horizontal scroll, where oversized items create a 'peek-a-boo' effect.",
+      "buttons": "Primary: background-color: #B8860B, color: #000000, border-radius: 8px, padding: 12px 24px. Secondary: background-color: transparent, color: #A52A2A, border: 1px solid #A52A2A, border-radius: 8px.",
+      "containers": "Method: Whitespace, Style: 40px vertical margin"
+    },
+    "typography": {
+      "headings": {
+        "font": {
+          "role": "headings",
+          "fontFamily": "roboto-bold",
+          "fontJustification": ""
+        },
+        "headingsUsageGuide": "Use for all main headings and subheadings. Maintain consistent hierarchy through size and weight.",
+        "headingsSimilarFonts": [],
+        "headingsAccessibilityNotes": "Ensure headings are properly nested (H1, H2, H3, etc.) for semantic structure and screen reader compatibility."
+      },
+      "fontSizes": [
+        {
+          "name": "xs",
+          "size": "0.75rem",
+          "letterSpacing": "0.05em",
+          "lineHeight": "1",
+          "fontWeight": "400"
+        },
+        {
+          "name": "sm",
+          "size": "0.875rem",
+          "letterSpacing": "0.025em",
+          "lineHeight": "1.25",
+          "fontWeight": "400"
+        },
+        {
+          "name": "base",
+          "size": "1rem",
+          "letterSpacing": "0em",
+          "lineHeight": "1.5",
+          "fontWeight": "400"
+        },
+        {
+          "name": "lg",
+          "size": "1.125rem",
+          "letterSpacing": "-0.01em",
+          "lineHeight": "1.75",
+          "fontWeight": "400"
+        },
+        {
+          "name": "xl",
+          "size": "1.25rem",
+          "letterSpacing": "-0.015em",
+          "lineHeight": "1.75",
+          "fontWeight": "400"
+        },
+        {
+          "name": "2xl",
+          "size": "1.5rem",
+          "letterSpacing": "-0.02em",
+          "lineHeight": "2",
+          "fontWeight": "500"
+        },
+        {
+          "name": "3xl",
+          "size": "1.875rem",
+          "letterSpacing": "-0.025em",
+          "lineHeight": "2.25",
+          "fontWeight": "500"
+        },
+        {
+          "name": "4xl",
+          "size": "2.25rem",
+          "letterSpacing": "-0.03em",
+          "lineHeight": "2.5",
+          "fontWeight": "600"
+        },
+        {
+          "name": "5xl",
+          "size": "3rem",
+          "letterSpacing": "-0.035em",
+          "lineHeight": "1",
+          "fontWeight": "700"
+        },
+        {
+          "name": "6xl",
+          "size": "3.75rem",
+          "letterSpacing": "-0.04em",
+          "lineHeight": "1",
+          "fontWeight": "700"
+        },
+        {
+          "name": "7xl",
+          "size": "4.5rem",
+          "letterSpacing": "-0.045em",
+          "lineHeight": "1",
+          "fontWeight": "800"
+        },
+        {
+          "name": "8xl",
+          "size": "6rem",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1",
+          "fontWeight": "800"
+        },
+        {
+          "name": "9xl",
+          "size": "8rem",
+          "letterSpacing": "-0.05em",
+          "lineHeight": "1",
+          "fontWeight": "900"
+        }
+      ],
+      "paragraphs": {
+        "font": {
+          "role": "paragraphs",
+          "fontFamily": "roboto",
+          "fontJustification": ""
+        },
+        "paragraphsUsageGuide": "Use for all body text and paragraph content. Maintain consistent line height and letter spacing for readability.",
+        "paragraphsSimilarFonts": [],
+        "paragraphsAccessibilityNotes": "Ensure sufficient contrast between text and background colors. Use appropriate font size for readability on different devices."
+      },
+      "welcomeSectionTypography": {
+        "placement": "",
+        "implementation": ""
+      }
+    },
+    "originImagesUrls": [],
+    "layout": {
+      "grid": {
+        "margins": "8px increments",
+        "padding": "8px increments",
+        "spacing": {
+          "gaps": "Base unit: 8px. All grid gaps are 24px (3x base unit).",
+          "rows": "Auto",
+          "columns": "12"
+        },
+        "compositionApproach": "Strict 12-Column Grid with Typographic Hierarchy"
+      },
+      "layoutDna": {
+        "contrastSpectrum": "Moderate",
+        "densitySpectrum": "Sparse",
+        "textVsImageEmphasis": "Balanced",
+        "complexitySpectrum": "Simple",
+        "gridAlignmentSpectrum": "Strictly Aligned",
+        "negativeSpaceUsage": "Extensive"
+      },
+      "heroSectionLayout": "**The Knife's Edge Reveal**\nComposition (Tailwind Spec): Full-screen container (h-screen grid place-items-center). Headline 'Experience the Art of Precision' (text-7xl font-bold text-white). A blurred background image of a knife edge (absolute inset-0 object-cover w-full h-full filter blur-3xl).\nSignature Hook (Framer Motion Spec): The headline uses `clip-path` to reveal from the center outwards on page load. Initial state `clip-path: circle(0% at 50% 50%)`. Animate state `clip-path: circle(150% at 50% 50%)` with `transition: { duration: 1.5, ease: 'easeInOut' }`."
+    },
+    "graphicElements": {
+      "icons": "",
+      "stickers": "",
+      "illustrations": ""
+    },
+    "designSummary": "**Zen Knife: Minimalist Precision**\n\nThe Vision: A website that embodies the precision and artistry of hand-sharpened knives through a minimalist design. The focus is on clarity, functionality, and the beauty of simplicity, creating a serene and trustworthy digital experience.\n\n**Execution Blueprint:**\n1. Strict Grid System: A 12-column grid provides the underlying structure, ensuring perfect alignment and visual order.\n2. Monochromatic Palette with Gold Accent: A warm, earthy palette of neutral grays is accented with polished gold for CTAs, evoking craftsmanship and reliability.\n3. Typography as Hierarchy: A single sans-serif font family is used, with hierarchy established through size, weight, and case variations.\n4. Negative Space Emphasis: Generous use of negative space allows each element to breathe, enhancing clarity and focus.\n5. Functional Animations: Subtle animations, such as fades and transitions, are used sparingly to enhance user experience without distracting from the content.",
+    "palette": {
+      "colors": {
+        "background": "#F5F5F5",
+        "secondary": "#B8860B",
+        "customColors": [
+          {
+            "name": "lightGray",
+            "value": "#E0E0E0"
+          },
+          {
+            "name": "darkGray",
+            "value": "#666666"
+          },
+          {
+            "name": "destructive",
+            "value": "#FF4136"
+          },
+          {
+            "name": "destructive-foreground",
+            "value": "#FFFFFF"
+          }
+        ],
+        "foreground": "#333333",
+        "secondaryForeground": "#000000",
+        "primaryForeground": "#FFFFFF",
+        "primary": "#A52A2A"
+      },
+      "paletteUsageGuide": "Primary color (deep crimson) is used for main headings and key elements. Secondary color (polished gold) is used for CTAs and accents. Neutral grays are used for backgrounds and body text.",
+      "paletteAccessibilityNotes": "Ensure sufficient contrast between text and background colors for readability. Use colorblindness simulators to verify accessibility."
+    }
+  },
+  "initialPrompt": "Create a professional, high-converting website for Mr. KNIFE GUY, a full-service knife sharpening business emphasizing hand sharpening, quality craftsmanship, attention to detail, exceptional customer service, and artisan expertise. The site should be modern, clean, minimalist, and mobile-responsive with fast loading times. Use a warm, earthy color palette (e.g., deep crimson, polished gold accents, and neutral grays) to evoke craftsmanship and reliability, with bold accents for CTAs (e.g., gold buttons). Ensure SEO optimization, including meta titles like \"Mr. KNIFE GUY: Expert Hand Knife Sharpening Services,\" descriptions, and alt text for images.\nOverall Structure and Navigation\nSimple top navigation menu: Home (landing page), Services, Testimonials, Our Story, Contact, Knife Giveaway.\nSticky header with menu, logo (e.g., a stylized knife edge or artisan tool icon), and a prominent \"Book Service\" CTA button.\nFooter with links to all pages, social media icons (Instagram, Facebook, YouTube for educational content), contact info (email, phone), privacy policy, terms of service, and a newsletter signup form for tips on knife care.\nHome/Landing Page\nHero section above the fold: Compelling headline like \"Experience the Art of Precision: Hand-Sharpened Knives Delivered with Care by Mr. KNIFE GUY\" and a subheadline highlighting key benefits (e.g., \"Artisan sharpening that restores your blades to perfection – trusted by home cooks and professional chefs alike\"). Include a bold CTA button like \"Schedule Your White Glove Service Today\".\nBelow the headline: A full-width image carousel/slideshow with 4-6 captivating, high-quality still images showcasing hand-sharpening processes, satisfied customers receiving door-to-door service, beautifully restored knives, and artisan tools. Images should auto-scroll or change every 3-5 seconds, with subtle animations for smooth transitions.\nBenefits section: 3-4 bullet points or icons outlining key value propositions (e.g., \"Meticulous Hand Sharpening for Lasting Edges\", \"Personalized Knife Care Education\", \"Concierge Sales with Expert Guidance\", \"Door-to-Door White Glove Convenience\").\nTestimonials teaser: A section with 4-6 rotating or grid-style customer testimonials including names (where available), photos (placeholders if needed), and short quotes praising craftsmanship, speed, expertise, and educational insights. Draw from real references to build authenticity:\n\"Sean was incredibly knowledgeable and gave me a great lesson in knife ownership and use – I thought I'd ruined my Shun knives, but he restored them perfectly!\" (Inspired by customer feedback on expert guidance and restoration).\n\"My blade was sharpened by Sean in no time at all – incredibly fast and the edge is flawless!\" (Highlighting quick, high-quality service).\n\"Sean let me watch the hand-sharpening process; his attention to detail and passion for craftsmanship turned my dull knives into razor-sharp works of art.\" (From observations of artisan expertise).\nAdditional quotes emphasizing superior edges trusted by chefs, personalized advice on knife care, and the difference hand sharpening makes over standard methods.\nInclude a \"See More Testimonials\" link to the dedicated page, and mention discounted rates for referrals and testimonials (e.g., \"Share your story and save on your next service\").\nServices overview: Grid of 3-4 cards with images, brief descriptions of main services, and \"Learn More\" links to the Services page.\nCall-to-action banner: Mid-page strip with \"Ready to Elevate Your Knives?\" and a form for name, email, and message, plus urgency like \"Limited appointments available – book now for artisan care\".\nLink to Our Story: A button or section teaser like \"Discover the Artisan Behind Mr. KNIFE GUY\" leading to the brand story page.\nGiveaway teaser: A prominent section or popup encouraging visitors to enter their information (name, email) for chances to win free knife sharpening sessions or premium knives, with a simple form and rules (e.g., \"Enter Now for Your Chance to Win – One Winner Monthly\").\nServices Page\nHero with headline like \"Our Artisan Knife Services: Crafted with Precision and Care\" and subheadline emphasizing hand-sharpening expertise.\nDetailed sections for each service: Use accordions or tabs for descriptions, benefits, and pricing (if applicable). Include:\nDoor-to-Door White Glove Service: Pickup, hand sharpening, and delivery with personalized handling and care instructions.\nKnife Maintenance Educational Service: Workshops, tutorials, or one-on-one sessions teaching proper care, honing techniques, and storage to extend blade life.\nConcierge Knife Sales: Curated selection of high-quality knives with personalized buying help, recommendations based on customer needs (e.g., kitchen type, usage), and artisan-approved brands.\nReferral and Testimonial Discounts: Details on earning reduced rates (e.g., 20% off for successful referrals or submitting a testimonial/video).\nIntegration for sales: Add a shop section with buyable knives or packages; include forms for personalized consultations or bookings.\nFAQ section at the bottom for common questions, such as \"How does hand sharpening differ from machine methods?\" or \"What knives qualify for white glove service?\"\nTestimonials Page\nFull page dedicated to social proof: Grid or carousel of 8-12 testimonials with photos (placeholders), star ratings, and detailed quotes focusing on craftsmanship, attention to detail, customer service, speed, and educational value.\nProminently feature quotes and references tied to real experiences:\nEducational and restorative expertise: \"I thought my expensive knives were beyond saving, but Sean provided an insightful lesson on proper use and restored them to better than new with meticulous hand sharpening.\"\nSpeed and quality: \"Incredibly fast service – my knives were sharpened to perfection while I waited, with an edge that's sharper and more durable than ever.\"\nArtisan passion: \"Watching Sean work showcased true craftsmanship; his dedication to detail and sharing knowledge about knife care made all the difference.\"\nChef-level trust: References to superior edges that won over discerning users, emphasizing hand-crafted results over ordinary sharpening.\nInclude video testimonials or placeholders for them, highlighting real customer experiences with hand-sharpened results.\nTrust badges: \"Trusted by Home Cooks and Professional Chefs,\" review aggregates (e.g., placeholders for Google/Yelp integration), or mentions of past recognition in culinary circles. Emphasize incentives like discounts for new testimonials.\nOur Story Page (Personal Brand Story)\nHero with engaging headline like \"The Journey of Mr. KNIFE GUY: A Lifelong Passion for Artisan Blade Craftsmanship\".\nNarrative sections: Timeline or paragraphs telling the personal brand story, including a childhood fascination with sharpening, starting with experiments on family knives and ancient techniques like flint knapping with obsidian. Describe learning through dedicated trial and error using traditional tools like Arkansas whetstones and diamond sharpeners passed down from a grandfather, overcoming challenges in professional settings by insisting on excellence and attention to detail despite conflicts, ultimately earning the trust of high-profile chefs through superior, hand-crafted edges. Highlight themes of resilience, dedication to quality over quantity, and a rebellion against mediocrity to deliver artisan-level results. Use images like personal photos of tools, sharpening in action, or milestones.\nEnd with a CTA linking back to services or contact, reinforcing the commitment to customer service and craftsmanship.\nContact Page\nSimple form for inquiries: Fields for name, email, phone, message, service interest dropdown (e.g., sharpening, education, sales), and referral source.\nMap embed for service areas (if location-based), plus address, phone, email.\nHours of operation and social links.\nKnife Giveaway Page\nDedicated page for the entry form: Collect name, email, and optional referral info for chances to win knives or sharpening services.\nRules, past winners (placeholders), and tie-ins to encourage testimonials or referrals for bonus entries.\nHero headline like \"Win Premium Knives or Free Sharpening – Enter Today!\"\nAdditional Elements\nBlog section: Integrated blog for content marketing, with 2-3 placeholder posts on knife care tips, artisan sharpening techniques, and buying guides to drive SEO, educate visitors, and position as an expert.\nPopup: On-load or exit-intent popup offering a lead magnet (e.g., \"Download Our Free Knife Maintenance Guide\" with email form) or giveaway entry.\nAnalytics: Integrate placeholders for Google Analytics tracking.\nPrivacy and Accessibility: Ensure compliance features like cookie consent banner.\nEducational Resources: Downloadable PDFs or videos on knife maintenance, integrated across pages to support the educational service.",
+  "status": "GENERATING",
+  "generatingOptions": {
+    "siteNameStatus": "COMPLETED",
+    "siteDomainStatus": "COMPLETED",
+    "brandBookStatus": "COMPLETED",
+    "planStatus": "COMPLETED"
+  },
+  "revision": "10",
+  "createdDate": "2025-12-25T22:20:57.750Z",
+  "updatedDate": "2025-12-25T22:21:24.209Z",
+  "attachments": {
+    "contentImagesUrls": [],
+    "inspirationImagesUrls": []
+  },
+  "selectedBrandingPresetId": "00000000-cff9-4a33-8b43-286356cf29e8",
+  "plan": "{\n  \"sections\": [\n    {\n      \"id\": \"overview\",\n      \"title\": \"## Overview\",\n      \"content\": \"This plan creates a professional, modern, and minimalist website for Mr. KNIFE GUY, a knife sharpening business. The site will highlight artisan expertise, quality craftsmanship, and exceptional customer service, featuring a service catalog, customer testimonials, brand story, and lead generation forms, all optimized for SEO and mobile responsiveness.\"\n    },\n    {\n      \"id\": \"key-features\",\n      \"title\": \"## Key features\",\n      \"content\": \"- **View Homepage Content**: Displays brand information, key benefits, and teasers for services and testimonials.\\n- **View Service Listing**: Shows an overview of available knife sharpening and related services.\\n- **View Service Details**: Provides in-depth descriptions of each service, including hand sharpening, education, and concierge sales.\\n- **View Product Listing**: Displays a catalog of knives and sharpening packages available for purchase.\\n- **View Product Details**: Shows detailed information for individual knives or service packages.\\n- **Submit Service Booking**: Allows visitors to book sharpening services or consultations.\\n- **View Testimonial Listing**: Displays customer feedback and reviews.\\n- **View Testimonial Details**: Shows detailed customer testimonials, potentially including photos or videos.\\n- **View Our Story Content**: Shares the personal brand narrative and artisan journey of Mr. KNIFE GUY.\\n- **Submit Contact Form**: Enables visitors to send inquiries or requests.\\n- **Submit Giveaway Entry**: Allows users to enter the knife giveaway.\\n- **View Blog Listing**: Displays a list of blog posts on knife care and expertise.\\n- **View Blog Post Details**: Shows the full content of a specific blog post.\\n- **Download Educational Resources**: Provides access to downloadable guides on knife maintenance.\",\n      \"metadata\": [\n        { \"id\": \"view-homepage-content\", \"name\": \"View Homepage Content\" },\n        { \"id\": \"view-service-listing\", \"name\": \"View Service Listing\" },\n        { \"id\": \"view-service-details\", \"name\": \"View Service Details\" },\n        { \"id\": \"view-product-listing\", \"name\": \"View Product Listing\" },\n        { \"id\": \"view-product-details\", \"name\": \"View Product Details\" },\n        { \"id\": \"submit-service-booking\", \"name\": \"Submit Service Booking\" },\n        { \"id\": \"view-testimonial-listing\", \"name\": \"View Testimonial Listing\" },\n        { \"id\": \"view-testimonial-details\", \"name\": \"View Testimonial Details\" },\n        { \"id\": \"view-our-story-content\", \"name\": \"View Our Story Content\" },\n        { \"id\": \"submit-contact-form\", \"name\": \"Submit Contact Form\" },\n        { \"id\": \"submit-giveaway-entry\", \"name\": \"Submit Giveaway Entry\" },\n        { \"id\": \"view-blog-listing\", \"name\": \"View Blog Listing\" },\n        { \"id\": \"view-blog-post-details\", \"name\": \"View Blog Post Details\" },\n        { \"id\": \"download-educational-resources\", \"name\": \"Download Educational Resources\" }\n      ]\n    },\n    {\n      \"id\": \"structure\",\n      \"title\": \"## Structure\",\n      \"content\": \"- **Header (Reusable)**: Contains the logo, main navigation menu (Home, Services, Testimonials, Our Story, Contact, Knife Giveaway), and a prominent \\\"Book Service\\\" CTA button.\\n- **Footer (Reusable)**: Includes links to all pages, social media icons, contact information, legal pages (Privacy Policy, Terms of Service), and a newsletter signup form.\\n- **Homepage**: Hosts the hero section, image carousel, benefits, testimonials teaser, services overview, CTA banner, and links to Our Story and Giveaway.\\n- **Services Page**: Details all services, including accordions/tabs for descriptions, pricing, and FAQs. Integrates booking forms.\\n- **Testimonials Page**: Displays a comprehensive grid or carousel of customer testimonials, including photos and video placeholders.\\n- **Our Story Page**: Narrates the personal brand journey of Mr. KNIFE GUY with images and a CTA.\\n- **Contact Page**: Features a contact form, map embed, address, phone, email, and hours of operation.\\n- **Knife Giveaway Page**: Dedicated page for the giveaway entry form, rules, and past winner information.\\n- **Blog Page**: Lists all blog posts.\\n- **Blog Post Detail Page**: Displays the content of a single blog post.\\n- **Product Page**: Hosts the catalog of buyable knives and packages.\\n- **Product Detail Page**: Shows detailed information for a specific product.\"\n    }\n  ],\n  \"apps\": [\n    {\n      \"id\": \"wix-stores\",\n      \"keyFeatures\": [\n        { \"id\": \"view-product-listing\", \"name\": \"View Product Listing\" },\n        { \"id\": \"view-product-details\", \"name\": \"View Product Details\" },\n        { \"id\": \"submit-service-booking\", \"name\": \"Submit Service Booking\" }\n      ]\n    },\n    {\n      \"id\": \"wix-cms\",\n      \"keyFeatures\": [\n        { \"id\": \"view-homepage-content\", \"name\": \"View Homepage Content\" },\n        { \"id\": \"view-service-listing\", \"name\": \"View Service Listing\" },\n        { \"id\": \"view-service-details\", \"name\": \"View Service Details\" },\n        { \"id\": \"view-testimonial-listing\", \"name\": \"View Testimonial Listing\" },\n        { \"id\": \"view-testimonial-details\", \"name\": \"View Testimonial Details\" },\n        { \"id\": \"view-our-story-content\", \"name\": \"View Our Story Content\" },\n        { \"id\": \"submit-contact-form\", \"name\": \"Submit Contact Form\" },\n        { \"id\": \"submit-giveaway-entry\", \"name\": \"Submit Giveaway Entry\" },\n        { \"id\": \"view-blog-listing\", \"name\": \"View Blog Listing\" },\n        { \"id\": \"view-blog-post-details\", \"name\": \"View Blog Post Details\" },\n        { \"id\": \"download-educational-resources\", \"name\": \"Download Educational Resources\" }\n      ]\n    }\n  ],\n  \"version\": \"3.0\"\n}",
+  "designerData": {
+    "designerId": "643efd59-4335-4582-a3a6-9a56a8750a37",
+    "designerName": "Isla",
+    "selectionMethod": "UNSELECTED"
+  }
+}
