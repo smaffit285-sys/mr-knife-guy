@@ -15,8 +15,9 @@ export default function ServicesPage() {
       id: 'white-glove',
       icon: Truck,
       title: 'Door-to-Door White Glove Service',
+      painPoint: 'Busy schedules and the hassle of transporting valuable knives',
       description:
-        'Experience the ultimate convenience with our premium pickup and delivery service. We handle your knives with meticulous care from start to finish.',
+        'No time to visit a sharpening service? We come to you. Our premium pickup and delivery service eliminates the inconvenience of transporting your knives while ensuring they receive expert care from start to finish.',
       benefits: [
         'Convenient pickup from your location',
         'Expert hand sharpening using traditional techniques',
@@ -29,8 +30,9 @@ export default function ServicesPage() {
       id: 'education',
       icon: BookOpen,
       title: 'Knife Maintenance Educational Service',
+      painPoint: 'Dull blades between sharpenings and uncertainty about proper care',
       description:
-        'Learn the art of proper knife care from an expert. Our educational sessions empower you to maintain your blades like a professional.',
+        'Stop struggling with dull knives and guessing about maintenance. Learn directly from an expert how to maintain your blades like a professional, extending their lifespan and keeping them sharp longer.',
       benefits: [
         'One-on-one personalized instruction',
         'Proper honing and maintenance techniques',
@@ -38,30 +40,29 @@ export default function ServicesPage() {
         'Blade inspection and assessment skills',
         'Lifetime access to educational resources',
       ],
-      pricing:
-        'Workshop sessions from $75. Private consultations available. Group rates for culinary teams.',
     },
     {
       id: 'sales',
       icon: Award,
       title: 'Concierge Knife Sales',
+      painPoint: 'Overwhelming choices and uncertainty about which knife is right for you',
       description:
-        'Discover the perfect knife for your needs with expert guidance. We offer a curated selection of premium blades with personalized recommendations.',
+        'Tired of buying the wrong knife? Our expert concierge service cuts through the confusion with personalized recommendations based on your cooking style and needs.',
       benefits: [
         'Curated selection of artisan-approved brands',
         'Personalized recommendations based on your cooking style',
         'Expert guidance on knife selection',
-        'Competitive pricing on premium knives',
+        'Quality assurance on every blade',
         'Complimentary sharpening with purchase',
       ],
-      pricing: 'Premium knives from $150. Consultation included with every purchase.',
     },
     {
       id: 'referral',
       icon: Gift,
       title: 'Referral and Testimonial Discounts',
+      painPoint: 'Wanting to share great service but feeling like you get nothing in return',
       description:
-        'Share the experience and save! We reward our loyal customers who help spread the word about artisan knife care.',
+        'Love our service? Get rewarded for sharing it. We believe in giving back to customers who help spread the word about artisan knife care.',
       benefits: [
         '20% off your next service for each successful referral',
         '15% discount for submitting a written testimonial',
@@ -69,7 +70,6 @@ export default function ServicesPage() {
         'Stackable discounts for multiple referrals',
         'Exclusive offers for repeat customers',
       ],
-      pricing: 'Earn discounts on all services. No limit on referral rewards.',
     },
   ];
 
@@ -152,6 +152,14 @@ export default function ServicesPage() {
                     <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                       <Icon className="w-10 h-10 text-primary" />
                     </div>
+                    
+                    {/* Pain Point Section */}
+                    <div className="bg-destructive/10 border-l-4 border-destructive rounded-r-lg p-4 mb-6">
+                      <p className="font-paragraph text-base text-destructive font-semibold">
+                        The Problem: {service.painPoint}
+                      </p>
+                    </div>
+
                     <h2 className="font-heading text-4xl text-foreground mb-4">
                       {service.title}
                     </h2>
@@ -160,7 +168,7 @@ export default function ServicesPage() {
                     </p>
 
                     <div className="mb-6">
-                      <h3 className="font-heading text-xl text-foreground mb-4">Benefits:</h3>
+                      <h3 className="font-heading text-xl text-foreground mb-4">What You Get:</h3>
                       <ul className="space-y-3">
                         {service.benefits.map((benefit, i) => (
                           <li key={i} className="flex items-start gap-3">
@@ -186,13 +194,6 @@ export default function ServicesPage() {
                         ))}
                       </ul>
                     </div>
-
-                    {service.pricing && (
-                      <div className="bg-light-gray/30 rounded-lg p-6 mb-6">
-                        <h3 className="font-heading text-lg text-foreground mb-2">Pricing:</h3>
-                        <p className="font-paragraph text-base text-dark-gray">{service.pricing}</p>
-                      </div>
-                    )}
 
                     <Button
                       asChild
