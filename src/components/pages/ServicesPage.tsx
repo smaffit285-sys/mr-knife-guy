@@ -24,7 +24,6 @@ export default function ServicesPage() {
         'Safe, secure delivery back to your door',
         'Inspection and consultation included',
       ],
-      pricing: 'Sharpening charge same as normal service. Concierge fee applies.',
     },
     {
       id: 'education',
@@ -188,10 +187,12 @@ export default function ServicesPage() {
                       </ul>
                     </div>
 
-                    <div className="bg-light-gray/30 rounded-lg p-6 mb-6">
-                      <h3 className="font-heading text-lg text-foreground mb-2">Pricing:</h3>
-                      <p className="font-paragraph text-base text-dark-gray">{service.pricing}</p>
-                    </div>
+                    {service.pricing && (
+                      <div className="bg-light-gray/30 rounded-lg p-6 mb-6">
+                        <h3 className="font-heading text-lg text-foreground mb-2">Pricing:</h3>
+                        <p className="font-paragraph text-base text-dark-gray">{service.pricing}</p>
+                      </div>
+                    )}
 
                     <Button
                       asChild
