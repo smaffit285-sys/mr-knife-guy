@@ -24,7 +24,7 @@ export default function ServicesPage() {
         'Safe, secure delivery back to your door',
         'Inspection and consultation included',
       ],
-      pricing: 'Starting at $8 per knife. Volume discounts available for 5+ knives.',
+      pricing: 'Sharpening charge same as normal service. Concierge fee applies.',
     },
     {
       id: 'education',
