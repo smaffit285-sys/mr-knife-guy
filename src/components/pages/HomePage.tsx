@@ -187,7 +187,7 @@ export default function HomePage() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % SLIDES.length);
-    }, 5000);
+    }, 20000);
     return () => clearInterval(timer);
   }, []);
 
