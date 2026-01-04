@@ -222,10 +222,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-heading text-lg text-foreground mb-1">Phone</h3>
                     <a
-                      href="tel:+15551234567"
+                      href="tel:+16505338361"
                       className="font-paragraph text-base text-dark-gray hover:text-primary transition-colors"
                     >
-                      (555) 123-4567
+                      650 533 8361
                     </a>
                   </div>
                 </div>
