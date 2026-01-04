@@ -90,6 +90,123 @@ export const ProductListSkeleton = () => {
   );
 };
 
+// Helper component to render a product card
+const ProductCard = ({ productPageRoute }: { productPageRoute: string }) => {
+  const Navigation = useNavigation();
+
+  return (
+    <Card className="relative hover:shadow-lg transition-all duration-200 hover:scale-105 group h-full flex flex-col bg-surface-card border-surface-subtle justify-between">
+      {/* Product Ribbon */}
+      <ProductRibbon />
+      <CardContent className="p-4 pb-0">
+        {/* Product Image */}
+        <div className="aspect-square bg-surface-primary rounded-lg mb-4 overflow-hidden relative">
+          <ProductMediaGallery>
+            <StyledMediaGallery.Viewport className="object-cover group-hover:scale-110 transition-transform duration-300" />
+          </ProductMediaGallery>
+        </div>
+
+        {/* Product Title */}
+        <ProductSlug asChild>
+          {({ slug }) => (
+            <Navigation
+              data-testid="title-navigation"
+              route={`${productPageRoute}/${slug}`}
+            >
+              <CardTitle className="text-primary mb-2 line-clamp-2 hover:text-brand-primary transition-colors">
+                <ProductName variant="paragraph" />
+              </CardTitle>
+            </Navigation>
+          )}
+        </ProductSlug>
+        {/* Enhanced Product Variants */}
+        <ProductVariants>
+          <ProductVariantOptions>
+            <div className="mb-3 space-y-2">
+              <ProductVariantOptionRepeater>
+                <div className="space-y-2">
+                  <OptionName className="text-content-secondary text-xs font-medium uppercase tracking-wide" />
+                  <OptionChoices>
+                    <div className="flex flex-wrap gap-1.5">
+                      <OptionChoiceRepeater>
+                        <>
+                          <ChoiceColor className="w-7 h-7 border-2" />
+                          <ChoiceText className="text-xs" />
+                        </>
+                      </OptionChoiceRepeater>
+                    </div>
+                  </OptionChoices>
+                </div>
+              </ProductVariantOptionRepeater>
+            </div>
+          </ProductVariantOptions>
+        </ProductVariants>
+
+        {/* Reset Selections */}
+        <ProductVariantSelectorReset className="text-xs underline p-0" />
+        {/* Product Description */}
+        <ProductDescription
+          as="html"
+          className="text-content-muted text-sm mb-3 line-clamp-2 leading-relaxed"
+        />
+      </CardContent>
+
+      <CardFooter className="p-4 pt-0 flex-col space-y-2">
+        {/* Enhanced Price and Stock */}
+        <div className="mt-auto w-full py-2">
+          <div className="w-full flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <ProductPrice className="text-xl font-bold text-content-primary" />
+              <ProductCompareAtPrice className="text-sm font-medium text-content-faded line-through" />
+            </div>
+            <ProductStock
+              className="flex items-center gap-1 text-xs font-medium"
+              labels={{
+                inStock: 'In Stock',
+                limitedStock: 'In Stock',
+                outOfStock: 'Out of Stock',
+              }}
+            />
+          </div>
+        </div>
+        {/* Enhanced Action Buttons */}
+        <ProductActionButtons />
+
+        <ProductSlug asChild>
+          {({ slug }) => (
+            <Navigation
+              data-testid="view-product-button"
+              route={`${productPageRoute}/${slug}`}
+              className="w-full"
+            >
+              <Button
+                variant="secondary"
+                size="lg"
+                className="w-full"
+              >
+                View Product
+                <svg
+                  className="w-4 h-4 transition-transform group-hover:translate-x-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </Button>
+            </Navigation>
+          )}
+        </ProductSlug>
+      </CardFooter>
+    </Card>
+  );
+};
+
 export const ProductListWrapper: React.FC<ProductListProps> = ({
   productsListConfig,
   productPageRoute,
@@ -162,118 +279,44 @@ export const ProductListWrapper: React.FC<ProductListProps> = ({
                   )}
                 </ProductListPrimitive.FilterResetTrigger>
 
-                {/* Products Grid */}
+                {/* Products Grouped by Type */}
+                <ProductListPrimitive.GroupedProductsRepeater
+                  groupBy="name"
+                  sortBy="name"
+                >
+                  {({ groupName, products }) => {
+                    // Check if this is a "Premium Hand Sharpening" group
+                    const isPremiumHandSharpening = groupName?.toLowerCase().includes('premium hand sharpening');
+                    
+                    return (
+                      <div key={groupName} className="mb-12">
+                        {/* Section Header */}
+                        <div className="mb-6">
+                          <h2 className="font-heading text-3xl text-foreground mb-2">
+                            {groupName}
+                          </h2>
+                          {isPremiumHandSharpening && (
+                            <p className="font-paragraph text-dark-gray">
+                              Professional hand sharpening services for 1, 3, and 5 knives
+                            </p>
+                          )}
+                        </div>
+
+                        {/* Products Grid */}
+                        <Products>
+                          <ProductRepeater>
+                            <ProductCard productPageRoute={productPageRoute} />
+                          </ProductRepeater>
+                        </Products>
+                      </div>
+                    );
+                  }}
+                </ProductListPrimitive.GroupedProductsRepeater>
+
+                {/* Fallback: If grouping not available, show all products */}
                 <Products>
                   <ProductRepeater>
-                    <Card className="relative hover:shadow-lg transition-all duration-200 hover:scale-105 group h-full flex flex-col bg-surface-card border-surface-subtle justify-between">
-                      {/* Product Ribbon */}
-                      <ProductRibbon />
-                      <CardContent className="p-4 pb-0">
-                        {/* Product Image */}
-                        <div className="aspect-square bg-surface-primary rounded-lg mb-4 overflow-hidden relative">
-                          <ProductMediaGallery>
-                            <StyledMediaGallery.Viewport className="object-cover group-hover:scale-110 transition-transform duration-300" />
-                          </ProductMediaGallery>
-                        </div>
-
-                        {/* Product Title */}
-                        <ProductSlug asChild>
-                          {({ slug }) => (
-                            <Navigation
-                              data-testid="title-navigation"
-                              route={`${productPageRoute}/${slug}`}
-                            >
-                              <CardTitle className="text-primary mb-2 line-clamp-2 hover:text-brand-primary transition-colors">
-                                <ProductName variant="paragraph" />
-                              </CardTitle>
-                            </Navigation>
-                          )}
-                        </ProductSlug>
-                        {/* Enhanced Product Variants */}
-                        <ProductVariants>
-                          <ProductVariantOptions>
-                            <div className="mb-3 space-y-2">
-                              <ProductVariantOptionRepeater>
-                                <div className="space-y-2">
-                                  <OptionName className="text-content-secondary text-xs font-medium uppercase tracking-wide" />
-                                  <OptionChoices>
-                                    <div className="flex flex-wrap gap-1.5">
-                                      <OptionChoiceRepeater>
-                                        <>
-                                          <ChoiceColor className="w-7 h-7 border-2" />
-                                          <ChoiceText className="text-xs" />
-                                        </>
-                                      </OptionChoiceRepeater>
-                                    </div>
-                                  </OptionChoices>
-                                </div>
-                              </ProductVariantOptionRepeater>
-                            </div>
-                          </ProductVariantOptions>
-                        </ProductVariants>
-
-                        {/* Reset Selections */}
-                        <ProductVariantSelectorReset className="text-xs underline p-0" />
-                        {/* Product Description */}
-                        <ProductDescription
-                          as="html"
-                          className="text-content-muted text-sm mb-3 line-clamp-2 leading-relaxed"
-                        />
-                      </CardContent>
-
-                      <CardFooter className="p-4 pt-0 flex-col space-y-2">
-                        {/* Enhanced Price and Stock */}
-                        <div className="mt-auto w-full py-2">
-                          <div className="w-full flex items-center justify-between">
-                            <div className="flex items-center gap-2">
-                              <ProductPrice className="text-xl font-bold text-content-primary" />
-                              <ProductCompareAtPrice className="text-sm font-medium text-content-faded line-through" />
-                            </div>
-                            <ProductStock
-                              className="flex items-center gap-1 text-xs font-medium"
-                              labels={{
-                                inStock: 'In Stock',
-                                limitedStock: 'In Stock',
-                                outOfStock: 'Out of Stock',
-                              }}
-                            />
-                          </div>
-                        </div>
-                        {/* Enhanced Action Buttons */}
-                        <ProductActionButtons />
-
-                        <ProductSlug asChild>
-                          {({ slug }) => (
-                            <Navigation
-                              data-testid="view-product-button"
-                              route={`${productPageRoute}/${slug}`}
-                              className="w-full"
-                            >
-                              <Button
-                                variant="secondary"
-                                size="lg"
-                                className="w-full"
-                              >
-                                View Product
-                                <svg
-                                  className="w-4 h-4 transition-transform group-hover:translate-x-0.5"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  stroke="currentColor"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M9 5l7 7-7 7"
-                                  />
-                                </svg>
-                              </Button>
-                            </Navigation>
-                          )}
-                        </ProductSlug>
-                      </CardFooter>
-                    </Card>
+                    <ProductCard productPageRoute={productPageRoute} />
                   </ProductRepeater>
                 </Products>
               </>
