@@ -234,7 +234,7 @@ export default function HomePage() {
           >
             <span className="inline-block py-2 px-3 border border-secondary/50 rounded-full text-secondary text-sm tracking-[0.2em] uppercase backdrop-blur-sm bg-black/20">
               <div>Artisan Craftsmanship</div>
-              <div className="text-xs tracking-[0.15em]">Est. 2009</div>
+              <div className="text-xs tracking-[0.15em]">Since 2009</div>
             </span>
           </motion.div>
 
