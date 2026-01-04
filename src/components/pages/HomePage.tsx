@@ -232,8 +232,9 @@ export default function HomePage() {
             transition={{ duration: 1, delay: 0.2 }}
             className="mb-6"
           >
-            <span className="inline-block py-1 px-3 border border-secondary/50 rounded-full text-secondary text-sm tracking-[0.2em] uppercase backdrop-blur-sm bg-black/20">
-              Est. Artisan Craftsmanship
+            <span className="inline-block py-2 px-3 border border-secondary/50 rounded-full text-secondary text-sm tracking-[0.2em] uppercase backdrop-blur-sm bg-black/20">
+              <div>Artisan Craftsmanship</div>
+              <div className="text-xs tracking-[0.15em]">Est. 2009</div>
             </span>
           </motion.div>
 
