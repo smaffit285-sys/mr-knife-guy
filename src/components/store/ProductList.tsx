@@ -279,41 +279,7 @@ export const ProductListWrapper: React.FC<ProductListProps> = ({
                   )}
                 </ProductListPrimitive.FilterResetTrigger>
 
-                {/* Products Grouped by Type */}
-                <ProductListPrimitive.GroupedProductsRepeater
-                  groupBy="name"
-                  sortBy="name"
-                >
-                  {({ groupName, products }) => {
-                    // Check if this is a "Premium Hand Sharpening" group
-                    const isPremiumHandSharpening = groupName?.toLowerCase().includes('premium hand sharpening');
-                    
-                    return (
-                      <div key={groupName} className="mb-12">
-                        {/* Section Header */}
-                        <div className="mb-6">
-                          <h2 className="font-heading text-3xl text-foreground mb-2">
-                            {groupName}
-                          </h2>
-                          {isPremiumHandSharpening && (
-                            <p className="font-paragraph text-dark-gray">
-                              Professional hand sharpening services for 1, 3, and 5 knives
-                            </p>
-                          )}
-                        </div>
-
-                        {/* Products Grid */}
-                        <Products>
-                          <ProductRepeater>
-                            <ProductCard productPageRoute={productPageRoute} />
-                          </ProductRepeater>
-                        </Products>
-                      </div>
-                    );
-                  }}
-                </ProductListPrimitive.GroupedProductsRepeater>
-
-                {/* Fallback: If grouping not available, show all products */}
+                {/* Products Grid */}
                 <Products>
                   <ProductRepeater>
                     <ProductCard productPageRoute={productPageRoute} />
