@@ -15,7 +15,6 @@ import BlogPage from '@/components/pages/BlogPage';
 import BlogPostPage from '@/components/pages/BlogPostPage';
 import PrivacyPage from '@/components/pages/PrivacyPage';
 import TermsPage from '@/components/pages/TermsPage';
-import ProductsPage from '@/components/pages/ProductsPage';
 
 // Import Wix Stores routes and providers
 import { rootRouteLoader, WixServicesProvider } from '@/wix-verticals/react-pages/react-router/routes/root';
@@ -94,10 +93,6 @@ const router = createBrowserRouter([
       {
         path: "terms",
         element: <TermsPage />,
-      },
-      {
-        path: "products",
-        element: <ProductsPage />,
       },
       // Wix Stores Routes
       {
