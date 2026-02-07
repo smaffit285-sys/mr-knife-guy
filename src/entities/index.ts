@@ -19,7 +19,7 @@ export interface BlogPosts {
   author?: string;
   /** @wixFieldType date */
   publishDate?: Date | string;
-  /** @wixFieldType image */
+  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
   featuredImage?: string;
   /** @wixFieldType text */
   content?: string;
@@ -42,7 +42,7 @@ export interface CustomerTestimonials {
   _updatedDate?: Date;
   /** @wixFieldType text */
   customerName?: string;
-  /** @wixFieldType image */
+  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
   customerPhoto?: string;
   /** @wixFieldType number */
   starRating?: number;
@@ -69,7 +69,7 @@ export interface EducationalResources {
   resourceTitle?: string;
   /** @wixFieldType text */
   resourceDescription?: string;
-  /** @wixFieldType image */
+  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
   thumbnailImage?: string;
   /** @wixFieldType url */
   downloadUrl?: string;
@@ -113,7 +113,7 @@ export interface KnifeCatalog {
   _updatedDate?: Date;
   /** @wixFieldType text */
   productName?: string;
-  /** @wixFieldType image */
+  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
   productImage?: string;
   /** @wixFieldType text */
   shortDescription?: string;
@@ -144,7 +144,7 @@ export interface PastGiveawayWinners {
   prizeWon?: string;
   /** @wixFieldType date */
   dateWon?: Date | string;
-  /** @wixFieldType image */
+  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
   winnerPhoto?: string;
   /** @wixFieldType text */
   winnerQuote?: string;
@@ -169,7 +169,7 @@ export interface Services {
   benefits?: string;
   /** @wixFieldType text */
   pricingInformation?: string;
-  /** @wixFieldType image */
+  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
   serviceImage?: string;
   /** @wixFieldType text */
   callToActionText?: string;

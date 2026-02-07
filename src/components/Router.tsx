@@ -4,17 +4,7 @@ import { ScrollToTop } from '@/lib/scroll-to-top';
 import ErrorPage from '@/integrations/errorHandlers/ErrorPage';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import LeadMagnetPopup from '@/components/LeadMagnetPopup';
 import HomePage from '@/components/pages/HomePage';
-import ServicesPage from '@/components/pages/ServicesPage';
-import TestimonialsPage from '@/components/pages/TestimonialsPage';
-import OurStoryPage from '@/components/pages/OurStoryPage';
-import ContactPage from '@/components/pages/ContactPage';
-import GiveawayPage from '@/components/pages/GiveawayPage';
-import BlogPage from '@/components/pages/BlogPage';
-import BlogPostPage from '@/components/pages/BlogPostPage';
-import PrivacyPage from '@/components/pages/PrivacyPage';
-import TermsPage from '@/components/pages/TermsPage';
 
 // Import Wix Stores routes and providers
 import { rootRouteLoader, WixServicesProvider } from '@/wix-verticals/react-pages/react-router/routes/root';
@@ -32,7 +22,6 @@ function MainLayout() {
         <Outlet />
       </main>
       <Footer />
-      <LeadMagnetPopup />
     </div>
   );
 }
@@ -57,42 +46,6 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
-      },
-      {
-        path: "services",
-        element: <ServicesPage />,
-      },
-      {
-        path: "testimonials",
-        element: <TestimonialsPage />,
-      },
-      {
-        path: "our-story",
-        element: <OurStoryPage />,
-      },
-      {
-        path: "contact",
-        element: <ContactPage />,
-      },
-      {
-        path: "giveaway",
-        element: <GiveawayPage />,
-      },
-      {
-        path: "blog",
-        element: <BlogPage />,
-      },
-      {
-        path: "blog/:slug",
-        element: <BlogPostPage />,
-      },
-      {
-        path: "privacy",
-        element: <PrivacyPage />,
-      },
-      {
-        path: "terms",
-        element: <TermsPage />,
       },
       // Wix Stores Routes
       {
