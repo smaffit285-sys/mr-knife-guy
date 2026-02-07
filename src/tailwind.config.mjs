@@ -32,7 +32,14 @@ export default {
                 foreground: '#333333',
                 'secondary-foreground': '#000000',
                 'primary-foreground': '#FFFFFF',
-                primary: '#A52A2A'
+                primary: '#A52A2A',
+                // Synthwave colors
+                'synthwave-midnight': '#0a0e27',
+                'synthwave-dark': '#1a1f3a',
+                'synthwave-neon-pink': '#ff006e',
+                'synthwave-neon-cyan': '#00f5ff',
+                'synthwave-purple': '#8338ec',
+                'synthwave-light': '#f0f0f0',
             },
         },
     },
