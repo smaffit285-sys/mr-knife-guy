@@ -2,48 +2,49 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Check, X } from 'lucide-react';
 import { Image } from '@/components/ui/image';
+import { BaseCrudService } from '@/integrations';
+import { CustomerTestimonials, KnifeCatalog, Services } from '@/entities';
 
 export default function HomePage() {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isSticky, setIsSticky] = useState(false);
+  const [testimonials, setTestimonials] = useState<CustomerTestimonials[]>([]);
+  const [knives, setKnives] = useState<KnifeCatalog[]>([]);
+  const [services, setServices] = useState<Services[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  // Testimonials data
-  const testimonials = [
-    {
-      name: 'Marcus T.',
-      quote: 'Best knife sharpening in Miami. Razor sharp.',
-      rating: 5,
-    },
-    {
-      name: 'Elena R.',
-      quote: 'Professional, fast, and my knives have never been better.',
-      rating: 5,
-    },
-    {
-      name: 'David K.',
-      quote: 'Worth every penny. Elite service.',
-      rating: 5,
-    },
-    {
-      name: 'Sofia M.',
-      quote: 'The difference is night and day. Highly recommend.',
-      rating: 5,
-    },
-    {
-      name: 'James P.',
-      quote: 'Precision craftsmanship at its finest.',
-      rating: 5,
-    },
-  ];
+  // Fetch CMS data
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const [testimonialsData, knivesData, servicesData] = await Promise.all([
+          BaseCrudService.getAll<CustomerTestimonials>('customertestimonials', {}, { limit: 100 }),
+          BaseCrudService.getAll<KnifeCatalog>('knifecatalog', {}, { limit: 100 }),
+          BaseCrudService.getAll<Services>('services', {}, { limit: 100 }),
+        ]);
+        
+        setTestimonials(testimonialsData.items || []);
+        setKnives(knivesData.items || []);
+        setServices(servicesData.items || []);
+      } catch (error) {
+        console.error('Error fetching CMS data:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   // Auto-rotate testimonials every 5 seconds
   useEffect(() => {
+    if (testimonials.length === 0) return;
     const interval = setInterval(() => {
       setActiveTestimonial((prev) => (prev + 1) % testimonials.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [testimonials.length]);
 
   // Sticky CTA on scroll
   useEffect(() => {
@@ -54,7 +55,7 @@ export default function HomePage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleSliderChange = (e) => {
+  const handleSliderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSliderPosition(parseFloat(e.target.value));
   };
 
@@ -138,48 +139,50 @@ export default function HomePage() {
       </section>
 
       {/* ===== SOCIAL PROOF TICKER ===== */}
-      <section className="relative py-12 bg-synthwave-dark border-y border-synthwave-neon-cyan/30">
-        <div className="max-w-[120rem] mx-auto px-6">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-synthwave-neon-cyan">TRUSTED BY MIAMI'S ELITE</h2>
-          </div>
+      {testimonials.length > 0 && (
+        <section className="relative py-12 bg-synthwave-dark border-y border-synthwave-neon-cyan/30">
+          <div className="max-w-[120rem] mx-auto px-6">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl font-bold text-synthwave-neon-cyan">TRUSTED BY MIAMI'S ELITE</h2>
+            </div>
 
-          <div className="relative h-24 flex items-center justify-center overflow-hidden rounded-lg border border-synthwave-neon-pink/30 bg-synthwave-midnight/50">
-            <motion.div
-              key={activeTestimonial}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              className="text-center px-8"
-            >
-              <p className="text-lg text-synthwave-light mb-2">"{testimonials[activeTestimonial].quote}"</p>
-              <p className="text-synthwave-neon-cyan font-bold">{testimonials[activeTestimonial].name}</p>
-              <div className="flex justify-center gap-1 mt-2">
-                {Array(testimonials[activeTestimonial].rating)
-                  .fill(0)
-                  .map((_, i) => (
-                    <span key={i} className="text-synthwave-neon-pink">
-                      ★
-                    </span>
-                  ))}
-              </div>
-            </motion.div>
-          </div>
+            <div className="relative h-24 flex items-center justify-center overflow-hidden rounded-lg border border-synthwave-neon-pink/30 bg-synthwave-midnight/50">
+              <motion.div
+                key={activeTestimonial}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.5 }}
+                className="text-center px-8"
+              >
+                <p className="text-lg text-synthwave-light mb-2">"{testimonials[activeTestimonial].quote}"</p>
+                <p className="text-synthwave-neon-cyan font-bold">{testimonials[activeTestimonial].customerName}</p>
+                <div className="flex justify-center gap-1 mt-2">
+                  {Array(testimonials[activeTestimonial].starRating || 5)
+                    .fill(0)
+                    .map((_, i) => (
+                      <span key={i} className="text-synthwave-neon-pink">
+                        ★
+                      </span>
+                    ))}
+                </div>
+              </motion.div>
+            </div>
 
-          <div className="flex justify-center gap-2 mt-6">
-            {testimonials.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setActiveTestimonial(i)}
-                className={`w-2 h-2 rounded-full transition-all ${
-                  i === activeTestimonial ? 'bg-synthwave-neon-pink w-8' : 'bg-synthwave-neon-cyan/50'
-                }`}
-              />
-            ))}
+            <div className="flex justify-center gap-2 mt-6">
+              {testimonials.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setActiveTestimonial(i)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    i === activeTestimonial ? 'bg-synthwave-neon-pink w-8' : 'bg-synthwave-neon-cyan/50'
+                  }`}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* ===== DULL VS SHARP PAIN POINT ===== */}
       <section className="py-20 px-6 max-w-[120rem] mx-auto">
