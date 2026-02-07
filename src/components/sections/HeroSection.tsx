@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
+import { Image } from '@/components/ui/image';
 
 export default function HeroSection() {
   const containerVariants = {
@@ -36,7 +37,6 @@ export default function HeroSection() {
           <rect width="100%" height="100%" fill="url(#grid)" />
         </svg>
       </div>
-
       {/* Animated Gradient Orbs */}
       <motion.div
         className="absolute top-20 left-10 w-72 h-72 bg-synthwave-neon-pink/20 rounded-full blur-3xl"
@@ -54,7 +54,6 @@ export default function HeroSection() {
         }}
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
       />
-
       {/* Content */}
       <motion.div
         className="relative z-10 max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8 text-center"
@@ -66,7 +65,7 @@ export default function HeroSection() {
         <motion.div variants={itemVariants} className="mb-8">
           <div className="inline-block">
             <motion.div
-              className="w-24 h-24 md:w-32 md:h-32 mx-auto mb-6 rounded-full border-2 border-synthwave-neon-pink flex items-center justify-center bg-synthwave-dark/50 backdrop-blur"
+              className="w-24 h-24 md:w-32 md:h-32 mx-auto mb-6 rounded-full border-2 border-synthwave-neon-pink flex items-center justify-center bg-synthwave-dark/50 backdrop-blur overflow-hidden"
               animate={{
                 boxShadow: [
                   '0 0 20px rgba(255, 0, 110, 0.5)',
@@ -76,9 +75,12 @@ export default function HeroSection() {
               }}
               transition={{ duration: 3, repeat: Infinity }}
             >
-              <span className="font-heading text-3xl md:text-4xl font-bold bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-cyan bg-clip-text text-transparent">
-                🔪
-              </span>
+              <Image 
+                src="https://static.wixstatic.com/media/37d64c_e04a07e02fac41d28b967da58a9938eb~mv2.png?originWidth=512&originHeight=512"
+                alt="Neon synthwave knife"
+                width={128}
+                className="w-full h-full object-cover"
+              />
             </motion.div>
           </div>
         </motion.div>
@@ -97,14 +99,14 @@ export default function HeroSection() {
         </motion.h1>
 
         {/* Subheadline */}
+        {/* CTA Button */}
         <motion.p
           variants={itemVariants}
           className="font-paragraph text-lg md:text-2xl text-synthwave-light/80 max-w-2xl mx-auto mb-8"
         >
-          Master-grade knife sharpening with mechanized precision. Elite service. Uncompromising results.
+          Master-grade knife sharpening. Elite service. Uncompromising results.
         </motion.p>
 
-        {/* CTA Button */}
         <motion.div
           variants={itemVariants}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
@@ -127,7 +129,6 @@ export default function HeroSection() {
           </motion.a>
         </motion.div>
       </motion.div>
-
       {/* Scroll Indicator */}
       <motion.div
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
