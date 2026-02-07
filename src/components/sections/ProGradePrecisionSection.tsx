@@ -39,7 +39,7 @@ export default function ProGradePrecisionSection() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="font-heading text-5xl md:text-6xl font-bold mb-6">
+            <h2 className="font-heading text-5xl md:text-6xl font-bold mb-6 text-synthwave-neon-pink" style={{ letterSpacing: '1.5px' }}>
               <span className="bg-gradient-to-r from-synthwave-neon-cyan to-synthwave-neon-pink bg-clip-text text-transparent">
                 PRO-GRADE PRECISION
               </span>

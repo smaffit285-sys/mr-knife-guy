@@ -19,7 +19,7 @@ export default {
                 '9xl': ['8rem', { lineHeight: '1', letterSpacing: '-0.05em', fontWeight: '900' }],
             },
             fontFamily: {
-                heading: "roboto-bold",
+                heading: "'Orbitron', 'Syncopate', sans-serif",
                 paragraph: "roboto"
             },
             colors: {
@@ -34,10 +34,10 @@ export default {
                 'primary-foreground': '#FFFFFF',
                 primary: '#A52A2A',
                 // Synthwave colors
-                'synthwave-midnight': '#0a0e27',
+                'synthwave-midnight': '#00172D',
                 'synthwave-dark': '#1a1f3a',
-                'synthwave-neon-pink': '#ff006e',
-                'synthwave-neon-cyan': '#00f5ff',
+                'synthwave-neon-pink': '#FF007F',
+                'synthwave-neon-cyan': '#00FFFF',
                 'synthwave-purple': '#8338ec',
                 'synthwave-light': '#f0f0f0',
             },

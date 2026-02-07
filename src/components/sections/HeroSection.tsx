@@ -86,13 +86,14 @@ export default function HeroSection() {
         {/* Main Headline */}
         <motion.h1
           variants={itemVariants}
-          className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
+          className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight text-synthwave-neon-pink"
+          style={{ letterSpacing: '1.5px' }}
         >
           <span className="bg-gradient-to-r from-synthwave-neon-pink via-synthwave-purple to-synthwave-neon-cyan bg-clip-text text-transparent">
             FACTORY FRESH
           </span>
           <br />
-          <span className="text-synthwave-light">EDGES</span>
+          <span className="text-synthwave-neon-pink">EDGES</span>
         </motion.h1>
 
         {/* Subheadline */}

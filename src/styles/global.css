@@ -1,5 +1,14 @@
 @import './fonts.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syncopate:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Synthwave Typography Overrides */
+h1, h2 {
+  font-family: 'Orbitron', 'Syncopate', sans-serif;
+  color: #FF007F;
+  letter-spacing: 1.5px;
+}

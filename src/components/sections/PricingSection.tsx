@@ -61,7 +61,7 @@ export default function PricingSection() {
           viewport={{ once: true }}
           className="text-center mb-16 relative z-10"
         >
-          <h2 className="font-heading text-5xl md:text-6xl font-bold mb-4">
+          <h2 className="font-heading text-5xl md:text-6xl font-bold mb-4 text-synthwave-neon-pink" style={{ letterSpacing: '1.5px' }}>
             <span className="bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-cyan bg-clip-text text-transparent">
               MIAMI KNIFE CLUB
             </span>
@@ -98,11 +98,7 @@ export default function PricingSection() {
               )}
 
               <div
-                className={`relative bg-synthwave-dark border-2 rounded-lg p-8 transition-all duration-300 ${
-                  plan.highlighted
-                    ? 'border-synthwave-neon-pink/50 hover:border-synthwave-neon-pink'
-                    : 'border-synthwave-neon-cyan/30 hover:border-synthwave-neon-cyan/50'
-                }`}
+                className="relative bg-black/50 backdrop-blur rounded-lg p-8 transition-all duration-300 border border-synthwave-neon-cyan hover:border-synthwave-neon-cyan"
               >
                 {/* Badge */}
                 {plan.highlighted && (

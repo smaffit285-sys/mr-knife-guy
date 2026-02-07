@@ -24,7 +24,7 @@ export default function CTASection() {
           viewport={{ once: true }}
           className="relative z-10 text-center max-w-3xl mx-auto"
         >
-          <h2 className="font-heading text-6xl md:text-7xl font-bold mb-6 leading-tight">
+          <h2 className="font-heading text-6xl md:text-7xl font-bold mb-6 leading-tight text-synthwave-neon-pink" style={{ letterSpacing: '1.5px' }}>
             <span className="bg-gradient-to-r from-synthwave-neon-pink via-synthwave-purple to-synthwave-neon-cyan bg-clip-text text-transparent">
               READY FOR THE REVOLUTION?
             </span>
