@@ -76,8 +76,8 @@ export default function HeroSection() {
               transition={{ duration: 3, repeat: Infinity }}
             >
               <Image 
-                src="https://static.wixstatic.com/media/37d64c_e04a07e02fac41d28b967da58a9938eb~mv2.png?originWidth=512&originHeight=512"
-                alt="Neon synthwave knife"
+                src="https://static.wixstatic.com/media/37d64c_47fb0c2d97a24d4cb93b20e14ea22073~mv2.png?originWidth=512&originHeight=512"
+                alt="Neon synthwave knife sharpening"
                 width={128}
                 className="w-full h-full object-cover"
               />
