@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Check, X } from 'lucide-react';
-import { Image } from '@/components/ui/image';
 import { BaseCrudService } from '@/integrations';
 import { CustomerTestimonials, KnifeCatalog, Services } from '@/entities';
 
@@ -317,14 +316,15 @@ export default function HomePage() {
               price: '$99',
               period: '/month',
               features: ['4 knife sharpening sessions', 'Priority scheduling', 'Email support', 'Member discount: 10%'],
-              color: 'synthwave-neon-cyan',
+              isCyan: true,
+              featured: false,
             },
             {
               name: 'PROFESSIONAL',
               price: '$199',
               period: '/month',
               features: ['Unlimited sharpening', 'Priority scheduling', '24/7 phone support', 'Member discount: 20%', 'Free maintenance check'],
-              color: 'synthwave-neon-pink',
+              isCyan: false,
               featured: true,
             },
             {
@@ -332,7 +332,8 @@ export default function HomePage() {
               price: '$349',
               period: '/month',
               features: ['Unlimited sharpening + honing', 'White-glove service', 'Dedicated concierge', 'Member discount: 30%', 'Free blade assessment', 'Custom edge profiles'],
-              color: 'synthwave-neon-cyan',
+              isCyan: true,
+              featured: false,
             },
           ].map((plan, i) => (
             <motion.div
@@ -342,19 +343,23 @@ export default function HomePage() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className={`p-8 rounded-lg border-2 backdrop-blur transition-all ${
                 plan.featured
-                  ? `border-${plan.color} bg-synthwave-dark/80 shadow-lg shadow-${plan.color}/50 scale-105`
-                  : `border-${plan.color}/50 bg-synthwave-dark/50`
+                  ? plan.isCyan
+                    ? 'border-synthwave-neon-cyan bg-synthwave-dark/80 shadow-lg shadow-synthwave-neon-cyan/50 scale-105'
+                    : 'border-synthwave-neon-pink bg-synthwave-dark/80 shadow-lg shadow-synthwave-neon-pink/50 scale-105'
+                  : plan.isCyan
+                  ? 'border-synthwave-neon-cyan/50 bg-synthwave-dark/50'
+                  : 'border-synthwave-neon-pink/50 bg-synthwave-dark/50'
               }`}
             >
-              <h3 className={`text-2xl font-bold mb-2 text-${plan.color}`}>{plan.name}</h3>
+              <h3 className={`text-2xl font-bold mb-2 ${plan.isCyan ? 'text-synthwave-neon-cyan' : 'text-synthwave-neon-pink'}`}>{plan.name}</h3>
               <div className="mb-6">
-                <span className={`text-4xl font-bold text-${plan.color}`}>{plan.price}</span>
+                <span className={`text-4xl font-bold ${plan.isCyan ? 'text-synthwave-neon-cyan' : 'text-synthwave-neon-pink'}`}>{plan.price}</span>
                 <span className="text-synthwave-light/60">{plan.period}</span>
               </div>
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature, j) => (
                   <li key={j} className="flex items-start gap-2">
-                    <Check className={`w-5 h-5 text-${plan.color} flex-shrink-0 mt-0.5`} />
+                    <Check className={`w-5 h-5 ${plan.isCyan ? 'text-synthwave-neon-cyan' : 'text-synthwave-neon-pink'} flex-shrink-0 mt-0.5`} />
                     <span className="text-synthwave-light/80">{feature}</span>
                   </li>
                 ))}
@@ -362,8 +367,12 @@ export default function HomePage() {
               <button
                 className={`w-full py-3 rounded-lg font-bold transition-all ${
                   plan.featured
-                    ? `bg-${plan.color} text-synthwave-midnight hover:shadow-lg hover:shadow-${plan.color}/50`
-                    : `border-2 border-${plan.color} text-${plan.color} hover:bg-${plan.color}/10`
+                    ? plan.isCyan
+                      ? 'bg-synthwave-neon-cyan text-synthwave-midnight hover:shadow-lg hover:shadow-synthwave-neon-cyan/50'
+                      : 'bg-synthwave-neon-pink text-synthwave-midnight hover:shadow-lg hover:shadow-synthwave-neon-pink/50'
+                    : plan.isCyan
+                    ? 'border-2 border-synthwave-neon-cyan text-synthwave-neon-cyan hover:bg-synthwave-neon-cyan/10'
+                    : 'border-2 border-synthwave-neon-pink text-synthwave-neon-pink hover:bg-synthwave-neon-pink/10'
                 }`}
               >
                 JOIN NOW
