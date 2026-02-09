@@ -19,8 +19,8 @@ export default function HomePage() {
         <HeroSection />
         <SocialProofTicker />
         <PainPointSection />
-        <ProGradePrecisionSection />
         <PricingSection />
+        <ProGradePrecisionSection />
         <BeforeAfterSlider />
         <CTASection />
       </main>
