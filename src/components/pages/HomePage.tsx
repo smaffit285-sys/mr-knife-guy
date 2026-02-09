@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Image } from '@/components/ui/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HeroSection from '@/components/sections/HeroSection';
