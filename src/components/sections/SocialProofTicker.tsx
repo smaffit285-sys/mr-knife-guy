@@ -34,7 +34,7 @@ export default function SocialProofTicker() {
     <section className="relative w-full py-12 bg-synthwave-dark border-y border-synthwave-neon-cyan/20 overflow-hidden">
       <div className="max-w-[100rem] mx-auto px-4">
         <motion.div
-          className="flex gap-8 whitespace-nowrap"
+          className="flex gap-8"
           animate={{ x: ['0%', '-100%'] }}
           transition={{
             duration: 20,
@@ -57,7 +57,7 @@ export default function SocialProofTicker() {
                   />
                 ))}
               </div>
-              <p className="text-synthwave-light/80 font-paragraph text-sm mb-4">
+              <p className="text-synthwave-light/80 font-paragraph text-sm mb-4 break-words">
                 "{testimonial.text}"
               </p>
               <p className="text-synthwave-neon-cyan font-heading text-sm font-bold">
