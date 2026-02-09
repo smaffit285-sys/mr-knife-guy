@@ -27,7 +27,7 @@ export default function PainPointSection() {
                   DULL IS DANGEROUS.
                 </h2>
                 <p className="font-paragraph text-lg text-synthwave-light/80">
-                  A dull blade doesn't cut; it crushes. Stop fighting your food and start enjoying the kitchen again. We bring the 'factory fresh' edge back to your block—only better.
+                  Dull blades slip off of food and on to your fingers, leading to expensive hospital trips. A dull blade doesn't cut; it crushes, causing more food waste, and constant dangerous struggle just to make dinner. Stop fighting your food and start enjoying the kitchen again. We bring the 'factory fresh' edge back to your blades—only better.
                 </p>
               </div>
             </div>
