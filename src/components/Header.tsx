@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { Image } from '@/components/ui/image';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +19,18 @@ export default function Header() {
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="font-heading text-2xl font-bold bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-cyan bg-clip-text text-transparent"
+          className="flex items-center gap-3"
         >
-          MIAMI KNIFE GUY
+          <Image
+            src="https://static.wixstatic.com/media/37d64c_108d3514a25a41efbed27efa7ace497b~mv2.png?originWidth=512&originHeight=512"
+            alt="Miami Knife Guy Logo"
+            width={48}
+            height={48}
+            className="h-12 w-12"
+          />
+          <span className="font-heading text-xl font-bold bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-cyan bg-clip-text text-transparent hidden sm:inline">
+            MIAMI KNIFE GUY
+          </span>
         </motion.div>
 
         {/* Desktop Navigation */}
