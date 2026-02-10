@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-synthwave-midnight/95 backdrop-blur border-b border-synthwave-neon-cyan/20">
-      <div className="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center">
+      <div className="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -24,9 +24,9 @@ export default function Header() {
           <Image
             src="https://static.wixstatic.com/media/37d64c_c26d92e0c01a495caeb57ac548ba7b8f~mv2.jpg"
             alt="Miami Knife Guy Logo"
-            width={96}
-            height={96}
-            className="h-24 w-24 rounded-full"
+            width={86}
+            height={86}
+            className="h-[21.6px] w-[21.6px] rounded-full"
           />
           <span className="font-heading text-2xl font-bold bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-cyan bg-clip-text text-transparent hidden sm:inline">
             MIAMI KNIFE GUY
