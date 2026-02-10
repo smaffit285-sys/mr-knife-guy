@@ -22,11 +22,11 @@ export default function Header() {
           className="flex items-center gap-3"
         >
           <Image
-            src="https://static.wixstatic.com/media/37d64c_108d3514a25a41efbed27efa7ace497b~mv2.png?originWidth=512&originHeight=512"
+            src="https://static.wixstatic.com/media/37d64c_c26d92e0c01a495caeb57ac548ba7b8f~mv2.jpg"
             alt="Miami Knife Guy Logo"
             width={48}
             height={48}
-            className="h-12 w-12"
+            className="h-12 w-12 rounded-full"
           />
           <span className="font-heading text-xl font-bold bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-cyan bg-clip-text text-transparent hidden sm:inline">
             MIAMI KNIFE GUY
