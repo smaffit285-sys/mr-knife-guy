@@ -65,7 +65,7 @@ export default function HeroSection() {
         <motion.div variants={itemVariants} className="mb-2">
           <div className="inline-block">
             <motion.div
-              className="w-56 h-56 md:w-80 md:h-80 mx-auto mb-2 rounded-lg border-2 border-synthwave-neon-pink flex items-center justify-center bg-synthwave-dark/50 backdrop-blur overflow-hidden"
+              className="w-56 md:w-80 mx-auto mb-2 rounded-lg border-2 border-synthwave-neon-pink flex items-center justify-center bg-synthwave-dark/50 backdrop-blur overflow-hidden"
               animate={{
                 boxShadow: [
                   '0 0 20px rgba(255, 0, 110, 0.5)',
