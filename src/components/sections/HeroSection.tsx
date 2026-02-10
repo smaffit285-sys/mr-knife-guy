@@ -65,7 +65,7 @@ export default function HeroSection() {
         <motion.div variants={itemVariants} className="mb-2">
           <div className="inline-block">
             <motion.div
-              className="w-48 h-48 md:w-64 md:h-64 mx-auto mb-2 rounded-lg border-2 border-synthwave-neon-pink flex items-center justify-center bg-synthwave-dark/50 backdrop-blur overflow-hidden"
+              className="w-72 h-72 md:w-96 md:h-96 mx-auto mb-2 rounded-lg border-2 border-synthwave-neon-pink flex items-center justify-center bg-synthwave-dark/50 backdrop-blur overflow-hidden"
               animate={{
                 boxShadow: [
                   '0 0 20px rgba(255, 0, 110, 0.5)',
@@ -78,8 +78,9 @@ export default function HeroSection() {
               <Image 
                 src="https://static.wixstatic.com/media/37d64c_c26d92e0c01a495caeb57ac548ba7b8f~mv2.jpg"
                 alt="Miami Knife Guy logo"
-                width={256}
-                className="w-full h-full object-contain"
+                width={384}
+                className="w-full h-full object-cover object-center"
+                style={{ objectPosition: 'center 20%' }}
               />
             </motion.div>
           </div>
