@@ -38,14 +38,14 @@ export default function ProGradePrecisionSection() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="flex justify-center mb-12"
+            className="flex justify-center mb-6"
           >
             <Image
               src="https://static.wixstatic.com/media/37d64c_c26d92e0c01a495caeb57ac548ba7b8f~mv2.jpg"
               alt="Miami Knife Guy Logo"
-              width={200}
-              height={200}
-              className="h-48 w-48 rounded-full shadow-2xl shadow-synthwave-neon-pink/50"
+              width={400}
+              height={400}
+              className="h-96 w-96 rounded-full shadow-2xl shadow-synthwave-neon-pink/50"
             />
           </motion.div>
 
