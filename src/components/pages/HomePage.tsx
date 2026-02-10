@@ -7,6 +7,7 @@ import PainPointSection from '@/components/sections/PainPointSection';
 import ProGradePrecisionSection from '@/components/sections/ProGradePrecisionSection';
 import PricingSection from '@/components/sections/PricingSection';
 import BeforeAfterSlider from '@/components/sections/BeforeAfterSlider';
+import FiveLiesSection from '@/components/sections/FiveLiesSection';
 import CTASection from '@/components/sections/CTASection';
 
 export default function HomePage() {
@@ -22,6 +23,7 @@ export default function HomePage() {
         <PricingSection />
         <ProGradePrecisionSection />
         <BeforeAfterSlider />
+        <FiveLiesSection />
         <CTASection />
       </main>
 
