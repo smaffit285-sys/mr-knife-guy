@@ -170,6 +170,68 @@ export default function PricingSection() {
         >
           Join the Miami Knife Club and keep your blades razor-sharp. All memberships include professional sharpening and inspection.
         </motion.p>
+
+        {/* Premium Banner - StoneSharp Heritage Service */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.7 }}
+          className="mt-16 relative z-10"
+        >
+          <div className="relative group">
+            {/* Animated Border Glow */}
+            <motion.div
+              className="absolute inset-0 bg-gradient-to-r from-synthwave-neon-pink via-synthwave-purple to-synthwave-neon-cyan rounded-xl opacity-75 blur-lg"
+              animate={{
+                opacity: [0.5, 0.8, 0.5],
+              }}
+              transition={{ duration: 3, repeat: Infinity }}
+            />
+
+            {/* Banner Content */}
+            <div className="relative bg-gradient-to-r from-synthwave-dark to-synthwave-midnight border-2 border-synthwave-neon-pink rounded-xl p-8 md:p-12 overflow-hidden">
+              {/* Background Pattern */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-synthwave-neon-pink/5 rounded-full blur-3xl -z-10" />
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-synthwave-neon-cyan/5 rounded-full blur-3xl -z-10" />
+
+              <div className="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                {/* Left Content */}
+                <div className="flex-1">
+                  <h3 className="font-heading text-3xl md:text-4xl font-bold mb-2 text-synthwave-neon-pink">
+                    STONESHARP HERITAGE SERVICE
+                  </h3>
+                  <p className="font-paragraph text-lg text-synthwave-light/90 mb-4">
+                    Full hand-sharpening on ceramic & diamond stones
+                  </p>
+                  <p className="font-paragraph text-synthwave-light/70">
+                    For collectors who demand the finest precision and artisanal craftsmanship
+                  </p>
+                </div>
+
+                {/* Right Content - Price & CTA */}
+                <div className="flex flex-col items-start md:items-end gap-4">
+                  <div className="text-right">
+                    <div className="font-heading text-4xl md:text-5xl font-bold bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-cyan bg-clip-text text-transparent">
+                      $60
+                    </div>
+                    <p className="font-paragraph text-synthwave-light/60 text-sm">
+                      per hour (minimum)
+                    </p>
+                  </div>
+                  <motion.a
+                    href="#cta"
+                    className="bg-gradient-to-r from-synthwave-neon-pink to-synthwave-purple text-synthwave-midnight px-8 py-3 rounded-lg font-heading font-bold text-center transition-all whitespace-nowrap"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    BOOK PREMIUM SERVICE
+                  </motion.a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
