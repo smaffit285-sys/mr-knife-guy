@@ -88,23 +88,22 @@ export default function HeroSection() {
         {/* Main Headline */}
         <motion.h1
           variants={itemVariants}
-          className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight text-synthwave-neon-pink"
+          className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-synthwave-neon-pink"
           style={{ letterSpacing: '1.5px' }}
         >
           <span className="bg-gradient-to-r from-synthwave-neon-pink via-synthwave-purple to-synthwave-neon-cyan bg-clip-text text-transparent">
-            FACTORY FRESH
+            Precision Edges
           </span>
           <br />
-          <span className="text-synthwave-neon-pink">EDGES</span>
+          <span className="text-synthwave-neon-pink">Since 2009</span>
         </motion.h1>
 
         {/* Subheadline */}
-        {/* CTA Button */}
         <motion.p
           variants={itemVariants}
-          className="font-paragraph text-lg md:text-2xl text-synthwave-light/80 max-w-2xl mx-auto mb-8"
+          className="font-paragraph text-lg md:text-2xl text-synthwave-light/80 max-w-3xl mx-auto mb-8"
         >
-          Master-grade knife sharpening. Elite service. Uncompromising results.
+          Sharpening the Future of Miami's Kitchens.
         </motion.p>
 
         <motion.div
