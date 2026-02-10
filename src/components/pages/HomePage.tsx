@@ -29,16 +29,16 @@ export default function HomePage() {
 
       <Footer />
 
-      {/* Sticky Mobile "Book Now" Button */}
+      {/* Sticky Mobile "SCHEDULE PICKUP NOW" Button */}
       <motion.a
-        href="#pricing"
-        className="fixed bottom-6 left-1/2 transform -translate-x-1/2 md:hidden z-40 px-8 py-4 bg-gradient-to-r from-synthwave-neon-pink to-synthwave-purple text-synthwave-midnight rounded-lg font-heading font-bold shadow-lg hover:shadow-xl transition-shadow"
+        href="#cta"
+        className="fixed bottom-6 left-1/2 transform -translate-x-1/2 md:hidden z-40 px-6 py-4 bg-synthwave-neon-blue text-synthwave-midnight rounded-lg font-heading font-bold shadow-lg hover:shadow-2xl hover:shadow-synthwave-neon-blue/50 transition-all w-[calc(100%-2rem)] max-w-xs text-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        BOOK NOW
+        SCHEDULE PICKUP NOW
       </motion.a>
 
       {/* Desktop Phone CTA */}

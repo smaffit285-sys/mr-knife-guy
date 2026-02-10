@@ -138,7 +138,7 @@ export default function ProGradePrecisionSection() {
                   <div className="flex items-center justify-center md:justify-start">
                     <motion.a
                       href="tel:650-533-8351"
-                      className="px-6 py-3 bg-synthwave-neon-pink text-synthwave-midnight font-heading font-bold rounded-lg hover:shadow-lg hover:shadow-synthwave-neon-pink/50 transition-all"
+                      className="px-6 py-3 bg-synthwave-neon-blue text-synthwave-midnight font-heading font-bold rounded-lg hover:shadow-lg hover:shadow-synthwave-neon-blue/50 transition-all"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >

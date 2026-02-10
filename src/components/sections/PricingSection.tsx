@@ -147,8 +147,8 @@ export default function PricingSection() {
                   href="#cta"
                   className={`block w-full py-3 rounded-lg font-heading font-bold text-center transition-all ${
                     plan.highlighted
-                      ? 'bg-gradient-to-r from-synthwave-neon-pink to-synthwave-purple text-synthwave-midnight hover:shadow-lg hover:shadow-synthwave-neon-pink/50'
-                      : 'border-2 border-synthwave-neon-cyan text-synthwave-neon-cyan hover:bg-synthwave-neon-cyan/10'
+                      ? 'bg-synthwave-neon-blue text-synthwave-midnight hover:shadow-lg hover:shadow-synthwave-neon-blue/50'
+                      : 'border-2 border-synthwave-neon-blue text-synthwave-neon-blue hover:bg-synthwave-neon-blue/10'
                   }`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

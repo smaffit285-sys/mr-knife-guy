@@ -112,7 +112,7 @@ export default function HeroSection() {
         >
           <motion.a
             href="#pricing"
-            className="px-8 py-4 bg-gradient-to-r from-synthwave-neon-pink to-synthwave-purple text-synthwave-midnight font-heading font-bold rounded-lg hover:shadow-lg hover:shadow-synthwave-neon-pink/50 transition-all"
+            className="px-8 py-4 bg-synthwave-neon-blue text-synthwave-midnight font-heading font-bold rounded-lg hover:shadow-lg hover:shadow-synthwave-neon-blue/50 transition-all"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -120,7 +120,7 @@ export default function HeroSection() {
           </motion.a>
           <motion.a
             href="tel:650-533-8351"
-            className="px-8 py-4 border-2 border-synthwave-neon-cyan text-synthwave-neon-cyan font-heading font-bold rounded-lg hover:bg-synthwave-neon-cyan/10 transition-all"
+            className="px-8 py-4 border-2 border-synthwave-neon-blue text-synthwave-neon-blue font-heading font-bold rounded-lg hover:bg-synthwave-neon-blue/10 transition-all"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

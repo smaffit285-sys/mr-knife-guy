@@ -38,6 +38,7 @@ export default {
                 'synthwave-dark': '#1a1f3a',
                 'synthwave-neon-pink': '#FF007F',
                 'synthwave-neon-cyan': '#00FFFF',
+                'synthwave-neon-blue': '#0080FF',
                 'synthwave-purple': '#8338ec',
                 'synthwave-light': '#f0f0f0',
             },

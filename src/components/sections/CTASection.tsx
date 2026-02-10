@@ -46,7 +46,7 @@ export default function CTASection() {
               href="https://calendly.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-synthwave-neon-pink to-synthwave-purple text-synthwave-midnight font-heading font-bold text-lg rounded-lg hover:shadow-2xl hover:shadow-synthwave-neon-pink/50 transition-all"
+              className="inline-flex items-center gap-3 px-10 py-5 bg-synthwave-neon-blue text-synthwave-midnight font-heading font-bold text-lg rounded-lg hover:shadow-2xl hover:shadow-synthwave-neon-blue/50 transition-all"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -66,7 +66,7 @@ export default function CTASection() {
             {/* Call Button */}
             <motion.a
               href="tel:650-533-8351"
-              className="flex items-center gap-2 px-6 py-3 border-2 border-synthwave-neon-cyan text-synthwave-neon-cyan font-heading font-bold rounded-lg hover:bg-synthwave-neon-cyan/10 transition-all"
+              className="flex items-center gap-2 px-6 py-3 border-2 border-synthwave-neon-blue text-synthwave-neon-blue font-heading font-bold rounded-lg hover:bg-synthwave-neon-blue/10 transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -77,7 +77,7 @@ export default function CTASection() {
             {/* Text Button */}
             <motion.a
               href="sms:650-533-8351?body=SHARP"
-              className="flex items-center gap-2 px-6 py-3 border-2 border-synthwave-neon-pink text-synthwave-neon-pink font-heading font-bold rounded-lg hover:bg-synthwave-neon-pink/10 transition-all"
+              className="flex items-center gap-2 px-6 py-3 border-2 border-synthwave-neon-blue text-synthwave-neon-blue font-heading font-bold rounded-lg hover:bg-synthwave-neon-blue/10 transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
