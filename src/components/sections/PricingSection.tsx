@@ -4,41 +4,44 @@ import { Check } from 'lucide-react';
 export default function PricingSection() {
   const plans = [
     {
-      name: 'STARTER',
-      price: 20,
-      description: 'Perfect for single knives',
+      name: 'TRY IT',
+      price: 0,
+      period: 'first month',
+      description: 'Test the Miami Knife Club',
       features: [
-        'Single knife sharpening',
-        'Factory-grade abrasives',
-        'Quick turnaround',
-        'Professional edge',
+        '2 Medium or 3 Small knives',
+        'Free first month with review',
+        'Professional sharpening',
+        'No commitment required',
       ],
       highlighted: false,
     },
     {
-      name: 'PROFESSIONAL',
-      price: 45,
-      description: 'Miami Knife Club tier',
+      name: 'I LIKE IT',
+      price: 20,
+      period: 'per month',
+      description: 'Growing collection',
       features: [
-        'Up to 3 knives',
-        'Premium sharpening service',
-        'Heat damage prevention',
-        'Extended edge retention',
+        'Up to 5 mixed knives',
+        '50% off repair services',
+        'Free honing lesson',
+        'Monthly maintenance',
         'Priority scheduling',
       ],
       highlighted: true,
     },
     {
-      name: 'ELITE',
-      price: 95,
-      description: 'Complete kitchen arsenal',
+      name: 'I WANT MORE',
+      price: 45,
+      period: 'per month',
+      description: 'Complete arsenal',
       features: [
-        'Up to 6 knives',
-        'Master technician service',
-        'Precision material removal',
-        'Lifetime edge guarantee',
-        'VIP scheduling',
-        'Free maintenance touch-ups',
+        'Up to 10 mixed knives',
+        'Priority turnaround',
+        'Free honing lesson',
+        'Expert maintenance',
+        'VIP member status',
+        'Exclusive member events',
       ],
       highlighted: false,
     },
@@ -123,7 +126,7 @@ export default function PricingSection() {
                     ${plan.price}
                   </span>
                   <span className="font-paragraph text-synthwave-light/60 ml-2">
-                    per service
+                    {plan.period}
                   </span>
                 </div>
 
@@ -165,7 +168,7 @@ export default function PricingSection() {
           transition={{ delay: 0.5 }}
           className="text-center font-paragraph text-synthwave-light/60 mt-12 relative z-10"
         >
-          All services include professional inspection and edge testing. Satisfaction guaranteed.
+          Join the Miami Knife Club and keep your blades razor-sharp. All memberships include professional sharpening and inspection.
         </motion.p>
       </div>
     </section>
