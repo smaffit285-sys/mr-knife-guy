@@ -76,8 +76,8 @@ export default function HeroSection() {
               transition={{ duration: 3, repeat: Infinity }}
             >
               <Image 
-                src="https://static.wixstatic.com/media/37d64c_47fb0c2d97a24d4cb93b20e14ea22073~mv2.png?originWidth=512&originHeight=512"
-                alt="Neon synthwave knife sharpening"
+                src="https://static.wixstatic.com/media/37d64c_b85f0ca516a346ce9c077488d1ab7e66~mv2.png?originWidth=512&originHeight=512"
+                alt="Miami Knife Guy logo"
                 width={128}
                 className="w-full h-full object-cover"
               />
