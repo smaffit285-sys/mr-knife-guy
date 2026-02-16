@@ -8,6 +8,7 @@ import PainPointSection from '@/components/sections/PainPointSection';
 import PricingSection from '@/components/sections/PricingSection';
 import ProGradePrecisionSection from '@/components/sections/ProGradePrecisionSection';
 import SocialProofTicker from '@/components/sections/SocialProofTicker';
+import ClubPricingLevels from '@/components/sections/ClubPricingLevels';
 import { motion } from 'framer-motion';
 
 export default function HomePage() {
@@ -23,6 +24,7 @@ export default function HomePage() {
         <PainPointSection />
         <ProGradePrecisionSection />
         <BeforeAfterSlider />
+        <ClubPricingLevels />
         <PricingSection />
         <FiveLiesSection />
         <CTASection />

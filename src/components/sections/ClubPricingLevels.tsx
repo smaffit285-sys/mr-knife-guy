@@ -1,0 +1,145 @@
+import { motion } from 'framer-motion';
+import { Zap, Users, Crown, Infinity, Eye } from 'lucide-react';
+
+export default function ClubPricingLevels() {
+  const levels = [
+    {
+      name: 'Scope the Scene',
+      icon: Eye,
+      description: 'Get a taste of the Miami Knife Club',
+      color: 'from-blue-500 to-cyan-500',
+      borderColor: 'border-blue-500/50',
+      bgColor: 'bg-blue-500/10',
+      accentColor: 'text-blue-400',
+    },
+    {
+      name: 'Limited Access',
+      icon: Zap,
+      description: 'Explore core sharpening services',
+      color: 'from-purple-500 to-pink-500',
+      borderColor: 'border-purple-500/50',
+      bgColor: 'bg-purple-500/10',
+      accentColor: 'text-purple-400',
+    },
+    {
+      name: 'Club Regular',
+      icon: Users,
+      description: 'Join our community of knife enthusiasts',
+      color: 'from-green-500 to-emerald-500',
+      borderColor: 'border-green-500/50',
+      bgColor: 'bg-green-500/10',
+      accentColor: 'text-green-400',
+    },
+    {
+      name: 'VIP',
+      icon: Crown,
+      description: 'Premium access and priority service',
+      color: 'from-yellow-500 to-orange-500',
+      borderColor: 'border-yellow-500/50',
+      bgColor: 'bg-yellow-500/10',
+      accentColor: 'text-yellow-400',
+    },
+    {
+      name: 'No Limits',
+      icon: Infinity,
+      description: 'Ultimate membership with all benefits',
+      color: 'from-red-500 to-pink-500',
+      borderColor: 'border-red-500/50',
+      bgColor: 'bg-red-500/10',
+      accentColor: 'text-red-400',
+    },
+  ];
+
+  return (
+    <section className="relative w-full py-20 px-4 sm:px-6 lg:px-8 bg-synthwave-midnight overflow-hidden">
+      <div className="max-w-[100rem] mx-auto">
+        {/* Background Elements */}
+        <motion.div
+          className="absolute top-0 left-0 w-96 h-96 bg-synthwave-neon-pink/5 rounded-full blur-3xl"
+          animate={{ y: [0, 30, 0] }}
+          transition={{ duration: 10, repeat: Infinity }}
+        />
+        <motion.div
+          className="absolute bottom-0 right-0 w-96 h-96 bg-synthwave-neon-cyan/5 rounded-full blur-3xl"
+          animate={{ y: [0, -30, 0] }}
+          transition={{ duration: 10, repeat: Infinity }}
+        />
+
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16 relative z-10"
+        >
+          <h2 className="font-heading text-5xl md:text-6xl font-bold mb-4 text-synthwave-neon-cyan">
+            MEMBERSHIP LEVELS
+          </h2>
+          <p className="font-paragraph text-xl text-synthwave-light/80">
+            Find your perfect fit in the Miami Knife Club
+          </p>
+        </motion.div>
+
+        {/* Pricing Level Boxes */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 relative z-10 mb-16">
+          {levels.map((level, index) => {
+            const IconComponent = level.icon;
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="group"
+              >
+                <motion.div
+                  className={`relative h-full rounded-xl border-2 ${level.borderColor} ${level.bgColor} backdrop-blur-sm p-8 transition-all duration-300 hover:border-opacity-100 border-opacity-50 overflow-hidden`}
+                  whileHover={{ scale: 1.05, y: -5 }}
+                >
+                  {/* Gradient Background on Hover */}
+                  <motion.div
+                    className={`absolute inset-0 bg-gradient-to-br ${level.color} opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-300 -z-10`}
+                  />
+
+                  {/* Icon */}
+                  <div className={`mb-6 inline-block p-3 rounded-lg ${level.bgColor}`}>
+                    <IconComponent className={`w-8 h-8 ${level.accentColor}`} />
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="font-heading text-2xl font-bold text-synthwave-light mb-2">
+                    {level.name}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="font-paragraph text-synthwave-light/70 text-sm leading-relaxed">
+                    {level.description}
+                  </p>
+
+                  {/* Bottom Accent Line */}
+                  <motion.div
+                    className={`absolute bottom-0 left-0 h-1 bg-gradient-to-r ${level.color}`}
+                    initial={{ width: 0 }}
+                    whileInView={{ width: '100%' }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 + 0.3, duration: 0.6 }}
+                  />
+                </motion.div>
+              </motion.div>
+            );
+          })}
+        </div>
+
+        {/* Divider */}
+        <motion.div
+          initial={{ opacity: 0, scaleX: 0 }}
+          whileInView={{ opacity: 1, scaleX: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+          className="h-px bg-gradient-to-r from-transparent via-synthwave-neon-cyan to-transparent relative z-10 mb-16"
+        />
+      </div>
+    </section>
+  );
+}
