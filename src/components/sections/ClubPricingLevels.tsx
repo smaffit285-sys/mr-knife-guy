@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Zap, Users, Crown, Infinity, Eye } from 'lucide-react';
+import { Zap, Users, Crown, Infinity, Eye, Gem } from 'lucide-react';
 
 export default function ClubPricingLevels() {
   const levels = [
@@ -48,6 +48,15 @@ export default function ClubPricingLevels() {
       bgColor: 'bg-red-500/10',
       accentColor: 'text-red-400',
     },
+    {
+      name: 'Club Benefactor',
+      icon: Gem,
+      description: 'Support our vision with exclusive perks and all No Limits benefits',
+      color: 'from-violet-500 to-fuchsia-500',
+      borderColor: 'border-violet-500/50',
+      bgColor: 'bg-violet-500/10',
+      accentColor: 'text-violet-400',
+    },
   ];
 
   return (
@@ -81,7 +90,7 @@ export default function ClubPricingLevels() {
         </motion.div>
 
         {/* Pricing Level Boxes */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 relative z-10 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 relative z-10 mb-16">
           {levels.map((level, index) => {
             const IconComponent = level.icon;
             return (
