@@ -45,7 +45,8 @@ export default function ProGradePrecisionSection() {
               alt="Miami Knife Guy Logo"
               width={400}
               height={400}
-              className="h-96 w-96 rounded-full shadow-2xl shadow-synthwave-neon-pink/50"
+              className="h-96 w-96 rounded-full shadow-2xl shadow-synthwave-neon-pink/50 object-cover"
+              style={{ objectPosition: 'center top' }}
             />
           </motion.div>
 
