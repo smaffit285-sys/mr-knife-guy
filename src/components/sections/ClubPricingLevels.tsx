@@ -153,7 +153,7 @@ export default function ClubPricingLevels() {
               className="group"
             >
               <motion.div
-                className={`relative rounded-xl border-2 ${levels[0].borderColor} ${levels[0].bgColor} backdrop-blur-sm p-4 transition-all duration-300 hover:border-opacity-100 border-opacity-50 overflow-hidden`}
+                className={`relative rounded-xl border-2 ${levels[0].borderColor} ${levels[0].bgColor} backdrop-blur-sm p-4 transition-all duration-300 hover:border-opacity-100 border-opacity-50 overflow-hidden max-h-[180px]`}
                 whileHover={{ scale: 1.05, y: -5 }}
               >
                 {/* Gradient Background on Hover */}
@@ -199,7 +199,7 @@ export default function ClubPricingLevels() {
               className="group"
             >
               <motion.div
-                className={`relative rounded-xl border-2 ${levels[5].borderColor} ${levels[5].bgColor} backdrop-blur-sm p-4 transition-all duration-300 hover:border-opacity-100 border-opacity-50 overflow-hidden`}
+                className={`relative rounded-xl border-2 ${levels[5].borderColor} ${levels[5].bgColor} backdrop-blur-sm p-4 transition-all duration-300 hover:border-opacity-100 border-opacity-50 overflow-hidden max-h-[180px]`}
                 whileHover={{ scale: 1.05, y: -5 }}
               >
                 {/* Gradient Background on Hover */}
