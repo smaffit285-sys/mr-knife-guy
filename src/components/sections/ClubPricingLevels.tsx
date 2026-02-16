@@ -91,54 +91,6 @@ export default function ClubPricingLevels() {
 
         {/* Pricing Level Boxes */}
         <div className="relative z-10 mb-16 space-y-6">
-          {/* Scope the Scene - Full Width Band */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0 }}
-            className="group"
-          >
-            <motion.div
-              className={`relative rounded-xl border-2 ${levels[0].borderColor} ${levels[0].bgColor} backdrop-blur-sm p-6 transition-all duration-300 hover:border-opacity-100 border-opacity-50 overflow-hidden`}
-              whileHover={{ scale: 1.02, y: -2 }}
-            >
-              {/* Gradient Background on Hover */}
-              <motion.div
-                className={`absolute inset-0 bg-gradient-to-br ${levels[0].color} opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-300 -z-10`}
-              />
-
-              <div className="flex items-center gap-4">
-                {/* Icon */}
-                <div className={`inline-block p-3 rounded-lg ${levels[0].bgColor} flex-shrink-0`}>
-                  {(() => {
-                    const IconComponent = levels[0].icon;
-                    return <IconComponent className={`w-8 h-8 ${levels[0].accentColor}`} />;
-                  })()}
-                </div>
-
-                {/* Content */}
-                <div className="flex-1">
-                  <h3 className="font-heading text-2xl font-bold text-synthwave-light">
-                    {levels[0].name}
-                  </h3>
-                  <p className="font-paragraph text-synthwave-light/70 text-sm">
-                    {levels[0].description}
-                  </p>
-                </div>
-              </div>
-
-              {/* Bottom Accent Line */}
-              <motion.div
-                className={`absolute bottom-0 left-0 h-1 bg-gradient-to-r ${levels[0].color}`}
-                initial={{ width: 0 }}
-                whileInView={{ width: '100%' }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3, duration: 0.6 }}
-              />
-            </motion.div>
-          </motion.div>
-
           {/* Middle Four Boxes - Single Row */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
             {levels.slice(1, 5).map((level, index) => {
@@ -149,7 +101,7 @@ export default function ClubPricingLevels() {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: (index + 1) * 0.1 }}
+                  transition={{ delay: index * 0.1 }}
                   className="group"
                 >
                   <motion.div
@@ -163,11 +115,11 @@ export default function ClubPricingLevels() {
 
                     {/* Icon */}
                     <div className={`mb-4 inline-block p-3 rounded-lg ${level.bgColor}`}>
-                      <IconComponent className={`w-5 h-5 ${level.accentColor}`} />
+                      <IconComponent className={`w-6 h-6 ${level.accentColor}`} />
                     </div>
 
                     {/* Title */}
-                    <h3 className="font-heading text-lg font-bold text-synthwave-light mb-2">
+                    <h3 className="font-heading text-base font-bold text-synthwave-light mb-2">
                       {level.name}
                     </h3>
 
@@ -182,7 +134,7 @@ export default function ClubPricingLevels() {
                       initial={{ width: 0 }}
                       whileInView={{ width: '100%' }}
                       viewport={{ once: true }}
-                      transition={{ delay: (index + 1) * 0.1 + 0.3, duration: 0.6 }}
+                      transition={{ delay: index * 0.1 + 0.3, duration: 0.6 }}
                     />
                   </motion.div>
                 </motion.div>
@@ -190,53 +142,100 @@ export default function ClubPricingLevels() {
             })}
           </div>
 
-          {/* Club Benefactor - Full Width Band */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.5 }}
-            className="group"
-          >
+          {/* Bottom Row - Scope the Scene and Club Benefactor (Half Screen Each) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {/* Scope the Scene - Half Width */}
             <motion.div
-              className={`relative rounded-xl border-2 ${levels[5].borderColor} ${levels[5].bgColor} backdrop-blur-sm p-6 transition-all duration-300 hover:border-opacity-100 border-opacity-50 overflow-hidden`}
-              whileHover={{ scale: 1.02, y: -2 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+              className="group"
             >
-              {/* Gradient Background on Hover */}
               <motion.div
-                className={`absolute inset-0 bg-gradient-to-br ${levels[5].color} opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-300 -z-10`}
-              />
+                className={`relative rounded-xl border-2 ${levels[0].borderColor} ${levels[0].bgColor} backdrop-blur-sm p-4 transition-all duration-300 hover:border-opacity-100 border-opacity-50 overflow-hidden`}
+                whileHover={{ scale: 1.05, y: -5 }}
+              >
+                {/* Gradient Background on Hover */}
+                <motion.div
+                  className={`absolute inset-0 bg-gradient-to-br ${levels[0].color} opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-300 -z-10`}
+                />
 
-              <div className="flex items-center gap-4">
                 {/* Icon */}
-                <div className={`inline-block p-3 rounded-lg ${levels[5].bgColor} flex-shrink-0`}>
+                <div className={`mb-4 inline-block p-3 rounded-lg ${levels[0].bgColor}`}>
                   {(() => {
-                    const IconComponent = levels[5].icon;
-                    return <IconComponent className={`w-8 h-8 ${levels[5].accentColor}`} />;
+                    const IconComponent = levels[0].icon;
+                    return <IconComponent className={`w-6 h-6 ${levels[0].accentColor}`} />;
                   })()}
                 </div>
 
-                {/* Content */}
-                <div className="flex-1">
-                  <h3 className="font-heading text-2xl font-bold text-synthwave-light">
-                    {levels[5].name}
-                  </h3>
-                  <p className="font-paragraph text-synthwave-light/70 text-sm">
-                    {levels[5].description}
-                  </p>
-                </div>
-              </div>
+                {/* Title */}
+                <h3 className="font-heading text-base font-bold text-synthwave-light mb-2">
+                  {levels[0].name}
+                </h3>
 
-              {/* Bottom Accent Line */}
-              <motion.div
-                className={`absolute bottom-0 left-0 h-1 bg-gradient-to-r ${levels[5].color}`}
-                initial={{ width: 0 }}
-                whileInView={{ width: '100%' }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.8, duration: 0.6 }}
-              />
+                {/* Description */}
+                <p className="font-paragraph text-synthwave-light/70 text-xs leading-relaxed">
+                  {levels[0].description}
+                </p>
+
+                {/* Bottom Accent Line */}
+                <motion.div
+                  className={`absolute bottom-0 left-0 h-1 bg-gradient-to-r ${levels[0].color}`}
+                  initial={{ width: 0 }}
+                  whileInView={{ width: '100%' }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.7, duration: 0.6 }}
+                />
+              </motion.div>
             </motion.div>
-          </motion.div>
+
+            {/* Club Benefactor - Half Width */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.5 }}
+              className="group"
+            >
+              <motion.div
+                className={`relative rounded-xl border-2 ${levels[5].borderColor} ${levels[5].bgColor} backdrop-blur-sm p-4 transition-all duration-300 hover:border-opacity-100 border-opacity-50 overflow-hidden`}
+                whileHover={{ scale: 1.05, y: -5 }}
+              >
+                {/* Gradient Background on Hover */}
+                <motion.div
+                  className={`absolute inset-0 bg-gradient-to-br ${levels[5].color} opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-300 -z-10`}
+                />
+
+                {/* Icon */}
+                <div className={`mb-4 inline-block p-3 rounded-lg ${levels[5].bgColor}`}>
+                  {(() => {
+                    const IconComponent = levels[5].icon;
+                    return <IconComponent className={`w-6 h-6 ${levels[5].accentColor}`} />;
+                  })()}
+                </div>
+
+                {/* Title */}
+                <h3 className="font-heading text-base font-bold text-synthwave-light mb-2">
+                  {levels[5].name}
+                </h3>
+
+                {/* Description */}
+                <p className="font-paragraph text-synthwave-light/70 text-xs leading-relaxed">
+                  {levels[5].description}
+                </p>
+
+                {/* Bottom Accent Line */}
+                <motion.div
+                  className={`absolute bottom-0 left-0 h-1 bg-gradient-to-r ${levels[5].color}`}
+                  initial={{ width: 0 }}
+                  whileInView={{ width: '100%' }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.8, duration: 0.6 }}
+                />
+              </motion.div>
+            </motion.div>
+          </div>
         </div>
 
         {/* Divider */}
