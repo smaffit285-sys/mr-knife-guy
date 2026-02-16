@@ -140,7 +140,7 @@ export default function ClubPricingLevels() {
           </motion.div>
 
           {/* Middle Four Boxes - Single Row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
             {levels.slice(1, 5).map((level, index) => {
               const IconComponent = level.icon;
               return (
@@ -153,7 +153,7 @@ export default function ClubPricingLevels() {
                   className="group"
                 >
                   <motion.div
-                    className={`relative h-full rounded-xl border-2 ${level.borderColor} ${level.bgColor} backdrop-blur-sm p-6 transition-all duration-300 hover:border-opacity-100 border-opacity-50 overflow-hidden`}
+                    className={`relative h-full rounded-xl border-2 ${level.borderColor} ${level.bgColor} backdrop-blur-sm p-4 transition-all duration-300 hover:border-opacity-100 border-opacity-50 overflow-hidden`}
                     whileHover={{ scale: 1.05, y: -5 }}
                   >
                     {/* Gradient Background on Hover */}
@@ -163,16 +163,16 @@ export default function ClubPricingLevels() {
 
                     {/* Icon */}
                     <div className={`mb-4 inline-block p-3 rounded-lg ${level.bgColor}`}>
-                      <IconComponent className={`w-6 h-6 ${level.accentColor}`} />
+                      <IconComponent className={`w-5 h-5 ${level.accentColor}`} />
                     </div>
 
                     {/* Title */}
-                    <h3 className="font-heading text-xl font-bold text-synthwave-light mb-2">
+                    <h3 className="font-heading text-lg font-bold text-synthwave-light mb-2">
                       {level.name}
                     </h3>
 
                     {/* Description */}
-                    <p className="font-paragraph text-synthwave-light/70 text-sm leading-relaxed">
+                    <p className="font-paragraph text-synthwave-light/70 text-xs leading-relaxed">
                       {level.description}
                     </p>
 
