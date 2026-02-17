@@ -58,7 +58,7 @@ export default function ProGradePrecisionSection() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-synthwave-neon-pink/10 to-synthwave-neon-cyan/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="relative bg-synthwave-midnight/50 backdrop-blur border border-synthwave-neon-cyan/30 rounded-lg p-8 hover:border-synthwave-neon-pink/50 transition-colors h-full flex flex-col">
-                    <h3 className="font-heading text-lg font-bold mb-3 bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-blue bg-clip-text text-transparent h-12 flex items-center">
+                    <h3 className="font-heading text-lg font-bold mb-3 bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-blue bg-clip-text text-transparent h-12 flex items-center justify-center">
                       {feature.title}
                     </h3>
                     <p className="font-paragraph text-synthwave-light/70 flex-grow">
