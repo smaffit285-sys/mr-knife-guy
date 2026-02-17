@@ -21,10 +21,10 @@ export default function HomePage() {
         <SocialProofTicker />
         {/* B2B FOCUS: Focus on kitchen efficiency and safety costs */}
         <PainPointSection />
+        <ClubPricingLevels />
         <BeforeAfterSlider />
         <ProGradePrecisionSection />
         <FiveLiesSection />
-        <ClubPricingLevels />
         <CTASection />
       </main>
 
