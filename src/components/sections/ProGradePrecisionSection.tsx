@@ -99,12 +99,14 @@ export default function ProGradePrecisionSection() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
                   <div>
-                    <p className="font-heading text-xs sm:text-sm text-synthwave-neon-cyan mb-2">RATE</p>
-                    <p className="font-heading text-2xl sm:text-3xl font-bold text-synthwave-neon-pink">
-                      $100<span className="text-sm sm:text-lg">/hr</span>
+                    <p className="font-heading text-lg sm:text-xl font-bold text-synthwave-neon-pink mb-2">
+                      RATE: By Consultation Only
                     </p>
-                    <p className="font-paragraph text-xs sm:text-sm text-synthwave-light/60 mt-2">
-                      By Consultation Only
+                    <p className="font-paragraph text-xs sm:text-sm text-dark-gray mb-3">
+                      starting at
+                    </p>
+                    <p className="font-heading text-2xl sm:text-3xl font-bold text-synthwave-neon-blue">
+                      $100/hr
                     </p>
                   </div>
 
