@@ -106,7 +106,7 @@ export default function FiveLiesSection() {
                   The Truth
                 </h4>
                 <p className="font-paragraph text-synthwave-light text-xs sm:text-sm leading-relaxed break-words">
-                  {lie.truth}
+                  {lie.truth} available
                 </p>
               </div>
 
