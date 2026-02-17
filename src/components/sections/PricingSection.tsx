@@ -64,12 +64,12 @@ export default function PricingSection() {
           viewport={{ once: true }}
           className="text-center mb-16 relative z-10"
         >
-          <h2 className="font-heading text-5xl md:text-6xl font-bold mb-4 text-synthwave-neon-pink" style={{ letterSpacing: '1.5px' }}>
-            <span className="bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-cyan bg-clip-text text-transparent">
+          <h2 className="font-heading text-5xl md:text-6xl font-bold mb-4 neon-unified-title" style={{ letterSpacing: '1.5px' }}>
+            <span className="neon-unified-title">
               MIAMI KNIFE CLUB
             </span>
           </h2>
-          <p className="font-paragraph text-xl text-synthwave-light/80">
+          <p className="font-paragraph text-xl neon-unified-title">
             Choose your sharpening tier
           </p>
         </motion.div>
