@@ -89,7 +89,7 @@ export default function ProGradePrecisionSection() {
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-1 h-6 sm:h-8 bg-gradient-to-b from-synthwave-neon-pink to-synthwave-neon-cyan" />
                   <h3 className="font-heading text-lg sm:text-2xl font-bold text-synthwave-neon-pink">
-                    THE TOP SHELF: STONESHARP HERITAGE
+                    THE TOP SHELF: STONE-SHARP HERITAGE
                   </h3>
                 </div>
 

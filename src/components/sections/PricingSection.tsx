@@ -199,10 +199,10 @@ export default function PricingSection() {
                 {/* Left Content */}
                 <div className="flex-1">
                   <h3 className="font-heading text-3xl md:text-4xl font-bold mb-2 text-synthwave-neon-pink">
-                    STONESHARP HERITAGE SERVICE
+                    STONE-SHARP HERITAGE SERVICE
                   </h3>
                   <p className="font-paragraph text-lg text-synthwave-light/90 mb-4">
-                    Full hand-sharpening on ceramic & diamond stones
+                    For the ultimate connoisseur, hair-popping edges sharp enough to win any di... BLADE measuring contest. Less durable for use in every day tasks, but perfect for collectables, sushi knives, high end tools, or competitive sorts
                   </p>
                   <p className="font-paragraph text-synthwave-light/70">
                     For collectors who demand the finest precision and artisanal craftsmanship
