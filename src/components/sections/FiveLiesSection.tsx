@@ -115,13 +115,13 @@ export default function FiveLiesSection() {
             </motion.div>
           ))}
 
-          {/* 6th Box - The Solution CTA */}
+          {/* 6th Box - The Solution CTA - Spans 3 columns (boxes 2-4) and half height */}
           <motion.a
             variants={cardVariants}
             href="https://calendly.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative bg-gradient-to-br from-synthwave-neon-pink/10 to-synthwave-neon-cyan/10 border-2 border-synthwave-neon-pink rounded-lg p-4 sm:p-6 hover:border-synthwave-neon-cyan transition-all duration-300 hover:shadow-lg hover:shadow-synthwave-neon-pink/30 w-full cursor-pointer flex flex-col justify-center"
+            className="group relative bg-gradient-to-br from-synthwave-neon-pink/10 to-synthwave-neon-cyan/10 border-2 border-synthwave-neon-pink rounded-lg p-4 sm:p-6 hover:border-synthwave-neon-cyan transition-all duration-300 hover:shadow-lg hover:shadow-synthwave-neon-pink/30 cursor-pointer flex flex-col justify-center lg:col-start-2 lg:col-span-3 h-auto lg:h-[180px]"
           >
             {/* Card Number */}
             <div className="absolute top-3 right-3 sm:top-4 sm:right-4 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-synthwave-neon-pink/20 flex items-center justify-center border border-synthwave-neon-pink flex-shrink-0">
@@ -129,8 +129,8 @@ export default function FiveLiesSection() {
             </div>
 
             {/* Solution Section */}
-            <div className="mb-4 sm:mb-6 pr-10 sm:pr-12">
-              <h3 className="font-heading text-base sm:text-lg font-bold text-synthwave-neon-pink mb-2">
+            <div className="mb-2 sm:mb-3 pr-10 sm:pr-12">
+              <h3 className="font-heading text-base sm:text-lg font-bold text-synthwave-neon-pink mb-1">
                 The Solution
               </h3>
               <p className="font-paragraph text-synthwave-light text-xs sm:text-sm leading-relaxed break-words">
@@ -139,11 +139,11 @@ export default function FiveLiesSection() {
             </div>
 
             {/* Divider */}
-            <div className="h-px bg-gradient-to-r from-synthwave-neon-pink to-transparent mb-4 sm:mb-6"></div>
+            <div className="h-px bg-gradient-to-r from-synthwave-neon-pink to-transparent mb-2 sm:mb-3"></div>
 
             {/* Truth Section */}
             <div>
-              <h4 className="font-heading text-xs sm:text-sm font-bold text-synthwave-neon-cyan mb-2 uppercase tracking-wide">
+              <h4 className="font-heading text-xs sm:text-sm font-bold text-synthwave-neon-cyan mb-1 uppercase tracking-wide">
                 The Truth
               </h4>
               <p className="font-paragraph text-synthwave-light text-xs sm:text-sm leading-relaxed break-words">
