@@ -16,7 +16,7 @@ export default function SocialLinksSection() {
       name: 'Instagram',
       icon: () => (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.953a6.002 6.002 0 01-10.042 0c-.869-1.196-1.479-2.652-1.479-4.253 0-4.418 3.582-8 8-8s8 3.582 8 8c0 1.601-.61 3.057-1.479 4.253zm.521-9.953a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+          <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm6-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
         </svg>
       ),
       url: 'https://instagram.com/miamiknifeguy',
