@@ -40,14 +40,25 @@ export default function ProGradePrecisionSection() {
             viewport={{ once: true }}
             className="flex justify-center mb-6"
           >
-            <Image
-              src="https://static.wixstatic.com/media/37d64c_c26d92e0c01a495caeb57ac548ba7b8f~mv2.jpg"
-              alt="Miami Knife Guy Logo"
-              width={400}
-              height={400}
-              className="h-48 sm:h-96 w-48 sm:w-96 rounded-full shadow-2xl shadow-synthwave-neon-pink/50 object-cover"
-              style={{ objectPosition: 'center top' }}
-            />
+            <motion.div
+              className="w-20 sm:w-28 md:w-40 mx-auto mb-2 rounded-lg border-2 border-synthwave-neon-pink flex items-center justify-center bg-synthwave-dark/50 backdrop-blur overflow-hidden"
+              animate={{
+                boxShadow: [
+                  '0 0 20px rgba(255, 0, 110, 0.5)',
+                  '0 0 40px rgba(0, 245, 255, 0.5)',
+                  '0 0 20px rgba(255, 0, 110, 0.5)',
+                ],
+              }}
+              transition={{ duration: 3, repeat: Infinity }}
+            >
+              <Image 
+                src="https://static.wixstatic.com/media/37d64c_c26d92e0c01a495caeb57ac548ba7b8f~mv2.jpg"
+                alt="Miami Knife Guy logo"
+                width={160}
+                className="w-full h-full object-cover object-center"
+                style={{ objectPosition: 'center top' }}
+              />
+            </motion.div>
           </motion.div>
 
           {/* Headline */}
