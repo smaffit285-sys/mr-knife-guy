@@ -101,7 +101,7 @@ export default function ProGradePrecisionSection() {
                       {feature.title}
                     </h3>
                     <p className="font-paragraph text-synthwave-light/70">
-                      {feature.description}
+                      We use pro plus level ceramic, aluminum oxide, and diamond abrasives and proprietary technology to keep your edges cool, and your temper intact
                     </p>
                   </div>
                 </motion.div>
