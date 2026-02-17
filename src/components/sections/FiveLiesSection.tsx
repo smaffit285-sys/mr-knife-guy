@@ -50,8 +50,8 @@ export default function FiveLiesSection() {
   };
 
   return (
-    <section id="five-lies" className="w-full py-20 bg-gradient-to-b from-synthwave-dark to-synthwave-midnight">
-      <div className="max-w-[100rem] mx-auto px-6 lg:px-8">
+    <section id="five-lies" className="w-full py-20 bg-gradient-to-b from-synthwave-dark to-synthwave-midnight overflow-x-hidden">
+      <div className="w-full max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -60,10 +60,10 @@ export default function FiveLiesSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-heading text-5xl lg:text-6xl font-bold text-synthwave-neon-pink mb-4">
+          <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-synthwave-neon-pink mb-4">
             The 5 Lies of Sharpening
           </h2>
-          <p className="font-paragraph text-lg text-synthwave-light max-w-2xl mx-auto">
+          <p className="font-paragraph text-base sm:text-lg text-synthwave-light max-w-2xl mx-auto px-2">
             Debunking common myths about knife sharpening and maintenance
           </p>
         </motion.div>
@@ -74,38 +74,38 @@ export default function FiveLiesSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6"
         >
           {lies.map((lie) => (
             <motion.div
               key={lie.id}
               variants={cardVariants}
-              className="group relative bg-gradient-to-br from-synthwave-dark to-synthwave-midnight border border-synthwave-neon-cyan rounded-lg p-6 hover:border-synthwave-neon-pink transition-all duration-300 hover:shadow-lg hover:shadow-synthwave-neon-pink/20"
+              className="group relative bg-gradient-to-br from-synthwave-dark to-synthwave-midnight border border-synthwave-neon-cyan rounded-lg p-4 sm:p-6 hover:border-synthwave-neon-pink transition-all duration-300 hover:shadow-lg hover:shadow-synthwave-neon-pink/20 w-full"
             >
               {/* Card Number */}
-              <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-synthwave-neon-cyan/10 flex items-center justify-center border border-synthwave-neon-cyan">
-                <span className="font-heading text-synthwave-neon-cyan font-bold">{lie.id}</span>
+              <div className="absolute top-3 right-3 sm:top-4 sm:right-4 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-synthwave-neon-cyan/10 flex items-center justify-center border border-synthwave-neon-cyan flex-shrink-0">
+                <span className="font-heading text-synthwave-neon-cyan font-bold text-xs sm:text-sm">{lie.id}</span>
               </div>
 
               {/* Myth Section */}
-              <div className="mb-6 pr-12">
-                <h3 className="font-heading text-lg font-bold text-synthwave-neon-pink mb-2">
+              <div className="mb-4 sm:mb-6 pr-10 sm:pr-12">
+                <h3 className="font-heading text-base sm:text-lg font-bold text-synthwave-neon-pink mb-2">
                   The Myth
                 </h3>
-                <p className="font-paragraph text-synthwave-light text-sm leading-relaxed">
+                <p className="font-paragraph text-synthwave-light text-xs sm:text-sm leading-relaxed break-words">
                   {lie.myth}
                 </p>
               </div>
 
               {/* Divider */}
-              <div className="h-px bg-gradient-to-r from-synthwave-neon-cyan to-transparent mb-6"></div>
+              <div className="h-px bg-gradient-to-r from-synthwave-neon-cyan to-transparent mb-4 sm:mb-6"></div>
 
               {/* Truth Section */}
               <div>
-                <h4 className="font-heading text-sm font-bold text-synthwave-neon-cyan mb-2 uppercase tracking-wide">
+                <h4 className="font-heading text-xs sm:text-sm font-bold text-synthwave-neon-cyan mb-2 uppercase tracking-wide">
                   The Truth
                 </h4>
-                <p className="font-paragraph text-synthwave-light text-sm leading-relaxed">
+                <p className="font-paragraph text-synthwave-light text-xs sm:text-sm leading-relaxed break-words">
                   {lie.truth}
                 </p>
               </div>
