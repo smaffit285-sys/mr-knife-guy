@@ -7,7 +7,7 @@ export default function ProGradePrecisionSection() {
     {
       icon: Shield,
       title: 'Zero Heat Damage',
-      description: 'Our process ensures your blade\'s heat-treat and temper remain perfect.',
+      description: 'We use pro-plus level ceramic, aluminum oxide, and diamond abrasives and proprietary technology to keep your edges cool, and your temper intact.',
     },
     {
       icon: Gauge,
