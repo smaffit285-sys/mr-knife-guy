@@ -14,7 +14,7 @@ const lies = [
   {
     id: 3,
     myth: "Sharpening is a pain",
-    truth: "Fast turnaround and local drop-off",
+    truth: "Fast turnaround and local drop-off available",
   },
   {
     id: 4,
