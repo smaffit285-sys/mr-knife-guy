@@ -114,6 +114,46 @@ export default function FiveLiesSection() {
               <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-synthwave-neon-pink/5 to-synthwave-neon-cyan/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
             </motion.div>
           ))}
+
+          {/* 6th Box - The Solution CTA */}
+          <motion.a
+            variants={cardVariants}
+            href="https://calendly.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative bg-gradient-to-br from-synthwave-neon-pink/10 to-synthwave-neon-cyan/10 border-2 border-synthwave-neon-pink rounded-lg p-4 sm:p-6 hover:border-synthwave-neon-cyan transition-all duration-300 hover:shadow-lg hover:shadow-synthwave-neon-pink/30 w-full cursor-pointer flex flex-col justify-center"
+          >
+            {/* Card Number */}
+            <div className="absolute top-3 right-3 sm:top-4 sm:right-4 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-synthwave-neon-pink/20 flex items-center justify-center border border-synthwave-neon-pink flex-shrink-0">
+              <span className="font-heading text-synthwave-neon-pink font-bold text-xs sm:text-sm">6</span>
+            </div>
+
+            {/* Solution Section */}
+            <div className="mb-4 sm:mb-6 pr-10 sm:pr-12">
+              <h3 className="font-heading text-base sm:text-lg font-bold text-synthwave-neon-pink mb-2">
+                The Solution
+              </h3>
+              <p className="font-paragraph text-synthwave-light text-xs sm:text-sm leading-relaxed break-words">
+                Book a FREE consultation and demo sharpening to get that Miami Edge
+              </p>
+            </div>
+
+            {/* Divider */}
+            <div className="h-px bg-gradient-to-r from-synthwave-neon-pink to-transparent mb-4 sm:mb-6"></div>
+
+            {/* Truth Section */}
+            <div>
+              <h4 className="font-heading text-xs sm:text-sm font-bold text-synthwave-neon-cyan mb-2 uppercase tracking-wide">
+                The Truth
+              </h4>
+              <p className="font-paragraph text-synthwave-light text-xs sm:text-sm leading-relaxed break-words">
+                You spend more on wasted food caused by dull knives than you would by sharpening them. Book a consultation today
+              </p>
+            </div>
+
+            {/* Hover Effect Background */}
+            <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-synthwave-neon-pink/10 to-synthwave-neon-cyan/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+          </motion.a>
         </motion.div>
       </div>
     </section>
