@@ -23,8 +23,8 @@ export default function HomePage() {
         <PainPointSection />
         <BeforeAfterSlider />
         <ProGradePrecisionSection />
-        <ClubPricingLevels />
         <FiveLiesSection />
+        <ClubPricingLevels />
         <CTASection />
       </main>
 
