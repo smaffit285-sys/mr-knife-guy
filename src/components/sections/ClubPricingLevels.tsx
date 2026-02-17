@@ -114,12 +114,12 @@ export default function ClubPricingLevels() {
                     />
 
                     {/* Icon */}
-                    <div className={`mb-4 flex justify-center p-3 rounded-lg ${level.bgColor}`}>
+                    <div className={`mb-4 inline-block p-3 rounded-lg ${level.bgColor}`}>
                       <IconComponent className={`w-6 h-6 ${level.accentColor}`} />
                     </div>
 
                     {/* Title */}
-                    <h3 className="font-heading text-base font-bold text-synthwave-light mb-2 text-center">
+                    <h3 className="font-heading text-base font-bold text-synthwave-light mb-2">
                       {level.name}
                     </h3>
 
@@ -162,7 +162,7 @@ export default function ClubPricingLevels() {
                 />
 
                 {/* Icon */}
-                <div className={`mb-4 flex justify-center p-3 rounded-lg ${levels[0].bgColor}`}>
+                <div className={`mb-4 inline-block p-3 rounded-lg ${levels[0].bgColor}`}>
                   {(() => {
                     const IconComponent = levels[0].icon;
                     return <IconComponent className={`w-6 h-6 ${levels[0].accentColor}`} />;
@@ -170,7 +170,7 @@ export default function ClubPricingLevels() {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-heading text-base font-bold text-synthwave-light mb-2 text-center">
+                <h3 className="font-heading text-base font-bold text-synthwave-light mb-2">
                   {levels[0].name}
                 </h3>
 
@@ -208,7 +208,7 @@ export default function ClubPricingLevels() {
                 />
 
                 {/* Icon */}
-                <div className={`mb-4 flex justify-center p-3 rounded-lg ${levels[5].bgColor}`}>
+                <div className={`mb-4 inline-block p-3 rounded-lg ${levels[5].bgColor}`}>
                   {(() => {
                     const IconComponent = levels[5].icon;
                     return <IconComponent className={`w-6 h-6 ${levels[5].accentColor}`} />;
@@ -216,7 +216,7 @@ export default function ClubPricingLevels() {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-heading text-base font-bold text-synthwave-light mb-2 text-center">
+                <h3 className="font-heading text-base font-bold text-synthwave-light mb-2">
                   {levels[5].name}
                 </h3>
 
