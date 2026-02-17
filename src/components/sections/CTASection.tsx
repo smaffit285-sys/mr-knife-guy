@@ -24,11 +24,11 @@ export default function CTASection() {
           viewport={{ once: true }}
           className="relative z-10 text-center max-w-3xl mx-auto"
         >
-          <h2 className="font-heading text-6xl md:text-7xl font-bold mb-6 leading-tight neon-unified-title" style={{ letterSpacing: '1.5px' }}>
+          <h2 className="font-heading text-6xl md:text-7xl font-bold mb-6 leading-tight neon-pink-flicker" style={{ letterSpacing: '1.5px' }}>
             READY FOR THE REVOLUTION?
           </h2>
 
-          <p className="font-paragraph text-lg neon-unified-title mb-12 max-w-xl mx-auto">
+          <p className="font-paragraph text-lg neon-cyan-glow mb-12 max-w-xl mx-auto">
             Transform your kitchen with factory-fresh edges. Book your sharpening service today and experience the difference.
           </p>
 

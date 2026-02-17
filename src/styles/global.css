@@ -343,12 +343,3 @@ h1, h2 {
   color: #FF007F;
   letter-spacing: 1.5px;
 }
-
-/* UNIFIED NEON TEXT STYLE - Applied uniformly across all titles and subtitles */
-.neon-unified-title {
-  animation: neon-flicker-pink 10s infinite;
-  color: #FF007F !important;
-  font-family: 'Orbitron', 'Syncopate', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-}

@@ -81,10 +81,10 @@ export default function ClubPricingLevels() {
           viewport={{ once: true }}
           className="text-center mb-16 relative z-10"
         >
-          <h2 className="font-heading text-5xl md:text-6xl font-bold mb-4 neon-unified-title">
+          <h2 className="font-heading text-5xl md:text-6xl font-bold mb-4 neon-cyan-flicker">
             MIAMI KNIFE CLUB
           </h2>
-          <p className="font-paragraph text-xl neon-unified-title">
+          <p className="font-paragraph text-xl neon-pink-glow">
             Join our exclusive community of knife enthusiasts and professionals
           </p>
         </motion.div>

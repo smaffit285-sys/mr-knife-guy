@@ -60,10 +60,10 @@ export default function FiveLiesSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 neon-unified-title">
+          <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 neon-pink-flicker">
             The 5 Lies of Sharpening
           </h2>
-          <p className="font-paragraph text-base sm:text-lg neon-unified-title max-w-2xl mx-auto px-2">
+          <p className="font-paragraph text-base sm:text-lg neon-cyan-glow max-w-2xl mx-auto px-2">
             Debunking common myths about knife sharpening and maintenance
           </p>
         </motion.div>
