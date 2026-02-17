@@ -153,7 +153,7 @@ export default function HeroSection() {
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <ChevronDown className="w-8 h-8 text-synthwave-neon-cyan" />
+
       </motion.div>
     </section>
   );
