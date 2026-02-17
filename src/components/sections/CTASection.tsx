@@ -3,7 +3,7 @@ import { ArrowRight, Phone, MessageSquare } from 'lucide-react';
 
 export default function CTASection() {
   return (
-    <section id="cta" className="relative w-full py-20 px-4 sm:px-6 lg:px-8 bg-synthwave-midnight overflow-hidden">
+    <section id="cta" className="relative w-full py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-synthwave-midnight overflow-hidden">
       <div className="max-w-[100rem] mx-auto">
         {/* Background Elements */}
         <motion.div

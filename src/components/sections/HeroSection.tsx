@@ -24,7 +24,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
       {/* Animated Background Grid */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0 bg-gradient-to-b from-synthwave-neon-cyan/10 to-synthwave-neon-pink/10" />
@@ -39,7 +39,7 @@ export default function HeroSection() {
       </div>
       {/* Animated Gradient Orbs */}
       <motion.div
-        className="absolute top-20 left-10 w-72 h-72 bg-synthwave-neon-pink/20 rounded-full blur-3xl"
+        className="absolute top-20 left-10 w-40 sm:w-72 h-40 sm:h-72 bg-synthwave-neon-pink/20 rounded-full blur-3xl"
         animate={{
           y: [0, 30, 0],
           x: [0, 20, 0],
@@ -47,7 +47,7 @@ export default function HeroSection() {
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
       />
       <motion.div
-        className="absolute bottom-20 right-10 w-72 h-72 bg-synthwave-neon-cyan/20 rounded-full blur-3xl"
+        className="absolute bottom-20 right-10 w-40 sm:w-72 h-40 sm:h-72 bg-synthwave-neon-cyan/20 rounded-full blur-3xl"
         animate={{
           y: [0, -30, 0],
           x: [0, -20, 0],
@@ -56,7 +56,7 @@ export default function HeroSection() {
       />
       {/* Content */}
       <motion.div
-        className="relative z-10 max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        className="relative z-10 max-w-[100rem] mx-auto text-center"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -65,7 +65,7 @@ export default function HeroSection() {
         <motion.div variants={itemVariants} className="mb-2">
           <div className="inline-block">
             <motion.div
-              className="w-56 md:w-80 mx-auto mb-2 rounded-lg border-2 border-synthwave-neon-pink flex items-center justify-center bg-synthwave-dark/50 backdrop-blur overflow-hidden"
+              className="w-40 sm:w-56 md:w-80 mx-auto mb-2 rounded-lg border-2 border-synthwave-neon-pink flex items-center justify-center bg-synthwave-dark/50 backdrop-blur overflow-hidden"
               animate={{
                 boxShadow: [
                   '0 0 20px rgba(255, 0, 110, 0.5)',
@@ -89,7 +89,7 @@ export default function HeroSection() {
         {/* Main Headline */}
         <motion.h1
           variants={itemVariants}
-          className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-synthwave-neon-pink"
+          className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight text-synthwave-neon-pink"
           style={{ letterSpacing: '1.5px' }}
         >
           <span className="bg-gradient-to-r from-synthwave-neon-pink via-synthwave-purple to-synthwave-neon-cyan bg-clip-text text-transparent">
@@ -102,18 +102,18 @@ export default function HeroSection() {
         {/* Subheadline */}
         <motion.p
           variants={itemVariants}
-          className="font-paragraph text-lg md:text-2xl text-synthwave-light/80 max-w-3xl mx-auto mb-8"
+          className="font-paragraph text-base sm:text-lg md:text-2xl text-synthwave-light/80 max-w-3xl mx-auto mb-6 sm:mb-8"
         >
           Sharpening the Future of Miami's Kitchens.
         </motion.p>
 
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center"
         >
           <motion.a
             href="#pricing"
-            className="px-8 py-4 bg-synthwave-neon-blue text-synthwave-midnight font-heading font-bold rounded-lg hover:shadow-lg hover:shadow-synthwave-neon-blue/50 transition-all"
+            className="px-6 sm:px-8 py-3 sm:py-4 bg-synthwave-neon-blue text-synthwave-midnight font-heading font-bold text-sm sm:text-base rounded-lg hover:shadow-lg hover:shadow-synthwave-neon-blue/50 transition-all w-full sm:w-auto"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -121,7 +121,7 @@ export default function HeroSection() {
           </motion.a>
           <motion.a
             href="tel:650-533-8351"
-            className="px-8 py-4 border-2 border-synthwave-neon-blue text-synthwave-neon-blue font-heading font-bold rounded-lg hover:bg-synthwave-neon-blue/10 transition-all"
+            className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-synthwave-neon-blue text-synthwave-neon-blue font-heading font-bold text-sm sm:text-base rounded-lg hover:bg-synthwave-neon-blue/10 transition-all w-full sm:w-auto"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
