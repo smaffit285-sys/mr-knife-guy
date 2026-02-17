@@ -89,20 +89,20 @@ export default function HeroSection() {
         {/* Main Headline */}
         <motion.h1
           variants={itemVariants}
-          className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight neon-unified-title"
+          className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-cyan bg-clip-text text-transparent"
           style={{ letterSpacing: '1.5px' }}
         >
-          <span className="neon-unified-title">
+          <span>
             Precision Edges
           </span>
           <br />
-          <span className="neon-unified-title">Since 2009</span>
+          <span>Since 2009</span>
         </motion.h1>
 
         {/* Subheadline */}
         <motion.p
           variants={itemVariants}
-          className="font-paragraph text-base sm:text-lg md:text-2xl max-w-3xl mx-auto mb-6 sm:mb-8 neon-unified-title"
+          className="font-paragraph text-base sm:text-lg md:text-2xl max-w-3xl mx-auto mb-6 sm:mb-8 text-synthwave-light"
         >
           Bringing the Edge back to Miami
         </motion.p>
