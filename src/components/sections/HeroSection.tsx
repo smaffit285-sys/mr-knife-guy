@@ -127,7 +127,7 @@ export default function HeroSection() {
               />
             </motion.div>
             {/* Social Icons Overlay - Centered below glow */}
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-24 flex gap-2 sm:gap-3 bg-synthwave-midnight/90 rounded-full px-3 sm:px-4 py-2 border border-synthwave-neon-cyan/50 backdrop-blur-sm">
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-12 flex gap-2 sm:gap-3 bg-synthwave-midnight/90 rounded-full px-3 sm:px-4 py-2 border border-synthwave-neon-cyan/50 backdrop-blur-sm">
               {socialLogos.map((social, index) => {
                 const IconComponent = social.icon;
                 return (
