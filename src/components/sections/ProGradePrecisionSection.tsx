@@ -94,7 +94,7 @@ export default function ProGradePrecisionSection() {
                 </div>
 
                 <p className="font-paragraph text-base sm:text-lg text-synthwave-light/90 mb-4 sm:mb-6 max-w-2xl">
-                  For the ultimate connoisseur. Full hand-sharpening on premium ceramic and diamond stones from start to finish.
+                  For the ultimate connoisseur, hair-popping edges sharp enough to win any di... BLADE measuring contest. Less durable for use in every day tasks, but perfect for collectables, sushi knives, high end tools, or competitive sorts
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
