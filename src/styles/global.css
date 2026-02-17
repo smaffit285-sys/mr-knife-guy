@@ -283,56 +283,56 @@
 /* Neon Text Classes */
 .neon-pink-flicker {
   animation: neon-flicker-pink 10s infinite;
-  color: #FF007F;
+  color: #FF007F !important;
   font-family: 'Orbitron', 'Syncopate', sans-serif;
   font-weight: 700;
 }
 
 .neon-cyan-flicker {
   animation: neon-flicker-cyan 10s infinite;
-  color: #00FFFF;
+  color: #00FFFF !important;
   font-family: 'Orbitron', 'Syncopate', sans-serif;
   font-weight: 700;
 }
 
 .neon-blue-flicker {
   animation: neon-flicker-blue 10s infinite;
-  color: #0080FF;
+  color: #0080FF !important;
   font-family: 'Orbitron', 'Syncopate', sans-serif;
   font-weight: 700;
 }
 
 .neon-purple-flicker {
   animation: neon-flicker-purple 10s infinite;
-  color: #8338ec;
+  color: #8338ec !important;
   font-family: 'Orbitron', 'Syncopate', sans-serif;
   font-weight: 700;
 }
 
 .neon-pink-glow {
   animation: neon-glow-pink 8.3s ease-in-out infinite;
-  color: #FF007F;
+  color: #FF007F !important;
   font-family: 'Orbitron', 'Syncopate', sans-serif;
   font-weight: 700;
 }
 
 .neon-cyan-glow {
   animation: neon-glow-cyan 8.3s ease-in-out infinite;
-  color: #00FFFF;
+  color: #00FFFF !important;
   font-family: 'Orbitron', 'Syncopate', sans-serif;
   font-weight: 700;
 }
 
 .neon-blue-glow {
   animation: neon-glow-blue 8.3s ease-in-out infinite;
-  color: #0080FF;
+  color: #0080FF !important;
   font-family: 'Orbitron', 'Syncopate', sans-serif;
   font-weight: 700;
 }
 
 .neon-purple-glow {
   animation: neon-glow-purple 8.3s ease-in-out infinite;
-  color: #8338ec;
+  color: #8338ec !important;
   font-family: 'Orbitron', 'Syncopate', sans-serif;
   font-weight: 700;
 }
