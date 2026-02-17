@@ -142,7 +142,7 @@ export default function ProGradePrecisionSection() {
                   <div>
                     <p className="font-heading text-xs sm:text-sm text-synthwave-neon-cyan mb-2">RATE</p>
                     <p className="font-heading text-2xl sm:text-3xl font-bold text-synthwave-neon-pink">
-                      $60<span className="text-sm sm:text-lg">/hr</span>
+                      $100<span className="text-sm sm:text-lg">/hr</span>
                     </p>
                     <p className="font-paragraph text-xs sm:text-sm text-synthwave-light/60 mt-2">
                       By Consultation Only

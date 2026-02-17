@@ -22,8 +22,8 @@ export default function HomePage() {
         <SocialProofTicker />
         {/* B2B FOCUS: Focus on kitchen efficiency and safety costs */}
         <PainPointSection />
-        <ProGradePrecisionSection />
         <BeforeAfterSlider />
+        <ProGradePrecisionSection />
         <ClubPricingLevels />
         <PricingSection />
         <FiveLiesSection />
