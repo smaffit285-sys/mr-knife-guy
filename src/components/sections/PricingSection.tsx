@@ -171,7 +171,7 @@ export default function PricingSection() {
           Join the Miami Knife Club and keep your blades razor-sharp. All memberships include professional sharpening and inspection.
         </motion.p>
 
-        {/* Premium Banner - StoneSharp Heritage Service */}
+        {/* Premium Banner - Stone-Sharp Heritage Service */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -199,10 +199,10 @@ export default function PricingSection() {
                 {/* Left Content */}
                 <div className="flex-1">
                   <h3 className="font-heading text-3xl md:text-4xl font-bold mb-2 text-synthwave-neon-pink">
-                    STONE-SHARP HERITAGE SERVICE
+                    Stone-Sharp Heritage Service
                   </h3>
                   <p className="font-paragraph text-lg text-synthwave-light/90 mb-4">
-                    For the ultimate connoisseur, hair-popping edges sharp enough to win any di... BLADE measuring contest. Less durable for use in every day tasks, but perfect for collectables, sushi knives, high end tools, or competitive sorts
+                    For the ultimate connoisseur, hair-popping edges sharp enough to slice through paper effortlessly. Perfect for collectibles, sushi knives, high-end tools, and competitive enthusiasts who demand precision.
                   </p>
                   <p className="font-paragraph text-synthwave-light/70">
                     For collectors who demand the finest precision and artisanal craftsmanship
