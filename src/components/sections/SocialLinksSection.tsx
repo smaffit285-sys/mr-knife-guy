@@ -119,15 +119,19 @@ export default function SocialLinksSection() {
 
   return (
     <section className="relative w-full py-16 px-4 sm:px-6 lg:px-8 bg-synthwave-dark border-b border-synthwave-neon-cyan/20">
-      <div className="max-w-[100rem] mx-auto">
+      {/* Neon glow background */}
+      <div className="absolute inset-0 opacity-30 pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-synthwave-neon-cyan rounded-full blur-3xl opacity-20"></div>
+      </div>
+      <div className="max-w-[100rem] mx-auto relative z-10">
         {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-6"
         >
-          <h3 className="font-heading text-3xl md:text-4xl font-bold text-synthwave-neon-cyan mb-2">
+          <h3 className="font-heading text-2xl md:text-3xl font-bold text-synthwave-neon-cyan mb-1">
             CONNECT WITH US
           </h3>
           <p className="font-paragraph text-synthwave-light/70">
