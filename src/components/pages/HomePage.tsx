@@ -2,10 +2,10 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import BeforeAfterSlider from '@/components/sections/BeforeAfterSlider';
 import CTASection from '@/components/sections/CTASection';
+import ClubPricingLevels from '@/components/sections/ClubPricingLevels';
 import FiveLiesSection from '@/components/sections/FiveLiesSection';
 import HeroSection from '@/components/sections/HeroSection';
 import PainPointSection from '@/components/sections/PainPointSection';
-import PricingSection from '@/components/sections/PricingSection';
 import ProGradePrecisionSection from '@/components/sections/ProGradePrecisionSection';
 import SocialProofTicker from '@/components/sections/SocialProofTicker';
 import { motion } from 'framer-motion';
@@ -23,7 +23,7 @@ export default function HomePage() {
         <PainPointSection />
         <BeforeAfterSlider />
         <ProGradePrecisionSection />
-        <PricingSection />
+        <ClubPricingLevels />
         <FiveLiesSection />
         <CTASection />
       </main>
