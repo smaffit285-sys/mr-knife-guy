@@ -1,21 +1,17 @@
 import { motion } from 'framer-motion';
-import { Zap, Shield, Gauge } from 'lucide-react';
 import { Image } from '@/components/ui/image';
 
 export default function ProGradePrecisionSection() {
   const features = [
     {
-      icon: Shield,
       title: 'Zero Heat Damage',
       description: 'We use pro-plus level ceramic, aluminum oxide, and diamond abrasives and proprietary technology to keep your edges cool, and your temper intact.',
     },
     {
-      icon: Gauge,
       title: 'Precision Material Removal',
       description: 'Using AI enabled measuring and our "digital twin" technology we ensure that the absolute minimum material is removed',
     },
     {
-      icon: Zap,
       title: 'High-Endurance Edges',
       description: 'Utilizing multi-abrasive techniques, shaped chines, polished bevels, and micro-bevels normally only seen in specialty Japanese sharpening, we create a smooth-cutting, razor-sharp edge that stays that way.',
     },
@@ -33,34 +29,6 @@ export default function ProGradePrecisionSection() {
 
         {/* Main Content */}
         <div className="relative z-10">
-          {/* Logo Graphic */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="flex justify-center mb-6"
-          >
-            <motion.div
-              className="w-20 sm:w-28 md:w-40 mx-auto mb-2 rounded-lg border-2 border-synthwave-neon-pink flex items-center justify-center bg-synthwave-dark/50 backdrop-blur overflow-hidden"
-              animate={{
-                boxShadow: [
-                  '0 0 20px rgba(255, 0, 110, 0.5)',
-                  '0 0 40px rgba(0, 245, 255, 0.5)',
-                  '0 0 20px rgba(255, 0, 110, 0.5)',
-                ],
-              }}
-              transition={{ duration: 3, repeat: Infinity }}
-            >
-              <Image 
-                src="https://static.wixstatic.com/media/37d64c_c26d92e0c01a495caeb57ac548ba7b8f~mv2.jpg"
-                alt="Miami Knife Guy logo"
-                width={160}
-                className="w-full h-full object-cover object-center"
-                style={{ objectPosition: 'center top' }}
-              />
-            </motion.div>
-          </motion.div>
-
           {/* Headline */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -79,7 +47,6 @@ export default function ProGradePrecisionSection() {
           {/* Features Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
             {features.map((feature, index) => {
-              const Icon = feature.icon;
               return (
                 <motion.div
                   key={index}
@@ -90,17 +57,11 @@ export default function ProGradePrecisionSection() {
                   className="relative group"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-synthwave-neon-pink/10 to-synthwave-neon-cyan/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="relative bg-synthwave-midnight/50 backdrop-blur border border-synthwave-neon-cyan/30 rounded-lg p-8 hover:border-synthwave-neon-pink/50 transition-colors">
-                    <motion.div
-                      className="w-12 h-12 bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-cyan rounded-lg flex items-center justify-center mb-4"
-                      whileHover={{ rotate: 10, scale: 1.1 }}
-                    >
-                      <Icon className="w-6 h-6 text-synthwave-midnight" />
-                    </motion.div>
-                    <h3 className="font-heading text-lg font-bold text-synthwave-light mb-3">
+                  <div className="relative bg-synthwave-midnight/50 backdrop-blur border border-synthwave-neon-cyan/30 rounded-lg p-8 hover:border-synthwave-neon-pink/50 transition-colors h-full flex flex-col">
+                    <h3 className="font-heading text-lg font-bold mb-3 bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-blue bg-clip-text text-transparent">
                       {feature.title}
                     </h3>
-                    <p className="font-paragraph text-synthwave-light/70">
+                    <p className="font-paragraph text-synthwave-light/70 flex-grow">
                       {feature.description}
                     </p>
                   </div>
