@@ -104,7 +104,7 @@ export default function HeroSection() {
           variants={itemVariants}
           className="font-paragraph text-base sm:text-lg md:text-2xl max-w-3xl mx-auto mb-6 sm:mb-8 neon-blue-glow"
         >
-          Sharpening the Future of Miami's Kitchens.
+          Bringing the Edge back to Miami
         </motion.p>
 
         <motion.div
