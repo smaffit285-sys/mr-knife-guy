@@ -8,6 +8,7 @@ import HeroSection from '@/components/sections/HeroSection';
 import PainPointSection from '@/components/sections/PainPointSection';
 import ProGradePrecisionSection from '@/components/sections/ProGradePrecisionSection';
 import SocialProofTicker from '@/components/sections/SocialProofTicker';
+import SocialLinksSection from '@/components/sections/SocialLinksSection';
 import { motion } from 'framer-motion';
 
 export default function HomePage() {
@@ -26,6 +27,7 @@ export default function HomePage() {
         <ProGradePrecisionSection />
         <FiveLiesSection />
         <CTASection />
+        <SocialLinksSection />
       </main>
 
       <Footer />
