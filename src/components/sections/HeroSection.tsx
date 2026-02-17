@@ -89,20 +89,20 @@ export default function HeroSection() {
         {/* Main Headline */}
         <motion.h1
           variants={itemVariants}
-          className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight text-synthwave-neon-pink"
+          className="font-heading text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight neon-pink-flicker"
           style={{ letterSpacing: '1.5px' }}
         >
-          <span className="bg-gradient-to-r from-synthwave-neon-pink via-synthwave-purple to-synthwave-neon-cyan bg-clip-text text-transparent">
+          <span className="neon-pink-flicker">
             Precision Edges
           </span>
           <br />
-          <span className="text-synthwave-neon-pink">Since 2009</span>
+          <span className="neon-cyan-glow">Since 2009</span>
         </motion.h1>
 
         {/* Subheadline */}
         <motion.p
           variants={itemVariants}
-          className="font-paragraph text-base sm:text-lg md:text-2xl text-synthwave-light/80 max-w-3xl mx-auto mb-6 sm:mb-8"
+          className="font-paragraph text-base sm:text-lg md:text-2xl max-w-3xl mx-auto mb-6 sm:mb-8 neon-blue-glow"
         >
           Sharpening the Future of Miami's Kitchens.
         </motion.p>
