@@ -12,7 +12,7 @@ export default function ProGradePrecisionSection() {
     {
       icon: Gauge,
       title: 'Precision Material Removal',
-      description: 'We remove no more steel than hand-sharpening, preserving the life of your knife.',
+      description: 'Using AI enabled measuring and our "digital twin" technology we ensure that the absolute minimum material is removed',
     },
     {
       icon: Zap,
