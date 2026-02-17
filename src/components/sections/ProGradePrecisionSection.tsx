@@ -17,7 +17,7 @@ export default function ProGradePrecisionSection() {
     {
       icon: Zap,
       title: 'High-Endurance Edges',
-      description: 'Using multi-abrasive techniques, shaped chines, polished bevels, and micro-bevels create a smooth-cutting, razor sharp edge that stays that way.',
+      description: 'Utilizing multi-abrasive techniques, shaped chines, polished bevels, and micro-bevels normally only seen in specialty Japanese sharpening, we create a smooth-cutting, razor-sharp edge that stays that way.',
     },
   ];
 
