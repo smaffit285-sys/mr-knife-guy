@@ -111,22 +111,40 @@ export default function HeroSection() {
           variants={itemVariants}
           className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center"
         >
-          <motion.a
-            href="#pricing"
-            className="px-6 sm:px-8 py-3 sm:py-4 bg-synthwave-neon-blue text-synthwave-midnight font-heading font-bold text-sm sm:text-base rounded-lg hover:shadow-lg hover:shadow-synthwave-neon-blue/50 transition-all w-full sm:w-auto"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            BOOK NOW
-          </motion.a>
-          <motion.a
-            href="tel:650-533-8351"
-            className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-synthwave-neon-blue text-synthwave-neon-blue font-heading font-bold text-sm sm:text-base rounded-lg hover:bg-synthwave-neon-blue/10 transition-all w-full sm:w-auto"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            CALL NOW
-          </motion.a>
+          <div className="flex flex-col items-center w-full sm:w-auto">
+            <motion.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
+              className="mb-2"
+            >
+              <ChevronDown className="w-6 h-6 text-synthwave-neon-blue" />
+            </motion.div>
+            <motion.a
+              href="#pricing"
+              className="px-6 sm:px-8 py-3 sm:py-4 bg-synthwave-neon-blue text-synthwave-midnight font-heading font-bold text-sm sm:text-base rounded-lg hover:shadow-lg hover:shadow-synthwave-neon-blue/50 transition-all w-full sm:w-auto"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              BOOK NOW
+            </motion.a>
+          </div>
+          <div className="flex flex-col items-center w-full sm:w-auto">
+            <motion.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
+              className="mb-2"
+            >
+              <ChevronDown className="w-6 h-6 text-synthwave-neon-blue" />
+            </motion.div>
+            <motion.a
+              href="tel:650-533-8351"
+              className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-synthwave-neon-blue text-synthwave-neon-blue font-heading font-bold text-sm sm:text-base rounded-lg hover:bg-synthwave-neon-blue/10 transition-all w-full sm:w-auto"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              CALL NOW
+            </motion.a>
+          </div>
         </motion.div>
       </motion.div>
       {/* Scroll Indicator */}
