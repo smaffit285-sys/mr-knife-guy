@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 export default function SocialProofTicker() {
   const phrases = [
     '5-STAR RATED ON YELP',
-    'OVER 10,000 BLADES RESTORED',
-    'MOBILE ON-SITE SERVICE',
+    'OVER 200,000 BLADES RESTORED',
+    'ZERO DOWN-TIME COMMERCIAL SERVICE',
     'AS SEEN IN MIAMI DINING MAGAZINE',
   ];
 
