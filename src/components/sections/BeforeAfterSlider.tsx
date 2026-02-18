@@ -112,7 +112,7 @@ export default function BeforeAfterSlider() {
               className="bg-synthwave-midnight/50 border border-synthwave-neon-pink/30 rounded-lg p-4 sm:p-6"
             >
               <h3 className="font-heading text-base sm:text-lg font-bold text-synthwave-neon-pink mb-3 sm:mb-4">
-                BEFORE: THE PROBLEM
+                THE PROBLEM
               </h3>
               <ul className="space-y-2 font-paragraph text-synthwave-light/70 text-xs sm:text-sm">
                 <li>• Crushed food instead of slicing</li>
@@ -129,7 +129,7 @@ export default function BeforeAfterSlider() {
               className="bg-synthwave-midnight/50 border border-synthwave-neon-cyan/30 rounded-lg p-4 sm:p-6"
             >
               <h3 className="font-heading text-base sm:text-lg font-bold text-synthwave-neon-cyan mb-3 sm:mb-4">
-                AFTER: THE SOLUTION
+                THE SOLUTION
               </h3>
               <ul className="space-y-2 font-paragraph text-synthwave-light/70 text-xs sm:text-sm">
                 <li>• Razor-sharp, factory-fresh edge</li>

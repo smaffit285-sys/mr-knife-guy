@@ -35,7 +35,7 @@ export default function HomePage() {
       {/* STICKY MOBILE CTA: Updated for B2B tone */}
       <motion.a
         href="#cta"
-        className="fixed bottom-4 left-1/2 transform -translate-x-1/2 md:hidden z-40 px-4 py-3 bg-cyan-600 text-white rounded-md font-heading font-bold shadow-xl hover:shadow-cyan-500/20 transition-all w-[calc(100%-2rem)] max-w-xs text-center tracking-wide uppercase text-sm"
+        className="fixed bottom-4 right-4 left-4 md:hidden z-40 px-4 py-3 bg-cyan-600 text-white rounded-md font-heading font-bold shadow-xl hover:shadow-cyan-500/20 transition-all text-center tracking-wide uppercase text-sm"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         whileHover={{ scale: 1.02 }}
