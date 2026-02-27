@@ -25,11 +25,11 @@ export default function PainPointSection() {
               <AlertCircle className="w-6 sm:w-8 h-6 sm:h-8 text-synthwave-neon-pink flex-shrink-0 mt-1" />
               <div>
                 <h2 className="font-heading text-3xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4 neon-pink-flicker" style={{ letterSpacing: '1.5px' }}>
-                  DULL IS DANGEROUS.
-                </h2>
+                    DULL IS DANGEROUS.
+                  </h2>
                 <p className="font-paragraph text-sm sm:text-lg neon-cyan-glow">
-                  Dull blades slip off of food and on to your fingers, leading to expensive hospital trips. A dull blade doesn't cut; it crushes, causing more food waste, and constant dangerous struggle just to make dinner. Stop fighting your food and start enjoying the kitchen again. We bring the 'factory fresh' edge back to your blades—only better.
-                </p>
+                Dull blades slip off of food and on to your fingers, leading to expensive hospital trips. A dull blade doesn't cut; it crushes, causing more food waste, and constant dangerous struggle just to make dinner. Stop fighting your food and start enjoying the kitchen again. We bring the 'factory fresh' edge back to your blades—only better.
+              </p>
               </div>
             </div>
 
