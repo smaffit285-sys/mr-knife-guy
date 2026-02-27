@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Image } from '@/components/ui/image';
 
 export default function BeforeAfterSlider() {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -56,12 +57,13 @@ export default function BeforeAfterSlider() {
             onTouchMove={handleTouchMove}
           >
             {/* Before Image */}
-            <div className="absolute inset-0 bg-gradient-to-br from-synthwave-neon-pink/30 to-synthwave-dark flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-4xl sm:text-6xl mb-2 sm:mb-4">❌</div>
-                <p className="font-heading text-lg sm:text-2xl font-bold text-synthwave-neon-pink">BEFORE</p>
-                <p className="font-paragraph text-xs sm:text-sm text-synthwave-light/60 mt-1 sm:mt-2">Dull, damaged edge</p>
-              </div>
+            <div className="absolute inset-0 bg-synthwave-dark flex items-center justify-center overflow-hidden">
+              <Image
+                src="https://static.wixstatic.com/media/37d64c_925efd69860f4d2099d75ee20c136397~mv2.jpg"
+                alt="Before - Dull, damaged knife edge"
+                className="w-full h-full object-cover"
+                width={800}
+              />
             </div>
 
             {/* After Image (Slider) */}
