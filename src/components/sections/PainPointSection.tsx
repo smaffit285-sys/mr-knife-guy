@@ -86,7 +86,7 @@ export default function PainPointSection() {
                 <div className="flex gap-4 sm:gap-8 justify-center items-end">
                   {/* Dull */}
                   <div className="flex flex-col items-center flex-1">
-                    <div className="w-full h-128 sm:h-160 mb-2 sm:mb-4 rounded-lg overflow-hidden">
+                    <div className="w-full h-64 sm:h-96 md:h-[28rem] mb-2 sm:mb-4 rounded-lg overflow-hidden">
                       <Image
                         src="https://static.wixstatic.com/media/37d64c_fbeb3c16558c461b9d5d2420732b6ffc~mv2.jpg"
                         alt="Dull knife"
@@ -107,7 +107,7 @@ export default function PainPointSection() {
 
                   {/* Sharp */}
                   <div className="flex flex-col items-center flex-1">
-                    <div className="w-full h-128 sm:h-160 mb-2 sm:mb-4 rounded-lg overflow-hidden">
+                    <div className="w-full h-64 sm:h-96 md:h-[28rem] mb-2 sm:mb-4 rounded-lg overflow-hidden">
                       <Image
                         src="https://static.wixstatic.com/media/37d64c_fcc4f79373ec4607abda79e2198826e7~mv2.jpg"
                         alt="Sharp knife"
