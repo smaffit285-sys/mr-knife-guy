@@ -79,22 +79,19 @@ export default function PainPointSection() {
 
               {/* Comparison Visual */}
               <motion.div
-                className="relative z-20 text-center"
+                className="relative z-10 text-center"
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ duration: 3, repeat: Infinity }}
               >
                 <div className="flex gap-4 sm:gap-8 justify-center items-end">
                   {/* Dull */}
                   <div className="flex flex-col items-center flex-1">
-                    <div className="relative w-full h-128 sm:h-160 mb-2 sm:mb-4 rounded-lg overflow-hidden">
+                    <div className="w-full h-128 sm:h-160 mb-2 sm:mb-4 rounded-lg overflow-hidden">
                       <Image
                         src="https://static.wixstatic.com/media/37d64c_fbeb3c16558c461b9d5d2420732b6ffc~mv2.jpg"
                         alt="Dull knife"
                         className="w-full h-full object-cover"
                       />
-                      <div className="absolute inset-0 bg-black/40 flex items-center justify-center z-30">
-                        <p className="font-paragraph text-sm sm:text-lg neon-cyan-glow text-center px-4 font-bold">Crushes instead of slicing</p>
-                      </div>
                     </div>
                     <p className="font-heading text-xs sm:text-sm font-bold text-synthwave-neon-pink">DULL</p>
                     <p className="font-paragraph text-xs text-synthwave-light/60 mt-1 sm:mt-2">Crushes food</p>
@@ -110,15 +107,12 @@ export default function PainPointSection() {
 
                   {/* Sharp */}
                   <div className="flex flex-col items-center flex-1">
-                    <div className="relative w-full h-128 sm:h-160 mb-2 sm:mb-4 rounded-lg overflow-hidden">
+                    <div className="w-full h-128 sm:h-160 mb-2 sm:mb-4 rounded-lg overflow-hidden">
                       <Image
                         src="https://static.wixstatic.com/media/37d64c_fcc4f79373ec4607abda79e2198826e7~mv2.jpg"
                         alt="Sharp knife"
                         className="w-full h-full object-cover"
                       />
-                      <div className="absolute inset-0 bg-black/40 flex items-center justify-center z-30">
-                        <p className="font-paragraph text-sm sm:text-lg neon-cyan-glow text-center px-4 font-bold">Glides through effortlessly</p>
-                      </div>
                     </div>
                     <p className="font-heading text-xs sm:text-sm font-bold text-synthwave-neon-cyan">SHARP</p>
                     <p className="font-paragraph text-xs text-synthwave-light/60 mt-1 sm:mt-2">Glides through</p>
