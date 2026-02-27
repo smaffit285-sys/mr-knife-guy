@@ -24,7 +24,7 @@ export default function PainPointSection() {
             <div className="flex items-start gap-4 mb-8">
               <AlertCircle className="w-6 sm:w-8 h-6 sm:h-8 text-synthwave-neon-pink flex-shrink-0 mt-1" />
               <div>
-                <h2 className="font-heading text-3xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4 neon-pink-flicker" style={{ letterSpacing: '1.5px' }}>
+                <h2 className="font-heading text-3xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4 neon-pink-flicker relative z-50" style={{ letterSpacing: '1.5px' }}>
                     DULL IS DANGEROUS.
                   </h2>
                 <p className="font-paragraph text-sm sm:text-lg neon-cyan-glow relative z-20">
