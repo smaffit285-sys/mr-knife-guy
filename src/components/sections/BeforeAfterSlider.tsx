@@ -72,11 +72,12 @@ export default function BeforeAfterSlider() {
               style={{ width: `${sliderPosition}%` }}
               transition={{ width: { type: 'spring', stiffness: 100, damping: 20 } }}
             >
-              <div className="text-center w-full">
-                <div className="text-4xl sm:text-6xl mb-2 sm:mb-4">✨</div>
-                <p className="font-heading text-lg sm:text-2xl font-bold text-synthwave-neon-cyan">AFTER</p>
-                <p className="font-paragraph text-xs sm:text-sm text-synthwave-light/60 mt-1 sm:mt-2">Factory-fresh edge</p>
-              </div>
+              <Image
+                src="https://static.wixstatic.com/media/37d64c_d406b7ab06554da8a58b2e7d9cce1aa2~mv2.jpg"
+                alt="After - Sharp, restored knife edge"
+                className="w-full h-full object-cover"
+                width={800}
+              />
             </motion.div>
 
             {/* Slider Handle */}
