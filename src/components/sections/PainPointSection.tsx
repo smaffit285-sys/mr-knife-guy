@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { AlertCircle, Zap } from 'lucide-react';
+import { Image } from '@/components/ui/image';
 
 export default function PainPointSection() {
   return (
@@ -85,7 +86,12 @@ export default function PainPointSection() {
                 <div className="flex gap-4 sm:gap-8 justify-center items-end">
                   {/* Dull */}
                   <div className="flex flex-col items-center">
-                    <div className="text-3xl sm:text-5xl mb-2 sm:mb-4">❌</div>
+                    <Image
+                      src="https://static.wixstatic.com/media/37d64c_d5c2ee34d4024dcdba9f651399a2440f~mv2.png"
+                      alt="Dull knife"
+                      width={120}
+                      className="mb-2 sm:mb-4 h-24 sm:h-32 object-contain"
+                    />
                     <p className="font-heading text-xs sm:text-sm font-bold text-synthwave-neon-pink">DULL</p>
                     <p className="font-paragraph text-xs text-synthwave-light/60 mt-1 sm:mt-2">Crushes food</p>
                   </div>
