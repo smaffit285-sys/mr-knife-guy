@@ -42,9 +42,12 @@ export default function HomePage() {
                 />
                 <div className="relative z-10 text-center">
                   <h3 className="font-heading text-3xl md:text-4xl font-bold text-synthwave-neon-pink group-hover:text-synthwave-neon-cyan transition-colors duration-300">
-                    Sharp After Dark Commercial Sharpening Service
+                    Sharp After Dark:
                   </h3>
-                  <p className="font-paragraph text-lg text-synthwave-light/70 mt-2 group-hover:text-synthwave-light transition-colors duration-300">
+                  <p className="font-paragraph text-xl md:text-2xl text-synthwave-neon-cyan mt-2 group-hover:text-synthwave-light transition-colors duration-300 font-semibold">
+                    Commercial Sharpening Service
+                  </p>
+                  <p className="font-paragraph text-lg text-synthwave-light/70 mt-4 group-hover:text-synthwave-light transition-colors duration-300">
                     Your kitchen doesn't sleep. Neither do your blades.
                   </p>
                 </div>
