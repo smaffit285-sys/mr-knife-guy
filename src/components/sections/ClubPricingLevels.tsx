@@ -48,7 +48,7 @@ export default function ClubPricingLevels() {
       name: 'All Access',
       icon: Infinity,
       price: '$250',
-      benefits: ['10 Large OR', '5 Large + 10 Medium + 10 Small OR', '15 Medium + 20 Small OR + 65 Small'],
+      benefits: ['10 large OR 15 medium OR 30 small', '5 Large + 10 Medium + 10 Small OR', '15 Medium + 20 Small OR + 65 Small'],
       color: 'from-red-500 to-pink-500',
       borderColor: 'border-red-500/50',
       bgColor: 'bg-red-500/10',
