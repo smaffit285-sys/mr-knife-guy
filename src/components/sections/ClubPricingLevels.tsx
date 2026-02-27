@@ -6,7 +6,9 @@ export default function ClubPricingLevels() {
     {
       name: 'Scope the Scene',
       icon: Eye,
-      description: 'Get a taste of the Miami Knife Club',
+      price: 'FREE',
+      priceSubtext: '(with honest review)',
+      benefits: ['1 Knife (Any size)'],
       color: 'from-blue-500 to-cyan-500',
       borderColor: 'border-blue-500/50',
       bgColor: 'bg-blue-500/10',
@@ -15,7 +17,8 @@ export default function ClubPricingLevels() {
     {
       name: 'Limited Access',
       icon: Zap,
-      description: 'Explore core sharpening services',
+      price: '$30',
+      benefits: ['1 Large OR', '1 Medium + 2 Small'],
       color: 'from-purple-500 to-pink-500',
       borderColor: 'border-purple-500/50',
       bgColor: 'bg-purple-500/10',
@@ -24,7 +27,8 @@ export default function ClubPricingLevels() {
     {
       name: 'Club Regular',
       icon: Users,
-      description: 'Join our community of knife enthusiasts',
+      price: '$55',
+      benefits: ['2 Large OR', '1 Large + 1 Medium + 2 Small OR', '2 Medium + 3 Small OR + 7 Small'],
       color: 'from-green-500 to-emerald-500',
       borderColor: 'border-green-500/50',
       bgColor: 'bg-green-500/10',
@@ -33,7 +37,8 @@ export default function ClubPricingLevels() {
     {
       name: 'VIP',
       icon: Crown,
-      description: 'Premium access and priority service',
+      price: '$100',
+      benefits: ['4 Large OR', '2 Large + 3 Medium + 4 Small OR', '5 Medium + 6 Small OR + 15 Small'],
       color: 'from-yellow-500 to-orange-500',
       borderColor: 'border-yellow-500/50',
       bgColor: 'bg-yellow-500/10',
@@ -42,7 +47,8 @@ export default function ClubPricingLevels() {
     {
       name: 'All Access',
       icon: Infinity,
-      description: 'Ultimate membership with all benefits',
+      price: '$250',
+      benefits: ['10 Large OR', '5 Large + 10 Medium + 10 Small OR', '15 Medium + 20 Small OR + 65 Small'],
       color: 'from-red-500 to-pink-500',
       borderColor: 'border-red-500/50',
       bgColor: 'bg-red-500/10',
@@ -51,7 +57,8 @@ export default function ClubPricingLevels() {
     {
       name: 'Club Benefactor',
       icon: Gem,
-      description: 'Support our vision with exclusive perks and all No Limits benefits',
+      price: 'PLEASE INQUIRE',
+      benefits: ['Custom packages', 'Exclusive perks', 'Priority service'],
       color: 'from-violet-500 to-fuchsia-500',
       borderColor: 'border-violet-500/50',
       bgColor: 'bg-violet-500/10',
@@ -123,10 +130,27 @@ export default function ClubPricingLevels() {
                       {level.name}
                     </h3>
 
-                    {/* Description */}
-                    <p className="font-paragraph text-synthwave-light/70 text-xs leading-relaxed">
-                      {level.description}
-                    </p>
+                    {/* Price */}
+                    <div className="mb-3">
+                      <p className={`font-heading text-lg font-bold ${level.accentColor}`}>
+                        {level.price}
+                      </p>
+                      {level.priceSubtext && (
+                        <p className="font-paragraph text-synthwave-light/60 text-xs">
+                          {level.priceSubtext}
+                        </p>
+                      )}
+                    </div>
+
+                    {/* Benefits */}
+                    <ul className="font-paragraph text-synthwave-light/70 text-xs space-y-1">
+                      {level.benefits.map((benefit, idx) => (
+                        <li key={idx} className="flex items-start gap-2">
+                          <span className={`${level.accentColor} mt-1 flex-shrink-0`}>•</span>
+                          <span>{benefit}</span>
+                        </li>
+                      ))}
+                    </ul>
 
                     {/* Bottom Accent Line */}
                     <motion.div
@@ -174,10 +198,27 @@ export default function ClubPricingLevels() {
                   {levels[0].name}
                 </h3>
 
-                {/* Description */}
-                <p className="font-paragraph text-synthwave-light/70 text-xs leading-relaxed">
-                  {levels[0].description}
-                </p>
+                {/* Price */}
+                <div className="mb-3">
+                  <p className={`font-heading text-lg font-bold ${levels[0].accentColor}`}>
+                    {levels[0].price}
+                  </p>
+                  {levels[0].priceSubtext && (
+                    <p className="font-paragraph text-synthwave-light/60 text-xs">
+                      {levels[0].priceSubtext}
+                    </p>
+                  )}
+                </div>
+
+                {/* Benefits */}
+                <ul className="font-paragraph text-synthwave-light/70 text-xs space-y-1">
+                  {levels[0].benefits.map((benefit, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className={`${levels[0].accentColor} mt-1 flex-shrink-0`}>•</span>
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
 
                 {/* Bottom Accent Line */}
                 <motion.div
@@ -220,10 +261,27 @@ export default function ClubPricingLevels() {
                   {levels[5].name}
                 </h3>
 
-                {/* Description */}
-                <p className="font-paragraph text-synthwave-light/70 text-xs leading-relaxed">
-                  {levels[5].description}
-                </p>
+                {/* Price */}
+                <div className="mb-3">
+                  <p className={`font-heading text-lg font-bold ${levels[5].accentColor}`}>
+                    {levels[5].price}
+                  </p>
+                  {levels[5].priceSubtext && (
+                    <p className="font-paragraph text-synthwave-light/60 text-xs">
+                      {levels[5].priceSubtext}
+                    </p>
+                  )}
+                </div>
+
+                {/* Benefits */}
+                <ul className="font-paragraph text-synthwave-light/70 text-xs space-y-1">
+                  {levels[5].benefits.map((benefit, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className={`${levels[5].accentColor} mt-1 flex-shrink-0`}>•</span>
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
 
                 {/* Bottom Accent Line */}
                 <motion.div
