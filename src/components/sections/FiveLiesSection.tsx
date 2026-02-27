@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Image } from '@/components/ui/image';
 
 const lies = [
   {
@@ -96,18 +95,6 @@ export default function FiveLiesSection() {
                 <p className="font-paragraph text-synthwave-light text-xs sm:text-sm leading-relaxed break-words">
                   {lie.myth}
                 </p>
-                {/* Image for "dull is dangerous" card */}
-                {lie.id === 4 && (
-                  <div className="mt-3 rounded overflow-hidden">
-                    <Image
-                      src="https://static.wixstatic.com/media/37d64c_f3282fa1fdea419f93708b75ff45b56c~mv2.png"
-                      alt="Dull knife injury demonstration"
-                      width={200}
-                      height={200}
-                      className="w-full h-auto object-cover"
-                    />
-                  </div>
-                )}
               </div>
 
               {/* Divider */}
