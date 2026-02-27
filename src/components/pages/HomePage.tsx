@@ -38,7 +38,7 @@ export default function HomePage() {
                 whileHover={{ scale: 1.02 }}
               >
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-cyan opacity-0 group-hover:opacity-5 transition-opacity duration-300"
+                  className="absolute inset-0 bg-gradient-to-r from-synthwave-neon-pink via-synthwave-purple to-synthwave-neon-cyan opacity-0 group-hover:opacity-20 transition-opacity duration-300"
                 />
                 <div className="relative z-10 text-center">
                   <h3 className="font-heading text-3xl md:text-4xl font-bold text-synthwave-neon-pink group-hover:text-synthwave-neon-cyan transition-colors duration-300">
