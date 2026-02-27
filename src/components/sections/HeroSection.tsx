@@ -97,6 +97,23 @@ export default function HeroSection() {
         }}
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
       />
+      
+      {/* Knife Image Background - Mobile Only */}
+      <motion.div
+        className="absolute inset-0 md:hidden flex items-center justify-center z-0"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <Image 
+          src="https://static.wixstatic.com/media/37d64c_c26d92e0c01a495caeb57ac548ba7b8f~mv2.jpg"
+          alt="Miami Knife Guy knife background"
+          width={400}
+          className="w-1/2 h-auto object-contain"
+          style={{ transform: 'rotate(90deg)', opacity: 0.15 }}
+        />
+      </motion.div>
+
       {/* Content */}
       <motion.div
         className="relative z-10 max-w-[100rem] mx-auto text-center"
