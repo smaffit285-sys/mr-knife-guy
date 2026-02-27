@@ -90,7 +90,6 @@ export default function PainPointSection() {
                       <Image
                         src="https://static.wixstatic.com/media/37d64c_92a8eac1bdd74446b2f746ea8b329cea~mv2.jpg"
                         alt="Dull knife"
-                        width={300}
                         className="w-full h-full object-cover"
                       />
                     </div>
