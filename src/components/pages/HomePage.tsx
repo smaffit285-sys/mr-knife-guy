@@ -10,6 +10,7 @@ import ProGradePrecisionSection from '@/components/sections/ProGradePrecisionSec
 import SocialProofTicker from '@/components/sections/SocialProofTicker';
 import SocialLinksSection from '@/components/sections/SocialLinksSection';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export default function HomePage() {
   return (
@@ -22,6 +23,36 @@ export default function HomePage() {
         <SocialProofTicker />
         {/* B2B FOCUS: Focus on kitchen efficiency and safety costs */}
         <PainPointSection />
+        
+        {/* Sharp After Dark Commercial Sharpening Service Link */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="w-full px-4 sm:px-6 lg:px-8 py-12 bg-slate-950"
+        >
+          <div className="max-w-[100rem] mx-auto">
+            <Link to="/sharp-after-dark">
+              <motion.div
+                className="group relative overflow-hidden rounded-lg border-2 border-synthwave-neon-pink/50 bg-gradient-to-r from-synthwave-neon-pink/10 to-synthwave-neon-cyan/10 p-8 cursor-pointer hover:border-synthwave-neon-pink transition-all duration-300"
+                whileHover={{ scale: 1.02 }}
+              >
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-cyan opacity-0 group-hover:opacity-5 transition-opacity duration-300"
+                />
+                <div className="relative z-10 text-center">
+                  <h3 className="font-heading text-3xl md:text-4xl font-bold text-synthwave-neon-pink group-hover:text-synthwave-neon-cyan transition-colors duration-300">
+                    Sharp After Dark Commercial Sharpening Service
+                  </h3>
+                  <p className="font-paragraph text-lg text-synthwave-light/70 mt-2 group-hover:text-synthwave-light transition-colors duration-300">
+                    Your kitchen doesn't sleep. Neither do your blades.
+                  </p>
+                </div>
+              </motion.div>
+            </Link>
+          </div>
+        </motion.div>
+
         <ClubPricingLevels />
         <BeforeAfterSlider />
         <ProGradePrecisionSection />

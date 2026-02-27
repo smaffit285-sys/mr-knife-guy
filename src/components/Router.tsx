@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import { ScrollToTop } from '@/lib/scroll-to-top';
 import ErrorPage from '@/integrations/errorHandlers/ErrorPage';
 import HomePage from '@/components/pages/HomePage';
+import SharpAfterDarkPage from '@/components/pages/SharpAfterDarkPage';
 
 function Layout() {
   return (
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
+      },
+      {
+        path: 'sharp-after-dark',
+        element: <SharpAfterDarkPage />,
       },
     ],
   },
