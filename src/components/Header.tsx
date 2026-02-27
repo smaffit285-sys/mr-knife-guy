@@ -10,6 +10,7 @@ export default function Header() {
     { label: 'Services', href: '#services' },
     { label: 'Pricing', href: '#pricing' },
     { label: 'Before & After', href: '#before-after' },
+    { label: 'Knives for Sale', href: '#knives' },
   ];
 
   // ... keep existing code (socialLogos array removed - moved to HeroSection)
