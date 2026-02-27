@@ -86,11 +86,11 @@ export default function PainPointSection() {
                 <div className="flex gap-4 sm:gap-8 justify-center items-end">
                   {/* Dull */}
                   <div className="flex flex-col items-center flex-1">
-                    <div className="w-full h-40 sm:h-56 mb-2 sm:mb-4 rounded-lg overflow-hidden">
+                    <div className="w-full h-64 sm:h-80 mb-2 sm:mb-4 rounded-lg overflow-hidden">
                       <Image
                         src="https://static.wixstatic.com/media/37d64c_92a8eac1bdd74446b2f746ea8b329cea~mv2.jpg"
                         alt="Dull knife"
-                        width={200}
+                        width={300}
                         className="w-full h-full object-cover"
                       />
                     </div>
