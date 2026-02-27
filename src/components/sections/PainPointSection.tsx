@@ -87,7 +87,7 @@ export default function PainPointSection() {
                   {/* Dull */}
                   <div className="flex flex-col items-center">
                     <Image
-                      src="https://static.wixstatic.com/media/37d64c_d5c2ee34d4024dcdba9f651399a2440f~mv2.png"
+                      src="https://static.wixstatic.com/media/37d64c_92a8eac1bdd74446b2f746ea8b329cea~mv2.jpg"
                       alt="Dull knife"
                       width={120}
                       className="mb-2 sm:mb-4 h-24 sm:h-32 object-contain"
