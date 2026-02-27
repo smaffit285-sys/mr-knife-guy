@@ -38,7 +38,7 @@ export default function ClubPricingLevels() {
       name: 'VIP',
       icon: Crown,
       price: '$100',
-      benefits: ['4 Large OR', '2 Large + 3 Medium + 4 Small OR', '5 Medium + 6 Small OR + 15 Small'],
+      benefits: ['4 Large OR', '2 Large + 3 Medium + 4 Small OR', '5 Medium + 6 Small OR 15 Small'],
       color: 'from-yellow-500 to-orange-500',
       borderColor: 'border-yellow-500/50',
       bgColor: 'bg-yellow-500/10',
