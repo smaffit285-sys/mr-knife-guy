@@ -34,7 +34,7 @@ export default function HomePage() {
           <div className="max-w-[100rem] mx-auto">
             <Link to="/sharp-after-dark">
               <motion.div
-                className="group relative overflow-hidden rounded-lg border-2 border-synthwave-neon-pink/50 bg-gradient-to-r from-synthwave-neon-pink/10 to-synthwave-neon-cyan/10 p-8 cursor-pointer hover:border-synthwave-neon-pink transition-all duration-300"
+                className="group relative overflow-hidden rounded-lg border-2 border-synthwave-neon-pink/50 bg-gradient-to-r from-synthwave-neon-pink/10 to-synthwave-neon-cyan/10 p-4 cursor-pointer hover:border-synthwave-neon-pink transition-all duration-300"
                 whileHover={{ scale: 1.02 }}
               >
                 <motion.div
