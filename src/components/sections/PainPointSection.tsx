@@ -106,8 +106,14 @@ export default function PainPointSection() {
                   </motion.div>
 
                   {/* Sharp */}
-                  <div className="flex flex-col items-center">
-                    <div className="text-3xl sm:text-5xl mb-2 sm:mb-4">✨</div>
+                  <div className="flex flex-col items-center flex-1">
+                    <div className="w-full h-128 sm:h-160 mb-2 sm:mb-4 rounded-lg overflow-hidden">
+                      <Image
+                        src="https://static.wixstatic.com/media/37d64c_fcc4f79373ec4607abda79e2198826e7~mv2.jpg"
+                        alt="Sharp knife"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                     <p className="font-heading text-xs sm:text-sm font-bold text-synthwave-neon-cyan">SHARP</p>
                     <p className="font-paragraph text-xs text-synthwave-light/60 mt-1 sm:mt-2">Glides through</p>
                   </div>
