@@ -76,7 +76,7 @@ export default function BeforeAfterSlider() {
               transition={{ width: { type: 'spring', stiffness: 100, damping: 20 } }}
             >
               <Image
-                src="https://static.wixstatic.com/media/37d64c_19ac020c73014295847136ba25108a7d~mv2.jpg"
+                src="https://static.wixstatic.com/media/37d64c_673be5fef56b45708473d610abb450f4~mv2.jpg"
                 alt="deba good"
                 className="w-full h-full object-cover"
               />
