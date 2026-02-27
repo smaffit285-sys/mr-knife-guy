@@ -90,7 +90,7 @@ export default function PainPointSection() {
                       src="https://static.wixstatic.com/media/37d64c_92a8eac1bdd74446b2f746ea8b329cea~mv2.jpg"
                       alt="Dull knife"
                       width={120}
-                      className="mb-2 sm:mb-4 h-24 sm:h-32 object-contain"
+                      className="mb-2 sm:mb-4 w-full h-full object-cover"
                     />
                     <p className="font-heading text-xs sm:text-sm font-bold text-synthwave-neon-pink">DULL</p>
                     <p className="font-paragraph text-xs text-synthwave-light/60 mt-1 sm:mt-2">Crushes food</p>
