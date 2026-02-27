@@ -28,7 +28,7 @@ export default function ClubPricingLevels() {
       name: 'Club Regular',
       icon: Users,
       price: '$55',
-      benefits: ['2 Large OR', '1 Large + 1 Medium + 2 Small OR', '2 Medium + 3 Small OR + 7 Small'],
+      benefits: ['2 Large OR', '1 Large + 1 Medium + 2 Small OR', '10 large + 5 small OR'],
       color: 'from-green-500 to-emerald-500',
       borderColor: 'border-green-500/50',
       bgColor: 'bg-green-500/10',
