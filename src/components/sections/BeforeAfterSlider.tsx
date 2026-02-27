@@ -56,34 +56,24 @@ export default function BeforeAfterSlider() {
             onTouchMove={handleTouchMove}
           >
             {/* Before Image */}
-            <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
-              <Image
-                src="https://static.wixstatic.com/media/37d64c_a837d718ea014d258502090af2d228ec~mv2.jpg"
-                alt="deba bad"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-synthwave-neon-pink/20 to-synthwave-dark/40 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="font-heading text-lg sm:text-2xl font-bold text-synthwave-neon-pink drop-shadow-lg">DEBA BAD</p>
-                </div>
+            <div className="absolute inset-0 bg-gradient-to-br from-synthwave-neon-pink/30 to-synthwave-dark flex items-center justify-center">
+              <div className="text-center">
+                <div className="text-4xl sm:text-6xl mb-2 sm:mb-4">❌</div>
+                <p className="font-heading text-lg sm:text-2xl font-bold text-synthwave-neon-pink">BEFORE</p>
+                <p className="font-paragraph text-xs sm:text-sm text-synthwave-light/60 mt-1 sm:mt-2">Dull, damaged edge</p>
               </div>
             </div>
 
             {/* After Image (Slider) */}
             <motion.div
-              className="absolute inset-0 flex items-center justify-center overflow-hidden"
+              className="absolute inset-0 bg-gradient-to-br from-synthwave-neon-cyan/30 to-synthwave-dark flex items-center justify-center overflow-hidden"
               style={{ width: `${sliderPosition}%` }}
               transition={{ width: { type: 'spring', stiffness: 100, damping: 20 } }}
             >
-              <Image
-                src="https://static.wixstatic.com/media/37d64c_673be5fef56b45708473d610abb450f4~mv2.jpg"
-                alt="deba good"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-synthwave-neon-cyan/20 to-synthwave-dark/40 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="font-heading text-lg sm:text-2xl font-bold text-synthwave-neon-cyan drop-shadow-lg">DEBA GOOD</p>
-                </div>
+              <div className="text-center w-full">
+                <div className="text-4xl sm:text-6xl mb-2 sm:mb-4">✨</div>
+                <p className="font-heading text-lg sm:text-2xl font-bold text-synthwave-neon-cyan">AFTER</p>
+                <p className="font-paragraph text-xs sm:text-sm text-synthwave-light/60 mt-1 sm:mt-2">Factory-fresh edge</p>
               </div>
             </motion.div>
 
