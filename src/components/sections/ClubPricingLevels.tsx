@@ -40,7 +40,7 @@ export default function ClubPricingLevels() {
       accentColor: 'text-yellow-400',
     },
     {
-      name: 'No Limits',
+      name: 'All Access',
       icon: Infinity,
       description: 'Ultimate membership with all benefits',
       color: 'from-red-500 to-pink-500',
