@@ -182,15 +182,6 @@ export default function SharpAfterDarkPage() {
                       </svg>
                     </div>
 
-                    {/* Vertical Dividing Line - Neon Gradient */}
-                    <div className="absolute inset-y-0 left-1/2 w-1 -translate-x-1/2 pointer-events-none">
-                      <div className="w-full h-full bg-gradient-to-b from-synthwave-neon-cyan via-synthwave-neon-pink to-synthwave-neon-cyan opacity-80"
-                        style={{
-                          boxShadow: '0 0 20px rgba(0, 255, 255, 0.8), 0 0 40px rgba(255, 0, 127, 0.6), inset 0 0 20px rgba(0, 255, 255, 0.5)'
-                        }}
-                      />
-                    </div>
-
                     {index < 3 ? (
                       <>
                         <Image
