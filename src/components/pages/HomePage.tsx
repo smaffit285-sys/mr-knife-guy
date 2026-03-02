@@ -32,7 +32,7 @@ export default function HomePage() {
           className="w-full px-4 sm:px-6 lg:px-8 py-12 bg-slate-950"
         >
           <div className="max-w-[100rem] mx-auto">
-            <Link to="/sharp-after-dark" className="flex justify-center">
+            <a href="#knives-catalog" className="flex justify-center">
               <motion.div
                 className="group relative overflow-hidden rounded-lg border-2 border-synthwave-neon-pink/50 bg-gradient-to-r from-synthwave-neon-pink/10 to-synthwave-neon-cyan/10 p-4 cursor-pointer hover:border-synthwave-neon-pink transition-all duration-300 w-fit"
                 whileHover={{ scale: 1.02 }}
@@ -52,7 +52,7 @@ export default function HomePage() {
                   </p>
                 </div>
               </motion.div>
-            </Link>
+            </a>
           </div>
         </motion.div>
 
