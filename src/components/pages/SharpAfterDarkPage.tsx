@@ -31,9 +31,9 @@ export default function SharpAfterDarkPage() {
       title: 'Service Details'
     },
     {
-      url: 'https://static.wixstatic.com/media/37d64c_3b2c4e0a0b674be0b182da405f430afc~mv2.png',
-      alt: 'Sharp After Dark Commercial Sharpening Service - Knife 2',
-      title: 'Expert Blade Precision'
+      url: 'https://static.wixstatic.com/media/37d64c_53eac3715b3e4aeeb142437191fcb233~mv2.png',
+      alt: 'Sharp After Dark - Featured Image',
+      title: 'Premium Service'
     }
   ];
 
