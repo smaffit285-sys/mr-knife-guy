@@ -5,9 +5,9 @@ import Footer from '@/components/Footer';
 
 export default function MiamiKnifeClubPage() {
   const [spotlights, setSpotlights] = useState([
-    { id: 0, originX: 15, originY: -5, angle: -60, intensity: 0.7 },
-    { id: 1, originX: 50, originY: -5, angle: 0, intensity: 0.7 },
-    { id: 2, originX: 85, originY: -5, angle: 60, intensity: 0.7 },
+    { id: 0, originX: 20, originY: 5, angle: -35, intensity: 0.8 },
+    { id: 1, originX: 50, originY: 5, angle: 0, intensity: 0.8 },
+    { id: 2, originX: 80, originY: 5, angle: 35, intensity: 0.8 },
   ]);
 
   const [flashIntensity, setFlashIntensity] = useState(0);
@@ -18,14 +18,14 @@ export default function MiamiKnifeClubPage() {
         setSpotlights((prev) =>
           prev.map((s) => {
             if (s.id === spotlight.id) {
-              // Sweep 120 degrees: from -60 to +60 degrees
-              const newAngle = -60 + Math.random() * 120;
-              const newIntensity = 0.5 + Math.random() * 0.4;
+              // Sweep 70 degrees: from -35 to +35 degrees (focused on title)
+              const newAngle = -35 + Math.random() * 70;
+              const newIntensity = 0.6 + Math.random() * 0.3;
               
-              // Trigger flash when beam sweeps toward viewer (angle near 0)
-              if (Math.abs(newAngle) < 15) {
-                setFlashIntensity(0.6);
-                setTimeout(() => setFlashIntensity(0), 400);
+              // Trigger flash less frequently - only when beam is very close to center
+              if (Math.abs(newAngle) < 8 && Math.random() > 0.7) {
+                setFlashIntensity(0.3);
+                setTimeout(() => setFlashIntensity(0), 300);
               }
               
               return {
@@ -37,7 +37,7 @@ export default function MiamiKnifeClubPage() {
             return s;
           })
         );
-      }, 3000 + Math.random() * 2000);
+      }, 2000 + Math.random() * 1000);
     });
 
     return () => intervals.forEach((interval) => clearInterval(interval));
@@ -52,7 +52,7 @@ export default function MiamiKnifeClubPage() {
           backgroundColor: `rgba(255, 255, 255, ${flashIntensity})`,
           opacity: flashIntensity,
         }}
-        transition={{ duration: 0.1 }}
+        transition={{ duration: 0.05 }}
       />
 
       {/* Muted Club Lights Background */}
@@ -106,7 +106,7 @@ export default function MiamiKnifeClubPage() {
               animate={{
                 rotate: spotlight.angle,
               }}
-              transition={{ duration: 2, ease: 'easeInOut' }}
+              transition={{ duration: 1.2, ease: 'linear' }}
             >
               {/* Spotlight Beam - Cone shaped with realistic light physics */}
               <svg
