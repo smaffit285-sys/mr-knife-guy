@@ -184,9 +184,13 @@ export default function SharpAfterDarkPage() {
 
                     {index === 1 ? (
                       <div className="relative z-10 w-full h-full flex items-center justify-center">
-                        <h3 className="font-heading text-lg font-bold text-synthwave-neon-pink">
-                          {image.title}
-                        </h3>
+                        <Image
+                          src="https://static.wixstatic.com/media/37d64c_2dab8ba0477c4a91bd9622c7d82b1638~mv2.jpg"
+                          alt="Sharp After Dark - Professional Sharpening Service"
+                          width={400}
+                          height={400}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
                       </div>
                     ) : index < 3 ? (
                       <>
