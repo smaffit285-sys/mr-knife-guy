@@ -79,7 +79,9 @@ export default function ProGradePrecisionSection() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="bg-gradient-to-r from-synthwave-neon-pink/20 to-synthwave-neon-cyan/20 border-2 border-synthwave-neon-pink/50 rounded-lg p-6 sm:p-12 overflow-hidden">
+            <div 
+              onClick={() => navigate('/artist-meditation')}
+              className="bg-gradient-to-r from-synthwave-neon-pink/20 to-synthwave-neon-cyan/20 border-2 border-synthwave-neon-pink/50 rounded-lg p-6 sm:p-12 overflow-hidden cursor-pointer hover:border-synthwave-neon-pink/80 transition-colors">
               {/* Accent */}
               <motion.div
                 className="absolute top-0 right-0 w-40 h-40 bg-synthwave-neon-pink/10 rounded-full blur-2xl"
