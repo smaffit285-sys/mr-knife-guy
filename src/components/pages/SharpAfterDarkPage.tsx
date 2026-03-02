@@ -245,7 +245,7 @@ export default function SharpAfterDarkPage() {
               className="relative z-10 text-center max-w-2xl mx-auto"
             >
               <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 neon-pink-glow">
-                Ready to Keep Your Blades Sharp?
+                Stay Sharp, Keep Your Edge Over the Competition
               </h2>
               <p className="font-paragraph text-lg text-synthwave-light/80 mb-8">
                 Join our commercial sharpening service and experience professional-grade blade maintenance.
