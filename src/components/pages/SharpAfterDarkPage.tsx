@@ -108,24 +108,34 @@ export default function SharpAfterDarkPage() {
                 >
                   {/* Image Container */}
                   <div className="relative w-full h-96 overflow-hidden bg-slate-900">
-                    <Image
-                      src={image.url}
-                      alt={image.alt}
-                      width={400}
-                      height={400}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    
-                    {/* Overlay */}
-                    <motion.div
-                      className="absolute inset-0 bg-gradient-to-t from-synthwave-midnight via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-4"
-                      initial={{ opacity: 0 }}
-                      whileHover={{ opacity: 1 }}
-                    >
-                      <h3 className="font-heading text-lg font-bold text-synthwave-neon-pink">
-                        {image.title}
-                      </h3>
-                    </motion.div>
+                    {index < 3 ? (
+                      <>
+                        <Image
+                          src={image.url}
+                          alt={image.alt}
+                          width={400}
+                          height={400}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        
+                        {/* Overlay */}
+                        <motion.div
+                          className="absolute inset-0 bg-gradient-to-t from-synthwave-midnight via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-4"
+                          initial={{ opacity: 0 }}
+                          whileHover={{ opacity: 1 }}
+                        >
+                          <h3 className="font-heading text-lg font-bold text-synthwave-neon-pink">
+                            {image.title}
+                          </h3>
+                        </motion.div>
+                      </>
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center">
+                        <h3 className="font-heading text-lg font-bold text-synthwave-neon-pink">
+                          {image.title}
+                        </h3>
+                      </div>
+                    )}
                   </div>
                 </motion.div>
               ))}
