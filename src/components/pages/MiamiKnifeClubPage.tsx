@@ -228,7 +228,7 @@ export default function MiamiKnifeClubPage() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-synthwave-neon-cyan text-lg sm:text-xl md:text-2xl font-paragraph mb-8 tracking-widest"
             >
-              FINALLY, A CLUB THAT'S NEVER DULL
+              finally a club that's never dull
             </motion.p>
           </motion.div>
 
