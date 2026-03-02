@@ -247,7 +247,7 @@ export default function CustomerInfoPage() {
                   {/* Knife Count */}
                   <div className="mb-4">
                     <label className="block font-paragraph text-sm font-semibold text-cyan-300 mb-2 uppercase tracking-wide">
-                      Number of Knives
+                      Number of Knives (Approx OK)
                     </label>
                     <input
                       type="number"
