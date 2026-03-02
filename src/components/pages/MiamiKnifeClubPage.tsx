@@ -171,6 +171,18 @@ export default function MiamiKnifeClubPage() {
               </motion.div>
             ))}
           </div>
+
+          {/* Duplicate CTA Section Below Club Benefactor */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="text-center mt-20"
+          >
+            <button className="px-8 py-4 bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-cyan text-synthwave-midnight font-heading font-bold text-lg hover:shadow-lg hover:shadow-synthwave-neon-pink/50 transition-all">
+              JOIN THE CLUB
+            </button>
+          </motion.div>
         </div>
       </main>
 
