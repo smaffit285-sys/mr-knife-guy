@@ -6,8 +6,8 @@ import { Image } from '@/components/ui/image';
 export default function SharpAfterDarkPage() {
   const images = [
     {
-      url: 'https://static.wixstatic.com/media/37d64c_a973a9b7fac6474d8e446c9780a70ab4~mv2.png',
-      alt: 'Sharp After Dark Commercial Sharpening Service - Knife 1',
+      url: 'https://static.wixstatic.com/media/37d64c_5d6ee69760ed44c1b959486957854280~mv2.jpg',
+      alt: 'Sharp After Dark Commercial Sharpening Service - Professional Knives',
       title: 'Professional Knife Sharpening'
     },
     {
