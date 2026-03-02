@@ -43,38 +43,90 @@ export default function SharpAfterDarkPage() {
 
       <main className="w-full">
         {/* Hero Section */}
-        <section className="relative w-full py-20 px-4 sm:px-6 lg:px-8 bg-synthwave-midnight overflow-hidden">
-          <div className="max-w-[100rem] mx-auto">
-            {/* Background Elements */}
-            <motion.div
-              className="absolute top-0 left-0 w-96 h-96 bg-synthwave-neon-pink/5 rounded-full blur-3xl"
-              animate={{ y: [0, 30, 0] }}
-              transition={{ duration: 10, repeat: Infinity }}
-            />
-            <motion.div
-              className="absolute bottom-0 right-0 w-96 h-96 bg-synthwave-neon-cyan/5 rounded-full blur-3xl"
-              animate={{ y: [0, -30, 0] }}
-              transition={{ duration: 10, repeat: Infinity }}
-            />
+        <section className="relative w-full py-32 px-4 sm:px-6 lg:px-8 bg-synthwave-midnight overflow-hidden">
+          {/* Grid Background Pattern */}
+          <div className="absolute inset-0 opacity-20">
+            <svg className="w-full h-full" preserveAspectRatio="none">
+              <defs>
+                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="url(#gridGradient)" strokeWidth="0.5"/>
+                </pattern>
+                <linearGradient id="gridGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#00FFFF"/>
+                  <stop offset="100%" stopColor="#FF007F"/>
+                </linearGradient>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#grid)"/>
+            </svg>
+          </div>
 
+          {/* Horizontal Scan Lines */}
+          <div className="absolute inset-0 opacity-10 pointer-events-none">
+            <div className="absolute inset-0" style={{
+              backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 255, 255, 0.3) 2px, rgba(0, 255, 255, 0.3) 4px)',
+              animation: 'scan 8s linear infinite'
+            }}/>
+          </div>
+
+          {/* Animated Neon Orbs */}
+          <motion.div
+            className="absolute top-10 left-10 w-80 h-80 bg-synthwave-neon-pink/10 rounded-full blur-3xl"
+            animate={{ y: [0, 40, 0], x: [0, 20, 0] }}
+            transition={{ duration: 12, repeat: Infinity }}
+          />
+          <motion.div
+            className="absolute bottom-10 right-10 w-96 h-96 bg-synthwave-neon-cyan/10 rounded-full blur-3xl"
+            animate={{ y: [0, -40, 0], x: [0, -20, 0] }}
+            transition={{ duration: 14, repeat: Infinity }}
+          />
+          <motion.div
+            className="absolute top-1/2 left-1/2 w-72 h-72 bg-synthwave-purple/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"
+            animate={{ scale: [1, 1.2, 1] }}
+            transition={{ duration: 10, repeat: Infinity }}
+          />
+
+          {/* Geometric Accent Lines */}
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-synthwave-neon-cyan to-transparent opacity-30"/>
+          <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-synthwave-neon-pink to-transparent opacity-30"/>
+
+          <div className="max-w-[100rem] mx-auto relative z-10">
             {/* Header */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-center mb-16 relative z-10"
+              className="text-center mb-16"
             >
-              <h1 className="font-heading text-6xl md:text-7xl font-bold mb-4 neon-pink-glow">
+              <motion.h1 
+                className="font-heading text-6xl md:text-7xl lg:text-8xl font-bold mb-6 neon-pink-glow"
+                animate={{ textShadow: [
+                  '0 0 10px rgba(255, 0, 127, 0.5), 0 0 20px rgba(255, 0, 127, 0.3)',
+                  '0 0 20px rgba(255, 0, 127, 0.8), 0 0 40px rgba(255, 0, 127, 0.5)',
+                  '0 0 10px rgba(255, 0, 127, 0.5), 0 0 20px rgba(255, 0, 127, 0.3)'
+                ]}}
+                transition={{ duration: 3, repeat: Infinity }}
+              >
                 SHARP AFTER DARK
-              </h1>
-              <p className="font-paragraph text-2xl neon-cyan-flicker mb-6">
+              </motion.h1>
+              <motion.p 
+                className="font-paragraph text-2xl md:text-3xl mb-6 neon-cyan-flicker"
+                animate={{ opacity: [0.8, 1, 0.8] }}
+                transition={{ duration: 2.5, repeat: Infinity }}
+              >
                 Commercial Sharpening Service
-              </p>
+              </motion.p>
               <p className="font-paragraph text-lg text-synthwave-light/80 max-w-2xl mx-auto">
                 Your kitchen doesn't sleep. Neither do your blades.
               </p>
             </motion.div>
           </div>
+
+          <style>{`
+            @keyframes scan {
+              0% { transform: translateY(0); }
+              100% { transform: translateY(10px); }
+            }
+          `}</style>
         </section>
 
         {/* Gallery Section */}
