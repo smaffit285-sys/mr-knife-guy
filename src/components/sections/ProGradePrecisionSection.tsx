@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion';
 import { Image } from '@/components/ui/image';
+import { useNavigate } from 'react-router-dom';
 
 export default function ProGradePrecisionSection() {
+  const navigate = useNavigate();
   const features = [
     {
       title: 'Zero Heat Damage',

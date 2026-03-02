@@ -15,6 +15,7 @@ import MembershipClubRegularPage from '@/components/pages/MembershipClubRegularP
 import MembershipVIPPage from '@/components/pages/MembershipVIPPage';
 import MembershipAllAccessPage from '@/components/pages/MembershipAllAccessPage';
 import MembershipClubBenefactorPage from '@/components/pages/MembershipClubBenefactorPage';
+import ArtistProcessPage from '@/components/pages/ArtistProcessPage';
 
 function Layout() {
   return (
@@ -82,6 +83,10 @@ const router = createBrowserRouter([
       {
         path: 'membership/club-benefactor',
         element: <MembershipClubBenefactorPage />,
+      },
+      {
+        path: 'artist-process',
+        element: <ArtistProcessPage />,
       },
     ],
   },
