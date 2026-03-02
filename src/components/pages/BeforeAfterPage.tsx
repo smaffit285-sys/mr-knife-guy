@@ -7,8 +7,8 @@ import { Image } from '@/components/ui/image';
 import { ChevronRight } from 'lucide-react';
 
 export default function BeforeAfterPage() {
-  // Create 20 groups with before and after images
-  const groupCount = 20;
+  // Create 21 groups with before and after images
+  const groupCount = 21;
   
   // Placeholder image URL
   const placeholderImage = 'https://static.wixstatic.com/media/37d64c_460796e67a93440f96e0fd00d3861189~mv2.png?originWidth=192&originHeight=192';
