@@ -11,8 +11,8 @@ export default function SharpAfterDarkPage() {
       title: 'Sharp After Dark'
     },
     {
-      url: 'https://static.wixstatic.com/media/37d64c_5d6ee69760ed44c1b959486957854280~mv2.jpg',
-      alt: 'Sharp After Dark Commercial Sharpening Service - Professional Knives',
+      url: 'https://static.wixstatic.com/media/37d64c_66d4bf065d4446cba9690f71164dfb6e~mv2.jpg',
+      alt: 'Sharp After Dark - Center Image',
       title: 'Professional Knife Sharpening'
     },
     {
