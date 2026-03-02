@@ -6,14 +6,19 @@ import { Image } from '@/components/ui/image';
 export default function SharpAfterDarkPage() {
   const images = [
     {
+      url: 'https://static.wixstatic.com/media/37d64c_bee695b14a5d4475a6e18a778c210f4b~mv2.png',
+      alt: 'Sharp After Dark - Top Left Image',
+      title: 'Sharp After Dark'
+    },
+    {
       url: 'https://static.wixstatic.com/media/37d64c_5d6ee69760ed44c1b959486957854280~mv2.jpg',
       alt: 'Sharp After Dark Commercial Sharpening Service - Professional Knives',
       title: 'Professional Knife Sharpening'
     },
     {
-      url: 'https://static.wixstatic.com/media/37d64c_3b2c4e0a0b674be0b182da405f430afc~mv2.png',
-      alt: 'Sharp After Dark Commercial Sharpening Service - Knife 2',
-      title: 'Expert Blade Precision'
+      url: 'https://static.wixstatic.com/media/37d64c_668cac880e5c4b2d978a048a2f4fdb32~mv2.png',
+      alt: 'Sharp After Dark - Top Right Image',
+      title: 'Sharp After Dark Service'
     },
     {
       url: 'https://static.wixstatic.com/media/37d64c_8549b2080ba84f8595f983f41f6d858a~mv2.jpg',
@@ -26,14 +31,9 @@ export default function SharpAfterDarkPage() {
       title: 'Service Details'
     },
     {
-      url: 'https://static.wixstatic.com/media/37d64c_c6b0045dc9f640618897445ae19a3ef8~mv2.jpg',
-      alt: 'Volume-Based Loyalty Bonus Program',
-      title: 'Loyalty Program'
-    },
-    {
-      url: 'https://static.wixstatic.com/media/37d64c_a6b697d33f814de6bbdb8638413b0d83~mv2.jpg',
-      alt: 'Sharp After Dark - Your Kitchen Does Not Sleep Campaign',
-      title: 'Campaign Promotion'
+      url: 'https://static.wixstatic.com/media/37d64c_3b2c4e0a0b674be0b182da405f430afc~mv2.png',
+      alt: 'Sharp After Dark Commercial Sharpening Service - Knife 2',
+      title: 'Expert Blade Precision'
     }
   ];
 
