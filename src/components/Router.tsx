@@ -7,6 +7,8 @@ import SharpAfterDarkPage from '@/components/pages/SharpAfterDarkPage';
 import CustomerInfoPage from '@/components/pages/CustomerInfoPage';
 import MiamiKnifeClubPage from '@/components/pages/MiamiKnifeClubPage';
 import BeforeAfterPage from '@/components/pages/BeforeAfterPage';
+import KnivesForSalePage from '@/components/pages/KnivesForSalePage';
+import KnifeDetailPage from '@/components/pages/KnifeDetailPage';
 
 function Layout() {
   return (
@@ -42,6 +44,14 @@ const router = createBrowserRouter([
       {
         path: 'before-after',
         element: <BeforeAfterPage />,
+      },
+      {
+        path: 'knives-for-sale',
+        element: <KnivesForSalePage />,
+      },
+      {
+        path: 'knife/:id',
+        element: <KnifeDetailPage />,
       },
     ],
   },

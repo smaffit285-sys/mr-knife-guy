@@ -77,6 +77,34 @@ export interface BlogPosts {
 
 
 /**
+ * Collection ID: communityknives
+ * @catalog This collection is an eCommerce catalog
+ * Interface for CommunityKnives
+ */
+export interface CommunityKnives {
+  _id: string;
+  _createdDate?: Date;
+  _updatedDate?: Date;
+  /** @wixFieldType text */
+  itemName?: string;
+  /** @wixFieldType number */
+  itemPrice?: number;
+  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
+  itemImage?: string;
+  /** @wixFieldType text */
+  itemDescription?: string;
+  /** @wixFieldType text */
+  knifeStyle?: string;
+  /** @wixFieldType text */
+  sellerName?: string;
+  /** @wixFieldType text */
+  sellerContact?: string;
+  /** @wixFieldType boolean */
+  isAvailable?: boolean;
+}
+
+
+/**
  * Collection ID: customertestimonials
  * Interface for CustomerTestimonials
  */
@@ -149,12 +177,15 @@ export interface FrequentlyAskedQuestions {
 
 /**
  * Collection ID: knifecatalog
+ * @catalog This collection is an eCommerce catalog
  * Interface for KnifeCatalog
  */
 export interface KnifeCatalog {
   _id: string;
   _createdDate?: Date;
   _updatedDate?: Date;
+  /** @wixFieldType number */
+  quantity?: number;
   /** @wixFieldType text */
   productName?: string;
   /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
