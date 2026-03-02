@@ -289,7 +289,11 @@ export default function MiamiKnifeClubPage() {
             transition={{ duration: 0.8, delay: 1.2 }}
             className="text-center mb-20"
           >
-            <p className="font-paragraph font-bold text-[19pt] text-gray-300 max-w-2xl mx-auto leading-relaxed uppercase">
+            <p className="font-paragraph font-bold text-[18pt] text-gray-100 max-w-2xl mx-auto leading-relaxed uppercase animate-pulse" style={{
+              color: '#E8E8E8',
+              textShadow: '0 0 10px rgba(232, 232, 232, 0.6), 0 0 20px rgba(200, 200, 200, 0.4), 0 0 30px rgba(150, 150, 150, 0.2)',
+              letterSpacing: '0.05em'
+            }}>
               PARTY AS OFTEN AS YOU LIKE! MONTHLY, QUARTERLY, SEMI-ANNUALLY, AND ONCE YEARLY PACKAGES AVAILABLE. SKIP THE LINE OR EVEN THE COVER CHARGE BASED ON ATTENDANCE
             </p>
             <p className="font-paragraph text-sm text-gray-500 max-w-2xl mx-auto leading-relaxed mt-4">
