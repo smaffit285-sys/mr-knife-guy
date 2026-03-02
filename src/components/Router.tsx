@@ -6,6 +6,7 @@ import HomePage from '@/components/pages/HomePage';
 import SharpAfterDarkPage from '@/components/pages/SharpAfterDarkPage';
 import CustomerInfoPage from '@/components/pages/CustomerInfoPage';
 import MiamiKnifeClubPage from '@/components/pages/MiamiKnifeClubPage';
+import BeforeAfterPage from '@/components/pages/BeforeAfterPage';
 
 function Layout() {
   return (
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: 'miami-knife-club',
         element: <MiamiKnifeClubPage />,
+      },
+      {
+        path: 'before-after',
+        element: <BeforeAfterPage />,
       },
     ],
   },
