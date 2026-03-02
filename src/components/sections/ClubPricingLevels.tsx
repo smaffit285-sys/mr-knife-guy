@@ -296,6 +296,19 @@ export default function ClubPricingLevels() {
           </div>
         </div>
 
+        {/* Small Print */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6 }}
+          className="relative z-10 text-center mb-8"
+        >
+          <p className="font-paragraph text-xs text-synthwave-light/50">
+            all quoted prices are assessed at Semi-Annual reoccurrence
+          </p>
+        </motion.div>
+
         {/* Divider */}
         <motion.div
           initial={{ opacity: 0, scaleX: 0 }}
