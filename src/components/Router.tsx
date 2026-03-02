@@ -4,6 +4,7 @@ import { ScrollToTop } from '@/lib/scroll-to-top';
 import ErrorPage from '@/integrations/errorHandlers/ErrorPage';
 import HomePage from '@/components/pages/HomePage';
 import SharpAfterDarkPage from '@/components/pages/SharpAfterDarkPage';
+import CustomerInfoPage from '@/components/pages/CustomerInfoPage';
 
 function Layout() {
   return (
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: 'sharp-after-dark',
         element: <SharpAfterDarkPage />,
+      },
+      {
+        path: 'customer-info',
+        element: <CustomerInfoPage />,
       },
     ],
   },

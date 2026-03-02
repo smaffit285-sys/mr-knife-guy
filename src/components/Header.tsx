@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Image } from '@/components/ui/image';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,6 +12,7 @@ export default function Header() {
     { label: 'Pricing', href: '#pricing' },
     { label: 'Before & After', href: '#before-after' },
     { label: 'Knives for Sale', href: '#knives' },
+    { label: 'Book Now', href: '/customer-info' },
   ];
 
   // ... keep existing code (socialLogos array removed - moved to HeroSection)
@@ -39,14 +41,25 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-4 lg:gap-8">
           {navLinks.map((link) => (
-            <motion.a
-              key={link.label}
-              href={link.href}
-              className="text-synthwave-light hover:text-synthwave-neon-cyan transition-colors font-paragraph text-xs lg:text-sm"
-              whileHover={{ y: -2 }}
-            >
-              {link.label}
-            </motion.a>
+            link.href.startsWith('/') ? (
+              <Link key={link.label} to={link.href}>
+                <motion.div
+                  className="text-synthwave-light hover:text-synthwave-neon-cyan transition-colors font-paragraph text-xs lg:text-sm cursor-pointer"
+                  whileHover={{ y: -2 }}
+                >
+                  {link.label}
+                </motion.div>
+              </Link>
+            ) : (
+              <motion.a
+                key={link.label}
+                href={link.href}
+                className="text-synthwave-light hover:text-synthwave-neon-cyan transition-colors font-paragraph text-xs lg:text-sm"
+                whileHover={{ y: -2 }}
+              >
+                {link.label}
+              </motion.a>
+            )
           ))}
         </nav>
 
@@ -67,14 +80,22 @@ export default function Header() {
           className="md:hidden bg-synthwave-dark border-t border-synthwave-neon-cyan/20 px-3 py-3 flex flex-col gap-3"
         >
           {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="text-synthwave-light hover:text-synthwave-neon-cyan transition-colors font-paragraph text-sm"
-              onClick={() => setIsOpen(false)}
-            >
-              {link.label}
-            </a>
+            link.href.startsWith('/') ? (
+              <Link key={link.label} to={link.href} onClick={() => setIsOpen(false)}>
+                <div className="text-synthwave-light hover:text-synthwave-neon-cyan transition-colors font-paragraph text-sm cursor-pointer">
+                  {link.label}
+                </div>
+              </Link>
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                className="text-synthwave-light hover:text-synthwave-neon-cyan transition-colors font-paragraph text-sm"
+                onClick={() => setIsOpen(false)}
+              >
+                {link.label}
+              </a>
+            )
           ))}
         </motion.nav>
       )}
