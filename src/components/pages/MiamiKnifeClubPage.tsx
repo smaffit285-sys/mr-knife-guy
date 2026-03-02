@@ -282,6 +282,18 @@ export default function MiamiKnifeClubPage() {
             </button>
           </motion.div>
 
+          {/* Package Info Section */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 1.2 }}
+            className="text-center mb-20"
+          >
+            <p className="font-paragraph text-lg text-synthwave-light max-w-2xl mx-auto leading-relaxed">
+              Party as often as you like! Monthly, Quarterly, Semi-Annually, and Once Yearly packages available. Skip the line or even the cover charge based on attendance
+            </p>
+          </motion.div>
+
           {/* Membership Levels */}
           <div className="space-y-8 max-w-2xl mx-auto">
             {[
