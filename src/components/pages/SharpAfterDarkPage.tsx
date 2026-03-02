@@ -6,8 +6,8 @@ import { Image } from '@/components/ui/image';
 export default function SharpAfterDarkPage() {
   const images = [
     {
-      url: 'https://static.wixstatic.com/media/37d64c_bee695b14a5d4475a6e18a778c210f4b~mv2.png',
-      alt: 'Sharp After Dark - Top Left Image',
+      url: 'https://static.wixstatic.com/media/37d64c_42ac90b279cd405c84ab21ca299fdcd7~mv2.jpg',
+      alt: 'Sharp After Dark - Logo',
       title: 'Sharp After Dark'
     },
     {
