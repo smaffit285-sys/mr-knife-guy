@@ -98,11 +98,17 @@ export default function SharpAfterDarkPage() {
               className="text-center mb-16"
             >
               <motion.h1 
-                className="font-heading text-6xl md:text-7xl lg:text-8xl font-bold mb-6 neon-pink-glow"
+                className="font-heading text-6xl md:text-7xl lg:text-8xl font-bold mb-6"
+                style={{
+                  background: 'linear-gradient(to bottom, #ff99ff 0%, #FF007F 50%, #ff0066 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                }}
                 animate={{ textShadow: [
-                  '0 0 10px rgba(255, 0, 127, 0.5), 0 0 20px rgba(255, 0, 127, 0.3)',
-                  '0 0 20px rgba(255, 0, 127, 0.8), 0 0 40px rgba(255, 0, 127, 0.5)',
-                  '0 0 10px rgba(255, 0, 127, 0.5), 0 0 20px rgba(255, 0, 127, 0.3)'
+                  '0 0 15px rgba(255, 0, 127, 0.6), 0 0 30px rgba(255, 0, 127, 0.4), 0 0 50px rgba(255, 153, 255, 0.3)',
+                  '0 0 25px rgba(255, 0, 127, 0.9), 0 0 50px rgba(255, 0, 127, 0.6), 0 0 80px rgba(255, 153, 255, 0.5)',
+                  '0 0 15px rgba(255, 0, 127, 0.6), 0 0 30px rgba(255, 0, 127, 0.4), 0 0 50px rgba(255, 153, 255, 0.3)'
                 ]}}
                 transition={{ duration: 3, repeat: Infinity }}
               >
