@@ -165,7 +165,32 @@ export default function SharpAfterDarkPage() {
                   className="group relative overflow-hidden rounded-lg border-2 border-synthwave-neon-cyan/30 hover:border-synthwave-neon-pink/50 transition-all duration-300"
                 >
                   {/* Image Container */}
-                  <div className="relative w-full h-96 overflow-hidden bg-slate-900">
+                  <div className="relative w-full h-96 overflow-hidden bg-synthwave-midnight">
+                    {/* Grid Background Pattern */}
+                    <div className="absolute inset-0 opacity-15 pointer-events-none">
+                      <svg className="w-full h-full" preserveAspectRatio="none">
+                        <defs>
+                          <pattern id={`grid-${index}`} width="40" height="40" patternUnits="userSpaceOnUse">
+                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="url(#gridGradient)" strokeWidth="0.5"/>
+                          </pattern>
+                          <linearGradient id="gridGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stopColor="#00FFFF"/>
+                            <stop offset="100%" stopColor="#FF007F"/>
+                          </linearGradient>
+                        </defs>
+                        <rect width="100%" height="100%" fill={`url(#grid-${index})`}/>
+                      </svg>
+                    </div>
+
+                    {/* Vertical Dividing Line - Neon Gradient */}
+                    <div className="absolute inset-y-0 left-1/2 w-1 -translate-x-1/2 pointer-events-none">
+                      <div className="w-full h-full bg-gradient-to-b from-synthwave-neon-cyan via-synthwave-neon-pink to-synthwave-neon-cyan opacity-80"
+                        style={{
+                          boxShadow: '0 0 20px rgba(0, 255, 255, 0.8), 0 0 40px rgba(255, 0, 127, 0.6), inset 0 0 20px rgba(0, 255, 255, 0.5)'
+                        }}
+                      />
+                    </div>
+
                     {index < 3 ? (
                       <>
                         <Image
@@ -173,12 +198,12 @@ export default function SharpAfterDarkPage() {
                           alt={image.alt}
                           width={400}
                           height={400}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          className="relative z-10 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                         
                         {/* Overlay */}
                         <motion.div
-                          className="absolute inset-0 bg-gradient-to-t from-synthwave-midnight via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-4"
+                          className="absolute inset-0 bg-gradient-to-t from-synthwave-midnight via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-4 z-20"
                           initial={{ opacity: 0 }}
                           whileHover={{ opacity: 1 }}
                         >
@@ -188,7 +213,7 @@ export default function SharpAfterDarkPage() {
                         </motion.div>
                       </>
                     ) : (
-                      <div className="w-full h-full flex items-center justify-center">
+                      <div className="relative z-10 w-full h-full flex items-center justify-center">
                         <h3 className="font-heading text-lg font-bold text-synthwave-neon-pink">
                           {image.title}
                         </h3>
