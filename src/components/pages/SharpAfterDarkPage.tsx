@@ -182,7 +182,13 @@ export default function SharpAfterDarkPage() {
                       </svg>
                     </div>
 
-                    {index < 3 ? (
+                    {index === 1 ? (
+                      <div className="relative z-10 w-full h-full flex items-center justify-center">
+                        <h3 className="font-heading text-lg font-bold text-synthwave-neon-pink">
+                          {image.title}
+                        </h3>
+                      </div>
+                    ) : index < 3 ? (
                       <>
                         <Image
                           src={image.url}
