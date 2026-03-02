@@ -200,7 +200,7 @@ export default function HeroSection() {
               <ChevronDown className="w-6 h-6 text-synthwave-neon-blue" />
             </motion.div>
             <motion.a
-              href="#pricing"
+              href="/customer-info"
               className="px-6 sm:px-8 py-3 sm:py-4 bg-synthwave-neon-blue text-synthwave-midnight font-heading font-bold text-sm sm:text-base rounded-lg hover:shadow-lg hover:shadow-synthwave-neon-blue/50 transition-all w-full sm:w-auto"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
