@@ -7,6 +7,7 @@ import SharpAfterDarkPage from '@/components/pages/SharpAfterDarkPage';
 import CustomerInfoPage from '@/components/pages/CustomerInfoPage';
 import MiamiKnifeClubPage from '@/components/pages/MiamiKnifeClubPage';
 import BeforeAfterPage from '@/components/pages/BeforeAfterPage';
+import BeforeAfterDetailPage from '@/components/pages/BeforeAfterDetailPage';
 import KnivesForSalePage from '@/components/pages/KnivesForSalePage';
 import KnifeDetailPage from '@/components/pages/KnifeDetailPage';
 import MembershipScopeTheScenesPage from '@/components/pages/MembershipScopeTheScenesPage';
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: 'before-after',
         element: <BeforeAfterPage />,
+      },
+      {
+        path: 'before-after/:id',
+        element: <BeforeAfterDetailPage />,
       },
       {
         path: 'knives-for-sale',
