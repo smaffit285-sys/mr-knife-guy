@@ -1,23 +1,170 @@
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export default function MiamiKnifeClubPage() {
+  const [spotlights, setSpotlights] = useState([
+    { id: 0, x: 0, y: 0, angle: -30, intensity: 0.6 },
+    { id: 1, x: 50, y: 0, angle: 0, intensity: 0.6 },
+    { id: 2, x: 100, y: 0, angle: 30, intensity: 0.6 },
+  ]);
+
+  useEffect(() => {
+    const intervals = spotlights.map((spotlight) => {
+      return setInterval(() => {
+        setSpotlights((prev) =>
+          prev.map((s) => {
+            if (s.id === spotlight.id) {
+              const randomX = Math.random() * 100;
+              const randomY = Math.random() * 40;
+              const randomAngle = (Math.random() - 0.5) * 60;
+              return {
+                ...s,
+                x: randomX,
+                y: randomY,
+                angle: randomAngle,
+                intensity: 0.4 + Math.random() * 0.4,
+              };
+            }
+            return s;
+          })
+        );
+      }, 4000 + Math.random() * 3000);
+    });
+
+    return () => intervals.forEach((interval) => clearInterval(interval));
+  }, []);
+
   return (
-    <div className="min-h-screen bg-synthwave-midnight">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden">
+      {/* Muted Club Lights Background */}
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Diffused Cyan Glow - Top Left */}
+        <motion.div
+          className="absolute top-0 left-0 w-96 h-96 bg-synthwave-neon-cyan/5 rounded-full blur-3xl"
+          animate={{
+            opacity: [0.3, 0.6, 0.3],
+            scale: [1, 1.2, 1],
+          }}
+          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        {/* Diffused Neon Pink Glow - Bottom Right */}
+        <motion.div
+          className="absolute bottom-0 right-0 w-96 h-96 bg-synthwave-neon-pink/5 rounded-full blur-3xl"
+          animate={{
+            opacity: [0.3, 0.6, 0.3],
+            scale: [1, 1.2, 1],
+          }}
+          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+        />
+        {/* Subtle Purple Accent - Center */}
+        <motion.div
+          className="absolute top-1/3 left-1/2 transform -translate-x-1/2 w-80 h-80 bg-synthwave-purple/3 rounded-full blur-3xl"
+          animate={{
+            opacity: [0.2, 0.4, 0.2],
+            scale: [1, 1.1, 1],
+          }}
+          transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
+        />
+      </div>
+
+      {/* Spotlight Beams Container */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {spotlights.map((spotlight) => (
+          <motion.div
+            key={spotlight.id}
+            className="absolute"
+            animate={{
+              left: `${spotlight.x}%`,
+              top: `${spotlight.y}%`,
+            }}
+            transition={{ duration: 3, ease: 'easeInOut' }}
+          >
+            {/* Spotlight Beam - Cone shaped with realistic light physics */}
+            <svg
+              className="absolute"
+              width="400"
+              height="600"
+              viewBox="0 0 400 600"
+              style={{
+                filter: `drop-shadow(0 0 ${20 * spotlight.intensity}px rgba(0, 255, 255, ${spotlight.intensity}))`,
+                opacity: spotlight.intensity,
+              }}
+            >
+              <defs>
+                <linearGradient
+                  id={`beam-gradient-${spotlight.id}`}
+                  x1="50%"
+                  y1="0%"
+                  x2="50%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    stopColor={spotlight.id === 1 ? '#FF007F' : '#00FFFF'}
+                    stopOpacity={spotlight.intensity}
+                  />
+                  <stop offset="100%" stopColor="#00FFFF" stopOpacity="0" />
+                </linearGradient>
+                <filter id={`blur-${spotlight.id}`}>
+                  <feGaussianBlur in="SourceGraphic" stdDeviation={3 + spotlight.intensity * 2} />
+                </filter>
+              </defs>
+              {/* Main beam cone */}
+              <polygon
+                points="200,0 50,600 350,600"
+                fill={`url(#beam-gradient-${spotlight.id})`}
+                filter={`url(#blur-${spotlight.id})`}
+              />
+              {/* Inner bright core */}
+              <polygon
+                points="200,0 150,600 250,600"
+                fill={spotlight.id === 1 ? '#FF007F' : '#00FFFF'}
+                opacity={spotlight.intensity * 0.3}
+                filter={`url(#blur-${spotlight.id})`}
+              />
+            </svg>
+          </motion.div>
+        ))}
+      </div>
+
       <Header />
       
       {/* Main Content */}
-      <main className="pt-24 pb-20">
+      <main className="pt-24 pb-20 relative z-10">
         <div className="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          {/* Neon Title */}
+          {/* Neon Title with Spotlight Illumination */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            className="text-center mb-16 relative"
           >
-            <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl font-bold mb-4">
+            {/* Illumination effect that responds to spotlights */}
+            <div className="absolute inset-0 pointer-events-none">
+              {spotlights.map((spotlight) => (
+                <motion.div
+                  key={`title-light-${spotlight.id}`}
+                  className="absolute w-full h-full"
+                  animate={{
+                    opacity: spotlight.intensity * 0.3,
+                  }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <div
+                    className="w-full h-full blur-2xl"
+                    style={{
+                      background: `radial-gradient(circle at ${spotlight.x}% ${spotlight.y}%, ${
+                        spotlight.id === 1 ? 'rgba(255, 0, 127, 0.2)' : 'rgba(0, 255, 255, 0.2)'
+                      }, transparent)`,
+                    }}
+                  />
+                </motion.div>
+              ))}
+            </div>
+
+            <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl font-bold mb-4 relative z-10">
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-synthwave-neon-pink via-synthwave-neon-cyan to-synthwave-neon-blue animate-pulse">
                 MIAMI
               </span>
