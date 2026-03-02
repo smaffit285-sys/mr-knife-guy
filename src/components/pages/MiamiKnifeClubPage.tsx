@@ -289,8 +289,11 @@ export default function MiamiKnifeClubPage() {
             transition={{ duration: 0.8, delay: 1.2 }}
             className="text-center mb-20"
           >
-            <p className="font-paragraph text-lg text-synthwave-light max-w-2xl mx-auto leading-relaxed">
-              Party as often as you like! Monthly, Quarterly, Semi-Annually, and Once Yearly packages available. Skip the line or even the cover charge based on attendance
+            <p className="font-paragraph font-bold text-[19pt] text-gray-300 max-w-2xl mx-auto leading-relaxed uppercase">
+              PARTY AS OFTEN AS YOU LIKE! MONTHLY, QUARTERLY, SEMI-ANNUALLY, AND ONCE YEARLY PACKAGES AVAILABLE. SKIP THE LINE OR EVEN THE COVER CHARGE BASED ON ATTENDANCE
+            </p>
+            <p className="font-paragraph text-sm text-gray-500 max-w-2xl mx-auto leading-relaxed mt-4">
+              all quoted prices are assessed at semi-annual reoccurring rates
             </p>
           </motion.div>
 
