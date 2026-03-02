@@ -5,6 +5,7 @@ import ErrorPage from '@/integrations/errorHandlers/ErrorPage';
 import HomePage from '@/components/pages/HomePage';
 import SharpAfterDarkPage from '@/components/pages/SharpAfterDarkPage';
 import CustomerInfoPage from '@/components/pages/CustomerInfoPage';
+import MiamiKnifeClubPage from '@/components/pages/MiamiKnifeClubPage';
 
 function Layout() {
   return (
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: 'customer-info',
         element: <CustomerInfoPage />,
+      },
+      {
+        path: 'miami-knife-club',
+        element: <MiamiKnifeClubPage />,
       },
     ],
   },

@@ -8,7 +8,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { label: 'Miami Knife Club', href: '#miami-knife-club' },
+    { label: 'Miami Knife Club', href: '/miami-knife-club' },
     { label: 'Pricing', href: '#pricing' },
     { label: 'Before & After', href: '#before-after' },
     { label: 'Knives for Sale', href: '#knives' },
