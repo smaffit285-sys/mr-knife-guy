@@ -5,10 +5,12 @@ import Footer from '@/components/Footer';
 
 export default function MiamiKnifeClubPage() {
   const [spotlights, setSpotlights] = useState([
-    { id: 0, x: 0, y: 0, angle: -30, intensity: 0.6 },
-    { id: 1, x: 50, y: 0, angle: 0, intensity: 0.6 },
-    { id: 2, x: 100, y: 0, angle: 30, intensity: 0.6 },
+    { id: 0, originX: 15, originY: -5, angle: -60, intensity: 0.7 },
+    { id: 1, originX: 50, originY: -5, angle: 0, intensity: 0.7 },
+    { id: 2, originX: 85, originY: -5, angle: 60, intensity: 0.7 },
   ]);
+
+  const [flashIntensity, setFlashIntensity] = useState(0);
 
   useEffect(() => {
     const intervals = spotlights.map((spotlight) => {
@@ -16,21 +18,26 @@ export default function MiamiKnifeClubPage() {
         setSpotlights((prev) =>
           prev.map((s) => {
             if (s.id === spotlight.id) {
-              const randomX = Math.random() * 100;
-              const randomY = Math.random() * 40;
-              const randomAngle = (Math.random() - 0.5) * 60;
+              // Sweep 120 degrees: from -60 to +60 degrees
+              const newAngle = -60 + Math.random() * 120;
+              const newIntensity = 0.5 + Math.random() * 0.4;
+              
+              // Trigger flash when beam sweeps toward viewer (angle near 0)
+              if (Math.abs(newAngle) < 15) {
+                setFlashIntensity(0.6);
+                setTimeout(() => setFlashIntensity(0), 400);
+              }
+              
               return {
                 ...s,
-                x: randomX,
-                y: randomY,
-                angle: randomAngle,
-                intensity: 0.4 + Math.random() * 0.4,
+                angle: newAngle,
+                intensity: newIntensity,
               };
             }
             return s;
           })
         );
-      }, 4000 + Math.random() * 3000);
+      }, 3000 + Math.random() * 2000);
     });
 
     return () => intervals.forEach((interval) => clearInterval(interval));
@@ -38,6 +45,16 @@ export default function MiamiKnifeClubPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden">
+      {/* Flash Washout Effect */}
+      <motion.div
+        className="fixed inset-0 pointer-events-none z-50"
+        style={{
+          backgroundColor: `rgba(255, 255, 255, ${flashIntensity})`,
+          opacity: flashIntensity,
+        }}
+        transition={{ duration: 0.1 }}
+      />
+
       {/* Muted Club Lights Background */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Diffused Cyan Glow - Top Left */}
@@ -71,62 +88,73 @@ export default function MiamiKnifeClubPage() {
 
       {/* Spotlight Beams Container */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {spotlights.map((spotlight) => (
-          <motion.div
-            key={spotlight.id}
-            className="absolute"
-            animate={{
-              left: `${spotlight.x}%`,
-              top: `${spotlight.y}%`,
-            }}
-            transition={{ duration: 3, ease: 'easeInOut' }}
-          >
-            {/* Spotlight Beam - Cone shaped with realistic light physics */}
-            <svg
+        {spotlights.map((spotlight) => {
+          // Calculate beam position based on origin and angle
+          const beamX = spotlight.originX;
+          const beamY = spotlight.originY;
+          
+          return (
+            <motion.div
+              key={spotlight.id}
               className="absolute"
-              width="400"
-              height="600"
-              viewBox="0 0 400 600"
               style={{
-                filter: `drop-shadow(0 0 ${20 * spotlight.intensity}px rgba(0, 255, 255, ${spotlight.intensity}))`,
-                opacity: spotlight.intensity,
+                left: `${beamX}%`,
+                top: `${beamY}%`,
+                transform: `rotate(${spotlight.angle}deg)`,
+                transformOrigin: 'center top',
               }}
+              animate={{
+                rotate: spotlight.angle,
+              }}
+              transition={{ duration: 2, ease: 'easeInOut' }}
             >
-              <defs>
-                <linearGradient
-                  id={`beam-gradient-${spotlight.id}`}
-                  x1="50%"
-                  y1="0%"
-                  x2="50%"
-                  y2="100%"
-                >
-                  <stop
-                    offset="0%"
-                    stopColor={spotlight.id === 1 ? '#FF007F' : '#00FFFF'}
-                    stopOpacity={spotlight.intensity}
-                  />
-                  <stop offset="100%" stopColor="#00FFFF" stopOpacity="0" />
-                </linearGradient>
-                <filter id={`blur-${spotlight.id}`}>
-                  <feGaussianBlur in="SourceGraphic" stdDeviation={3 + spotlight.intensity * 2} />
-                </filter>
-              </defs>
-              {/* Main beam cone */}
-              <polygon
-                points="200,0 50,600 350,600"
-                fill={`url(#beam-gradient-${spotlight.id})`}
-                filter={`url(#blur-${spotlight.id})`}
-              />
-              {/* Inner bright core */}
-              <polygon
-                points="200,0 150,600 250,600"
-                fill={spotlight.id === 1 ? '#FF007F' : '#00FFFF'}
-                opacity={spotlight.intensity * 0.3}
-                filter={`url(#blur-${spotlight.id})`}
-              />
-            </svg>
-          </motion.div>
-        ))}
+              {/* Spotlight Beam - Cone shaped with realistic light physics */}
+              <svg
+                className="absolute"
+                width="300"
+                height="800"
+                viewBox="0 0 300 800"
+                style={{
+                  filter: `drop-shadow(0 0 ${25 * spotlight.intensity}px rgba(0, 255, 255, ${spotlight.intensity}))`,
+                  opacity: spotlight.intensity,
+                }}
+              >
+                <defs>
+                  <linearGradient
+                    id={`beam-gradient-${spotlight.id}`}
+                    x1="50%"
+                    y1="0%"
+                    x2="50%"
+                    y2="100%"
+                  >
+                    <stop
+                      offset="0%"
+                      stopColor={spotlight.id === 1 ? '#FF007F' : '#00FFFF'}
+                      stopOpacity={spotlight.intensity}
+                    />
+                    <stop offset="100%" stopColor="#00FFFF" stopOpacity="0" />
+                  </linearGradient>
+                  <filter id={`blur-${spotlight.id}`}>
+                    <feGaussianBlur in="SourceGraphic" stdDeviation={4 + spotlight.intensity * 3} />
+                  </filter>
+                </defs>
+                {/* Main beam cone - 60 degree spread (120 total from -60 to +60) */}
+                <polygon
+                  points="150,0 30,800 270,800"
+                  fill={`url(#beam-gradient-${spotlight.id})`}
+                  filter={`url(#blur-${spotlight.id})`}
+                />
+                {/* Inner bright core */}
+                <polygon
+                  points="150,0 100,800 200,800"
+                  fill={spotlight.id === 1 ? '#FF007F' : '#00FFFF'}
+                  opacity={spotlight.intensity * 0.4}
+                  filter={`url(#blur-${spotlight.id})`}
+                />
+              </svg>
+            </motion.div>
+          );
+        })}
       </div>
 
       <Header />
@@ -143,25 +171,35 @@ export default function MiamiKnifeClubPage() {
           >
             {/* Illumination effect that responds to spotlights */}
             <div className="absolute inset-0 pointer-events-none">
-              {spotlights.map((spotlight) => (
-                <motion.div
-                  key={`title-light-${spotlight.id}`}
-                  className="absolute w-full h-full"
-                  animate={{
-                    opacity: spotlight.intensity * 0.3,
-                  }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <div
-                    className="w-full h-full blur-2xl"
-                    style={{
-                      background: `radial-gradient(circle at ${spotlight.x}% ${spotlight.y}%, ${
-                        spotlight.id === 1 ? 'rgba(255, 0, 127, 0.2)' : 'rgba(0, 255, 255, 0.2)'
-                      }, transparent)`,
+              {spotlights.map((spotlight) => {
+                // Calculate illumination position based on beam angle
+                const beamX = spotlight.originX;
+                const beamY = spotlight.originY + 15; // Offset down from origin
+                const beamAngleRad = (spotlight.angle * Math.PI) / 180;
+                const illuminationDistance = 20; // How far down the beam to calculate illumination
+                const illuminationX = beamX + Math.sin(beamAngleRad) * illuminationDistance;
+                const illuminationY = beamY + Math.cos(beamAngleRad) * illuminationDistance;
+
+                return (
+                  <motion.div
+                    key={`title-light-${spotlight.id}`}
+                    className="absolute w-full h-full"
+                    animate={{
+                      opacity: spotlight.intensity * 0.4,
                     }}
-                  />
-                </motion.div>
-              ))}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <div
+                      className="w-full h-full blur-3xl"
+                      style={{
+                        background: `radial-gradient(circle at ${illuminationX}% ${illuminationY}%, ${
+                          spotlight.id === 1 ? 'rgba(255, 0, 127, 0.3)' : 'rgba(0, 255, 255, 0.3)'
+                        }, transparent)`,
+                      }}
+                    />
+                  </motion.div>
+                );
+              })}
             </div>
 
             <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl font-bold mb-4 relative z-10">
