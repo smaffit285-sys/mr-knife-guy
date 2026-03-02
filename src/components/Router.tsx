@@ -17,6 +17,7 @@ import MembershipAllAccessPage from '@/components/pages/MembershipAllAccessPage'
 import MembershipClubBenefactorPage from '@/components/pages/MembershipClubBenefactorPage';
 import ArtistProcessPage from '@/components/pages/ArtistProcessPage';
 import ArtistMeditationPage from '@/components/pages/ArtistMeditationPage';
+import BrandStoryPage from '@/components/pages/BrandStoryPage';
 
 function Layout() {
   return (
@@ -92,6 +93,10 @@ const router = createBrowserRouter([
       {
         path: 'artist-meditation',
         element: <ArtistMeditationPage />,
+      },
+      {
+        path: 'brand-story',
+        element: <BrandStoryPage />,
       },
     ],
   },

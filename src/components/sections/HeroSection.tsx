@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { Image } from '@/components/ui/image';
+import { useNavigate } from 'react-router-dom';
 
 const socialLogos = [
   {
@@ -46,6 +47,17 @@ const socialLogos = [
 ];
 
 export default function HeroSection() {
+  const navigate = useNavigate();
+
+  const handleImageClick = (e: React.MouseEvent) => {
+    // Check if the click target is a link (social media)
+    const target = e.target as HTMLElement;
+    if (target.closest('a')) {
+      return; // Allow link clicks to proceed
+    }
+    // Navigate to brand story page for any other click in the container
+    navigate('/brand-story');
+  };
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -125,7 +137,7 @@ export default function HeroSection() {
         <motion.div variants={itemVariants} className="mb-8">
           <div className="inline-block relative">
             <motion.div
-              className="w-40 sm:w-56 md:w-80 mx-auto mb-2 rounded-lg border-2 border-synthwave-neon-pink flex items-center justify-center bg-synthwave-dark/50 backdrop-blur overflow-hidden"
+              className="w-40 sm:w-56 md:w-80 mx-auto mb-2 rounded-lg border-2 border-synthwave-neon-pink flex items-center justify-center bg-synthwave-dark/50 backdrop-blur overflow-hidden cursor-pointer"
               animate={{
                 boxShadow: [
                   '0 0 20px rgba(255, 0, 110, 0.5)',
@@ -134,6 +146,7 @@ export default function HeroSection() {
                 ],
               }}
               transition={{ duration: 3, repeat: Infinity }}
+              onClick={handleImageClick}
             >
               <Image 
                 src="https://static.wixstatic.com/media/37d64c_c26d92e0c01a495caeb57ac548ba7b8f~mv2.jpg"
