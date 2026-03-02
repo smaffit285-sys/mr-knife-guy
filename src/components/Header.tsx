@@ -10,7 +10,6 @@ export default function Header() {
   const navLinks = [
     { label: 'Sharp After Dark', href: '/sharp-after-dark' },
     { label: 'Miami Knife Club', href: '/miami-knife-club' },
-    { label: 'Pricing', href: '#pricing' },
     { label: 'Before & After', href: '#before-after' },
     { label: 'Knives for Sale', href: '#knives' },
     { label: 'Book Now', href: '/customer-info' },
