@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -289,71 +290,78 @@ export default function MiamiKnifeClubPage() {
                 description: 'Entry level access to explore our exclusive knife community and events.',
                 color: '#D4A574',
                 glowColor: 'rgba(212, 165, 116, 0.5)',
+                path: '/membership/scope-the-scene',
               },
               {
                 name: 'Limited Access',
                 description: 'Gain entry to select club events and access to limited edition knife releases.',
                 color: '#39FF14',
                 glowColor: 'rgba(57, 255, 20, 0.5)',
+                path: '/membership/limited-access',
               },
               {
                 name: 'Club Regular',
                 description: 'Full membership with priority access to all club events and exclusive workshops.',
                 color: '#00FFFF',
                 glowColor: 'rgba(0, 255, 255, 0.5)',
+                path: '/membership/club-regular',
               },
               {
                 name: 'VIP',
                 description: 'Premium tier with VIP seating at events, early access to new releases, and personal concierge service.',
                 color: '#FF007F',
                 glowColor: 'rgba(255, 0, 127, 0.5)',
+                path: '/membership/vip',
               },
               {
                 name: 'All Access',
                 description: 'Ultimate membership including unlimited event access, custom knife consultations, and exclusive merchandise.',
                 color: '#FFD700',
                 glowColor: 'rgba(255, 215, 0, 0.5)',
+                path: '/membership/all-access',
               },
               {
                 name: 'Club Benefactor',
                 description: 'Elite patron status with lifetime benefits, naming rights to events, and bespoke knife commissions.',
                 color: '#9D4EDD',
                 glowColor: 'rgba(157, 78, 221, 0.5)',
+                path: '/membership/club-benefactor',
               },
             ].map((level, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="text-center"
-              >
+              <Link key={index} to={level.path}>
                 <motion.div
-                  className="p-6 rounded-lg border border-opacity-30 backdrop-blur-sm"
-                  style={{
-                    borderColor: level.color,
-                    backgroundColor: `rgba(0, 0, 0, 0.3)`,
-                    boxShadow: `0 0 20px ${level.glowColor}`,
-                  }}
-                  whileHover={{
-                    boxShadow: `0 0 30px ${level.glowColor}`,
-                  }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="text-center cursor-pointer"
                 >
-                  <h3
-                    className="font-heading text-[22px] font-bold mb-3"
+                  <motion.div
+                    className="p-6 rounded-lg border border-opacity-30 backdrop-blur-sm"
                     style={{
-                      color: level.color,
-                      textShadow: `0 0 10px ${level.glowColor}`,
+                      borderColor: level.color,
+                      backgroundColor: `rgba(0, 0, 0, 0.3)`,
+                      boxShadow: `0 0 20px ${level.glowColor}`,
+                    }}
+                    whileHover={{
+                      boxShadow: `0 0 30px ${level.glowColor}`,
                     }}
                   >
-                    {level.name}
-                  </h3>
-                  <p className="font-paragraph text-light-gray text-base leading-relaxed">
-                    {level.description}
-                  </p>
+                    <h3
+                      className="font-heading text-[22px] font-bold mb-3"
+                      style={{
+                        color: level.color,
+                        textShadow: `0 0 10px ${level.glowColor}`,
+                      }}
+                    >
+                      {level.name}
+                    </h3>
+                    <p className="font-paragraph text-light-gray text-base leading-relaxed">
+                      {level.description}
+                    </p>
+                  </motion.div>
                 </motion.div>
-              </motion.div>
+              </Link>
             ))}
           </div>
 

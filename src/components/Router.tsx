@@ -9,6 +9,12 @@ import MiamiKnifeClubPage from '@/components/pages/MiamiKnifeClubPage';
 import BeforeAfterPage from '@/components/pages/BeforeAfterPage';
 import KnivesForSalePage from '@/components/pages/KnivesForSalePage';
 import KnifeDetailPage from '@/components/pages/KnifeDetailPage';
+import MembershipScopeTheScenesPage from '@/components/pages/MembershipScopeTheScenesPage';
+import MembershipLimitedAccessPage from '@/components/pages/MembershipLimitedAccessPage';
+import MembershipClubRegularPage from '@/components/pages/MembershipClubRegularPage';
+import MembershipVIPPage from '@/components/pages/MembershipVIPPage';
+import MembershipAllAccessPage from '@/components/pages/MembershipAllAccessPage';
+import MembershipClubBenefactorPage from '@/components/pages/MembershipClubBenefactorPage';
 
 function Layout() {
   return (
@@ -52,6 +58,30 @@ const router = createBrowserRouter([
       {
         path: 'knife/:id',
         element: <KnifeDetailPage />,
+      },
+      {
+        path: 'membership/scope-the-scene',
+        element: <MembershipScopeTheScenesPage />,
+      },
+      {
+        path: 'membership/limited-access',
+        element: <MembershipLimitedAccessPage />,
+      },
+      {
+        path: 'membership/club-regular',
+        element: <MembershipClubRegularPage />,
+      },
+      {
+        path: 'membership/vip',
+        element: <MembershipVIPPage />,
+      },
+      {
+        path: 'membership/all-access',
+        element: <MembershipAllAccessPage />,
+      },
+      {
+        path: 'membership/club-benefactor',
+        element: <MembershipClubBenefactorPage />,
       },
     ],
   },
