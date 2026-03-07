@@ -63,18 +63,18 @@ export default function CTASection() {
           >
             {/* Call Button */}
             <motion.a
-              href="tel:650-533-8351"
+              href="tel:650-533-8361"
               className="flex items-center gap-2 px-6 py-3 border-2 border-synthwave-neon-blue text-synthwave-neon-blue font-heading font-bold rounded-lg hover:bg-synthwave-neon-blue/10 transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <Phone className="w-5 h-5" />
-              CALL 650-533-8351
+              CALL 650-533-8361
             </motion.a>
 
             {/* Text Button */}
             <motion.a
-              href="sms:650-533-8351?body=SHARP"
+              href="sms:650-533-8361?body=SHARP"
               className="flex items-center gap-2 px-6 py-3 border-2 border-synthwave-neon-blue text-synthwave-neon-blue font-heading font-bold rounded-lg hover:bg-synthwave-neon-blue/10 transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
