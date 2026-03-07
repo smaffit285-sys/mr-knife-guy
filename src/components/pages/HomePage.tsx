@@ -51,7 +51,7 @@ export default function HomePage() {
                   <p className="font-paragraph text-lg text-synthwave-light/70 mt-4 group-hover:text-synthwave-light transition-colors duration-300">
                     Your kitchen doesn't sleep. Neither do your blades.
                   </p>
-                  <div className="absolute bottom-3 right-3">
+                  <div className="absolute -bottom-3 -right-3">
                     <MousePointer2 className="w-5 h-5 text-synthwave-neon-cyan group-hover:text-synthwave-light transition-colors duration-300" />
                   </div>
                 </div>
