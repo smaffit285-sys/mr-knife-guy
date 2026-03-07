@@ -77,7 +77,7 @@ export default function BrandStoryPage() {
             </motion.h1>
             <motion.div
               variants={itemVariants}
-              className="h-1 w-24 sm:w-32 mx-auto bg-gradient-to-r from-synthwave-neon-pink via-synthwave-neon-cyan to-synthwave-neon-blue"
+              className="h-1 w-full max-w-3xl mx-auto bg-gradient-to-r from-synthwave-neon-pink via-synthwave-neon-cyan to-synthwave-neon-blue"
               style={{
                 boxShadow: '0 0 20px rgba(255, 0, 127, 0.8), 0 0 40px rgba(0, 255, 255, 0.6)',
               }}
