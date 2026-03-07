@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, MousePointer2 } from 'lucide-react';
 import { Image } from '@/components/ui/image';
 import { useNavigate } from 'react-router-dom';
 
@@ -137,7 +137,7 @@ export default function HeroSection() {
         <motion.div variants={itemVariants} className="mb-8">
           <div className="inline-block relative">
             <motion.div
-              className="w-40 sm:w-56 md:w-80 mx-auto mb-2 rounded-lg border-2 border-synthwave-neon-pink flex items-center justify-center bg-synthwave-dark/50 backdrop-blur overflow-hidden cursor-pointer"
+              className="w-40 sm:w-56 md:w-80 mx-auto mb-2 rounded-lg border-2 border-synthwave-neon-pink flex items-center justify-center bg-synthwave-dark/50 backdrop-blur overflow-hidden cursor-pointer relative"
               animate={{
                 boxShadow: [
                   '0 0 20px rgba(255, 0, 110, 0.5)',
@@ -155,6 +155,10 @@ export default function HeroSection() {
                 className="w-full h-full object-cover object-center"
                 style={{ objectPosition: 'center top' }}
               />
+              {/* Shape icon - bottom right */}
+              <div className="absolute bottom-2 right-2">
+                <MousePointer2 className="w-5 h-5 text-synthwave-neon-cyan" />
+              </div>
             </motion.div>
             {/* Social Icons Overlay - Centered below glow */}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-12 flex gap-2 sm:gap-3 bg-synthwave-midnight/90 rounded-full px-3 sm:px-4 py-2 border border-synthwave-neon-cyan/50 backdrop-blur-sm">
