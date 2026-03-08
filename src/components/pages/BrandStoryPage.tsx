@@ -92,7 +92,7 @@ export default function BrandStoryPage() {
         </section>
 
         {/* Brand Story Content Section */}
-        <section className="relative w-full pt-[60px] pb-16 sm:pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <section className="relative w-full pt-[44px] pb-16 sm:pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
           {/* Background Elements */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-0 left-1/4 w-96 h-96 bg-synthwave-neon-cyan/20 rounded-full blur-3xl" />
