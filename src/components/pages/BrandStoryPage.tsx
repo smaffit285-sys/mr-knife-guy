@@ -109,7 +109,7 @@ export default function BrandStoryPage() {
               </div>
 
               <div>
-                <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-synthwave-neon-cyan">The Choice: Volume vs. Vision</h2>
+                <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-synthwave-neon-cyan [text-shadow:0px_0px_10px_#bfbfbf]">The Choice: Volume vs. Vision</h2>
                 <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
                   In the world of high-volume sharpening, speed is the king. I was told to sharpen faster, to prioritize the clock, and to stick to the rigid methods of the past. But my hands wouldn't listen. I began to develop my own techniques—edges that didn't just meet the standard, but redefined it. They were sharper, they lasted longer, and they possessed a mirror-like finish that the old ways couldn't replicate.
                 </p>
