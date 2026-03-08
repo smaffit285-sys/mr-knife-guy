@@ -23,6 +23,13 @@ export default function BrandStoryPage() {
     },
   };
 
+  const gradientStyle = {
+    backgroundImage: 'linear-gradient(to right, #FF007F, #00FFFF)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    backgroundClip: 'text',
+  };
+
   return (
     <div className="min-h-screen bg-synthwave-midnight text-synthwave-light flex flex-col">
       <Header />
@@ -109,7 +116,10 @@ export default function BrandStoryPage() {
               </div>
 
               <div>
-                <h2 className="font-heading text-2xl sm:text-3xl mb-1 underline font-normal md:text-xl [text-shadow:0px_1px_10px_#bfbfbf] bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-cyan bg-clip-text text-transparent">The Choice: Volume vs. Vision</h2>
+                <h2 
+                  className="font-heading text-2xl sm:text-3xl mb-1 underline font-normal md:text-xl"
+                  style={gradientStyle}
+                >The Choice: Volume vs. Vision</h2>
                 <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
                   In the world of high-volume sharpening, speed is the king. I was told to sharpen faster, to prioritize the clock, and to stick to the rigid methods of the past. But my hands wouldn't listen. I began to develop my own techniques—edges that didn't just meet the standard, but redefined it. They were sharper, they lasted longer, and they possessed a mirror-like finish that the old ways couldn't replicate.
                 </p>
@@ -119,14 +129,20 @@ export default function BrandStoryPage() {
               </div>
 
               <div>
-                <h2 className="font-heading text-2xl sm:text-3xl mb-1 md:text-xl underline font-normal [text-shadow:0px_0px_10px_#bfbfbf] bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-cyan bg-clip-text text-transparent">A Custom Forge for a Custom Result</h2>
+                <h2 
+                  className="font-heading text-2xl sm:text-3xl mb-1 md:text-xl underline font-normal"
+                  style={gradientStyle}
+                >A Custom Forge for a Custom Result</h2>
                 <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
                   I spent four years preparing, building my own sharpening station from the ground up to allow for control and precision that no "off-the-shelf" machine can match. I traded the safety of the institution for the soul of the steel.
                 </p>
               </div>
 
               <div>
-                <h2 className="font-heading text-2xl sm:text-3xl mb-1 md:text-2xl [text-shadow:0px_1px_10px_#bfbfbf] font-normal underline bg-gradient-to-r from-synthwave-neon-pink to-synthwave-neon-cyan bg-clip-text text-transparent">The Journey to You</h2>
+                <h2 
+                  className="font-heading text-2xl sm:text-3xl mb-1 md:text-2xl font-normal underline"
+                  style={gradientStyle}
+                >The Journey to You</h2>
                 <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
                   I have crossed this country to bring this mastery to Miami. I am not here to "churn out" knives for the masses. I am here for the discerning few—the ones who understand that a tool is an extension of the hand, and that perfection cannot be rushed.
                 </p>
