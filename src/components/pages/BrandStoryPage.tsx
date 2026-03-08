@@ -117,7 +117,7 @@ export default function BrandStoryPage() {
 
               <div>
                 <h2 
-                  className="font-heading text-2xl sm:text-3xl mb-1 underline font-normal md:text-xl"
+                  className="font-heading text-2xl sm:text-3xl mb-1 underline font-normal md:text-xl -mt-4"
                   style={gradientStyle}
                 >The Choice: Volume vs. Vision</h2>
                 <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
