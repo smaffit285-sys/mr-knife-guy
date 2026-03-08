@@ -141,7 +141,7 @@ export default function BrandStoryPage() {
               <div style={{ marginTop: '-16px' }}>
                 <h2 
                   className="font-heading text-2xl sm:text-3xl mb-1 md:text-2xl font-normal underline"
-                  style={{ ...gradientStyle, marginTop: '8pt' }}
+                  style={gradientStyle}
                 >The Journey to You</h2>
                 <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
                   I have crossed this country to bring this mastery to Miami. I am not here to "churn out" knives for the masses. I am here for the discerning few—the ones who understand that a tool is an extension of the hand, and that perfection cannot be rushed.
