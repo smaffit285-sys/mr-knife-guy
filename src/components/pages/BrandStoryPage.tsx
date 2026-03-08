@@ -102,7 +102,7 @@ export default function BrandStoryPage() {
           >
             <div className="bg-synthwave-dark/40 backdrop-blur-sm border border-synthwave-neon-cyan/30 rounded-lg p-8 sm:p-12 md:p-16 space-y-6">
               <div>
-                <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl mb-4 text-synthwave-neon-pink underline font-normal [text-shadow:0px_1px_10px_#bfbfbf]">When Steel Whispers, Listen</h2>
+                <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl mb-4 text-synthwave-neon-pink underline font-normal [text-shadow:0px_0px_10px_#bfbfbf]">When Steel Whispers, Listen</h2>
                 <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
                   For sixteen years, I lived within the walls of a legend. I began as an apprentice in one of the country's most renowned sharpening houses, learning the "old ways" under a master recognized across the globe. I gave my loyalty, my labor, and my years to that craft. But eventually, a quiet truth began to whisper from the steel: The standard wasn't enough.
                 </p>
