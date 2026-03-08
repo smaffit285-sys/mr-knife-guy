@@ -28,7 +28,7 @@ export default function BrandStoryPage() {
       <Header />
       <main className="flex-grow">
         {/* Hero Section with Neon Title */}
-        <section className="relative w-full min-h-[60vh] flex items-center justify-center overflow-hidden pt-20 px-4 sm:px-6 lg:px-8">
+        <section className="relative w-full min-h-[60vh] flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8">
           {/* Animated Background Grid */}
           <div className="absolute inset-0 opacity-20">
             <div className="absolute inset-0 bg-gradient-to-b from-synthwave-neon-cyan/10 to-synthwave-neon-pink/10" />
