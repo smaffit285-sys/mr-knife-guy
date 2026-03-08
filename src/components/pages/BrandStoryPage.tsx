@@ -102,14 +102,14 @@ export default function BrandStoryPage() {
           >
             <div className="bg-synthwave-dark/40 backdrop-blur-sm border border-synthwave-neon-cyan/30 rounded-lg p-8 sm:p-12 md:p-16 space-y-3">
               <div>
-                <h2 className="font-heading text-2xl sm:text-3xl mb-2 underline font-normal md:text-2xl [text-shadow:0px_1px_10px_#bfbfbf] text-[#a4e1f9ff]">When Steel Whispers, Listen</h2>
+                <h2 className="font-heading text-2xl sm:text-3xl mb-1 underline font-normal md:text-2xl [text-shadow:0px_1px_10px_#bfbfbf] text-[#a4e1f9ff]">When Steel Whispers, Listen</h2>
                 <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
                   For sixteen years, I lived within the walls of a legend. I began as an apprentice in one of the country's most renowned sharpening houses, learning the "old ways" under a master recognized across the globe. I gave my loyalty, my labor, and my years to that craft. But eventually, a quiet truth began to whisper from the steel: The standard wasn't enough.
                 </p>
               </div>
 
               <div>
-                <h2 className="font-heading text-2xl sm:text-3xl mb-2 text-synthwave-neon-cyan underline font-normal md:text-xl [text-shadow:0px_1px_10px_#bfbfbf]">The Choice: Volume vs. Vision</h2>
+                <h2 className="font-heading text-2xl sm:text-3xl mb-1 text-synthwave-neon-cyan underline font-normal md:text-xl [text-shadow:0px_1px_10px_#bfbfbf]">The Choice: Volume vs. Vision</h2>
                 <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
                   In the world of high-volume sharpening, speed is the king. I was told to sharpen faster, to prioritize the clock, and to stick to the rigid methods of the past. But my hands wouldn't listen. I began to develop my own techniques—edges that didn't just meet the standard, but redefined it. They were sharper, they lasted longer, and they possessed a mirror-like finish that the old ways couldn't replicate.
                 </p>
@@ -119,14 +119,14 @@ export default function BrandStoryPage() {
               </div>
 
               <div>
-                <h2 className="font-heading text-2xl sm:text-3xl mb-2 md:text-xl underline font-normal [text-shadow:0px_0px_10px_#bfbfbf] text-[#a747deff]">A Custom Forge for a Custom Result</h2>
+                <h2 className="font-heading text-2xl sm:text-3xl mb-1 md:text-xl underline font-normal [text-shadow:0px_0px_10px_#bfbfbf] text-[#a747deff]">A Custom Forge for a Custom Result</h2>
                 <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
                   I spent four years preparing, building my own sharpening station from the ground up to allow for control and precision that no "off-the-shelf" machine can match. I traded the safety of the institution for the soul of the steel.
                 </p>
               </div>
 
               <div>
-                <h2 className="font-heading text-2xl sm:text-3xl mb-2 text-synthwave-neon-pink md:text-2xl [text-shadow:0px_1px_10px_#bfbfbf] font-normal underline">The Journey to You</h2>
+                <h2 className="font-heading text-2xl sm:text-3xl mb-1 text-synthwave-neon-pink md:text-2xl [text-shadow:0px_1px_10px_#bfbfbf] font-normal underline">The Journey to You</h2>
                 <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
                   I have crossed this country to bring this mastery to Miami. I am not here to "churn out" knives for the masses. I am here for the discerning few—the ones who understand that a tool is an extension of the hand, and that perfection cannot be rushed.
                 </p>
