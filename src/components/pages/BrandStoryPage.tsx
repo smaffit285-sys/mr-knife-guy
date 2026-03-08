@@ -117,8 +117,8 @@ export default function BrandStoryPage() {
 
               <div>
                 <h2 
-                  className="font-heading text-2xl sm:text-3xl mb-1 underline font-normal md:text-xl -mt-4"
-                  style={gradientStyle}
+                  className="font-heading text-3xl sm:text-4xl mb-4 underline font-normal md:text-3xl -mt-4"
+                  style={{ ...gradientStyle, transform: 'scaleX(1.15)', transformOrigin: 'left', letterSpacing: '0.05em' }}
                 >The Choice: Volume vs. Vision</h2>
                 <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
                   In the world of high-volume sharpening, speed is the king. I was told to sharpen faster, to prioritize the clock, and to stick to the rigid methods of the past. But my hands wouldn't listen. I began to develop my own techniques—edges that didn't just meet the standard, but redefined it. They were sharper, they lasted longer, and they possessed a mirror-like finish that the old ways couldn't replicate.
@@ -130,8 +130,8 @@ export default function BrandStoryPage() {
 
               <div style={{ marginTop: '-26px' }}>
                 <h2 
-                  className="font-heading text-2xl sm:text-3xl mb-1 md:text-xl underline font-normal"
-                  style={gradientStyle}
+                  className="font-heading text-3xl sm:text-4xl mb-4 md:text-3xl underline font-normal"
+                  style={{ ...gradientStyle, transform: 'scaleX(1.15)', transformOrigin: 'left', letterSpacing: '0.05em' }}
                 >A Custom Forge for a Custom Result</h2>
                 <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
                   I spent four years preparing, building my own sharpening station from the ground up to allow for control and precision that no "off-the-shelf" machine can match. I traded the safety of the institution for the soul of the steel.
@@ -140,8 +140,8 @@ export default function BrandStoryPage() {
 
               <div style={{ marginTop: '-16px' }}>
                 <h2 
-                  className="font-heading text-2xl sm:text-3xl mb-1 md:text-2xl font-normal underline"
-                  style={{ ...gradientStyle, marginTop: '8pt' }}
+                  className="font-heading text-3xl sm:text-4xl mb-4 md:text-3xl font-normal underline"
+                  style={{ ...gradientStyle, transform: 'scaleX(1.15)', transformOrigin: 'left', letterSpacing: '0.05em', marginTop: '8pt' }}
                 >The Journey to You</h2>
                 <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
                   I have crossed this country to bring this mastery to Miami. I am not here to "churn out" knives for the masses. I am here for the discerning few—the ones who understand that a tool is an extension of the hand, and that perfection cannot be rushed.
