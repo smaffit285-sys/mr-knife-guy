@@ -306,6 +306,8 @@ export default function MiamiKnifeClubPage() {
             {[
               {
                 name: 'Scope the Scene',
+                price: 'FREE',
+                priceSubtext: '(with honest review)',
                 description: 'Entry level access to explore our exclusive knife community and events.',
                 color: '#D4A574',
                 glowColor: 'rgba(212, 165, 116, 0.5)',
@@ -313,6 +315,7 @@ export default function MiamiKnifeClubPage() {
               },
               {
                 name: 'Limited Access',
+                price: '$30',
                 description: 'Gain entry to select club events and access to limited edition knife releases.',
                 color: '#39FF14',
                 glowColor: 'rgba(57, 255, 20, 0.5)',
@@ -320,6 +323,7 @@ export default function MiamiKnifeClubPage() {
               },
               {
                 name: 'Club Regular',
+                price: '$55',
                 description: 'Full membership with priority access to all club events and exclusive workshops.',
                 color: '#00FFFF',
                 glowColor: 'rgba(0, 255, 255, 0.5)',
@@ -327,6 +331,7 @@ export default function MiamiKnifeClubPage() {
               },
               {
                 name: 'VIP',
+                price: '$100',
                 description: 'Premium tier with VIP seating at events, early access to new releases, and personal concierge service.',
                 color: '#FF007F',
                 glowColor: 'rgba(255, 0, 127, 0.5)',
@@ -334,6 +339,7 @@ export default function MiamiKnifeClubPage() {
               },
               {
                 name: 'All Access',
+                price: '$250',
                 description: 'Ultimate membership including unlimited event access, custom knife consultations, and exclusive merchandise.',
                 color: '#FFD700',
                 glowColor: 'rgba(255, 215, 0, 0.5)',
@@ -341,6 +347,7 @@ export default function MiamiKnifeClubPage() {
               },
               {
                 name: 'Club Benefactor',
+                price: 'PLEASE INQUIRE',
                 description: 'Elite patron status with lifetime benefits, naming rights to events, and bespoke knife commissions.',
                 color: '#9D4EDD',
                 glowColor: 'rgba(157, 78, 221, 0.5)',
@@ -375,6 +382,19 @@ export default function MiamiKnifeClubPage() {
                     >
                       {level.name}
                     </h3>
+                    <p
+                      className="font-heading text-lg font-bold mb-2"
+                      style={{
+                        color: level.color,
+                      }}
+                    >
+                      {level.price}
+                    </p>
+                    {level.priceSubtext && (
+                      <p className="font-paragraph text-light-gray/60 text-xs mb-3">
+                        {level.priceSubtext}
+                      </p>
+                    )}
                     <p className="font-paragraph text-light-gray text-base leading-relaxed">
                       {level.description}
                     </p>
