@@ -101,12 +101,40 @@ export default function BrandStoryPage() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="bg-synthwave-dark/40 backdrop-blur-sm border border-synthwave-neon-cyan/30 rounded-lg p-8 sm:p-12 md:p-16">
-              <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-dark-gray text-center">
-                Your brand story goes here. Share your journey, your passion for precision edges, and what drives Miami Knife Guy. 
-                This is your space to connect with customers and tell them what makes your knives and services special. 
-                Update this text with your authentic brand narrative that captures the essence of your craft and vision.
-              </p>
+            <div className="bg-synthwave-dark/40 backdrop-blur-sm border border-synthwave-neon-cyan/30 rounded-lg p-8 sm:p-12 md:p-16 space-y-6">
+              <div>
+                <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-synthwave-neon-pink">The Evolution of the Edge</h2>
+                <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
+                  For sixteen years, I lived within the walls of a legend. I began as an apprentice in one of the country's most renowned sharpening houses, learning the "old ways" under a master recognized across the globe. I gave my loyalty, my labor, and my years to that craft. But eventually, a quiet truth began to whisper from the steel: The standard wasn't enough.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-synthwave-neon-cyan">The Choice: Volume vs. Vision</h2>
+                <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
+                  In the world of high-volume sharpening, speed is the king. I was told to sharpen faster, to prioritize the clock, and to stick to the rigid methods of the past. But my hands wouldn't listen. I began to develop my own techniques—edges that didn't just meet the standard, but redefined it. They were sharper, they lasted longer, and they possessed a mirror-like finish that the old ways couldn't replicate.
+                </p>
+                <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light mt-4">
+                  When my mentor told me I was "too slow" because I cared too much about the result, I knew I had reached the edge of my known world. I chose to leave the volume behind to pursue the Perfect Edge.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-synthwave-neon-blue">A Custom Forge for a Custom Result</h2>
+                <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
+                  I spent four years preparing, building my own sharpening station from the ground up to allow for control and precision that no "off-the-shelf" machine can match. I traded the safety of the institution for the soul of the steel.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-synthwave-neon-pink">The Journey to You</h2>
+                <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light">
+                  I have crossed this country to bring this mastery to Miami. I am not here to "churn out" knives for the masses. I am here for the discerning few—the ones who understand that a tool is an extension of the hand, and that perfection cannot be rushed.
+                </p>
+                <p className="font-paragraph text-base sm:text-lg md:text-xl leading-relaxed text-synthwave-light mt-4">
+                  My quest is to find those who, like me, hear the steel whisper. I am the Guide for those who refuse to settle for anything less than a surgically perfect edge.
+                </p>
+              </div>
             </div>
 
             {/* Decorative Elements */}
