@@ -100,7 +100,7 @@ export default function MembershipAllAccessPage() {
                         {tier.description}
                       </p>
                       <p className="font-heading text-2xl font-bold text-synthwave-neon-pink mt-3">
-                        {tier.price}
+                        price upon assessment
                       </p>
                     </div>
                   </div>
