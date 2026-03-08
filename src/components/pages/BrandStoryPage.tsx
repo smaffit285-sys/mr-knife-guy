@@ -138,7 +138,7 @@ export default function BrandStoryPage() {
                 </p>
               </div>
 
-              <div style={{ marginTop: '-16px' }}>
+              <div style={{ marginTop: '16px' }}>
                 <h2 
                   className="font-heading text-2xl sm:text-3xl mb-1 md:text-2xl font-normal underline"
                   style={gradientStyle}
