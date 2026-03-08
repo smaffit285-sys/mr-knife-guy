@@ -69,7 +69,7 @@ export default function CTASection() {
               whileTap={{ scale: 0.95 }}
             >
               <Phone className="w-5 h-5" />
-              CALL 650-533-8361
+              CALL (650) 533-8361
             </motion.a>
 
             {/* Text Button */}

@@ -239,7 +239,7 @@ export default function HeroSection() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              CALL NOW
+              CALL (650) 533-8361
             </motion.a>
           </div>
         </motion.div>
