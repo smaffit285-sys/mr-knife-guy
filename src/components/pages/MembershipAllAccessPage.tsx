@@ -16,8 +16,8 @@ export default function MembershipAllAccessPage() {
   ];
 
   const pricingTiers = [
-    { pieces: 'up to 40 knives', price: '$250', description: 'Premium+ sharpening' },
-    { pieces: '51-unlimited', price: '$400', description: 'Unlimited package' },
+    { pieces: 'up to 20 knives', price: '$250', description: 'Premium+ sharpening' },
+    { pieces: 'up to 40 knives', price: '$400', description: 'Unlimited package' },
     { pieces: 'Custom requests', price: '$300', description: 'Specialty blade work' },
     { pieces: 'Maintenance plan', price: '$500/mo', description: 'Premium+ maintenance' },
     { pieces: 'Concierge service', price: '$400', description: 'Premium concierge' },
@@ -27,7 +27,6 @@ export default function MembershipAllAccessPage() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-synthwave-midnight to-synthwave-dark">
       <Header />
-      
       <main className="flex-1 w-full max-w-[100rem] mx-auto px-6 py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -94,7 +93,7 @@ export default function MembershipAllAccessPage() {
                   <div className="flex items-start gap-4">
                     <div className="bg-red-500 w-3 h-3 rounded-full mt-2 flex-shrink-0" />
                     <div className="flex-1">
-                      <h3 className="font-heading text-xl font-bold text-synthwave-neon-cyan">
+                      <h3 className="font-heading text-xl font-bold text-synthwave-neon-cyan normal-case">
                         {tier.pieces}
                       </h3>
                       <p className="font-paragraph text-synthwave-light mt-1">
@@ -111,7 +110,6 @@ export default function MembershipAllAccessPage() {
           </motion.div>
         </div>
       </main>
-
       <Footer />
     </div>
   );
