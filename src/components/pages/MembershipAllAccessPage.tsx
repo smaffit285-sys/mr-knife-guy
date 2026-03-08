@@ -16,7 +16,7 @@ export default function MembershipAllAccessPage() {
   ];
 
   const pricingTiers = [
-    { pieces: '1-50 knives', price: '$250', description: 'Premium+ sharpening' },
+    { pieces: 'up to 20 knives', price: '$250', description: 'Premium+ sharpening' },
     { pieces: '51-unlimited', price: '$400', description: 'Unlimited package' },
     { pieces: 'Custom requests', price: '$300', description: 'Specialty blade work' },
     { pieces: 'Maintenance plan', price: '$500/mo', description: 'Premium+ maintenance' },
