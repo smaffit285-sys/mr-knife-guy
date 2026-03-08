@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Image } from '@/components/ui/image';
 import { Link } from 'react-router-dom';
+import './header-effects.css';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +47,7 @@ export default function Header() {
             link.href.startsWith('/') ? (
               <Link key={link.label} to={link.href}>
                 <motion.div
-                  className="text-synthwave-light hover:text-synthwave-neon-cyan transition-colors font-paragraph text-xs lg:text-sm cursor-pointer"
+                  className="neon-glow-text text-synthwave-light hover:text-synthwave-neon-cyan transition-colors font-paragraph text-xs lg:text-sm cursor-pointer"
                   whileHover={{ y: -2 }}
                 >
                   {link.label}
@@ -56,7 +57,7 @@ export default function Header() {
               <motion.a
                 key={link.label}
                 href={link.href}
-                className="text-synthwave-light hover:text-synthwave-neon-cyan transition-colors font-paragraph text-xs lg:text-sm"
+                className="neon-glow-text text-synthwave-light hover:text-synthwave-neon-cyan transition-colors font-paragraph text-xs lg:text-sm"
                 whileHover={{ y: -2 }}
               >
                 {link.label}
@@ -84,7 +85,7 @@ export default function Header() {
           {navLinks.map((link) => (
             link.href.startsWith('/') ? (
               <Link key={link.label} to={link.href} onClick={() => setIsOpen(false)}>
-                <div className="text-synthwave-light hover:text-synthwave-neon-cyan transition-colors font-paragraph text-sm cursor-pointer">
+                <div className="neon-glow-text text-synthwave-light hover:text-synthwave-neon-cyan transition-colors font-paragraph text-sm cursor-pointer">
                   {link.label}
                 </div>
               </Link>
@@ -92,7 +93,7 @@ export default function Header() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-synthwave-light hover:text-synthwave-neon-cyan transition-colors font-paragraph text-sm"
+                className="neon-glow-text text-synthwave-light hover:text-synthwave-neon-cyan transition-colors font-paragraph text-sm"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
