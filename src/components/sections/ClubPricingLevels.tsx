@@ -92,7 +92,7 @@ export default function ClubPricingLevels() {
             MIAMI KNIFE CLUB
           </h2>
           <p className="font-paragraph text-xl neon-pink-glow">
-            sharpenining on a schedule, pay a little less, never struggle with your food again
+            Sharpening on a Schedule. Pay a Little Less and Never Struggle With Your Food Again!
           </p>
         </motion.div>
 
