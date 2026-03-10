@@ -118,9 +118,7 @@ export default function FiveLiesSection() {
           {/* 6th Box - The Solution CTA - Spans 3 columns (boxes 2-4) and half height */}
           <motion.a
             variants={cardVariants}
-            href="https://calendly.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/knife-sharpening-services"
             className="group relative bg-gradient-to-br from-synthwave-neon-pink/10 to-synthwave-neon-cyan/10 border-2 border-synthwave-neon-pink rounded-lg p-4 sm:p-6 hover:border-synthwave-neon-cyan transition-all duration-300 hover:shadow-lg hover:shadow-synthwave-neon-pink/30 cursor-pointer flex flex-col justify-center lg:col-start-2 lg:col-span-3 h-auto lg:h-[180px]"
           >
             {/* Card Number */}
