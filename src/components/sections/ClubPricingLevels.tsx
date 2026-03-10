@@ -92,7 +92,7 @@ export default function ClubPricingLevels() {
             MIAMI KNIFE CLUB
           </h2>
           <p className="font-paragraph text-xl neon-pink-glow">
-            Join our exclusive community of knife enthusiasts and professionals
+            sharpenining on a schedule, pay a little less, never struggle with your food again
           </p>
         </motion.div>
 
