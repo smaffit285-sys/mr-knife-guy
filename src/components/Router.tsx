@@ -19,7 +19,6 @@ import MembershipClubBenefactorPage from '@/components/pages/MembershipClubBenef
 import ArtistProcessPage from '@/components/pages/ArtistProcessPage';
 import ArtistMeditationPage from '@/components/pages/ArtistMeditationPage';
 import BrandStoryPage from '@/components/pages/BrandStoryPage';
-import KnifeServicePage from '@/components/pages/KnifeServicePage';
 
 function Layout() {
   return (
@@ -103,10 +102,6 @@ const router = createBrowserRouter([
       {
         path: 'brand-story',
         element: <BrandStoryPage />,
-      },
-      {
-        path: 'knife-sharpening-services',
-        element: <KnifeServicePage />,
       },
     ],
   },
