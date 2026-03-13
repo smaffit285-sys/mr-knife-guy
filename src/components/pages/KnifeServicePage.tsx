@@ -100,13 +100,11 @@ export default function KnifeServicePage() {
         >
           {services.map((service) => {
             const IconComponent = service.icon;
-            const isClickable = service.id === 4; // Miami Knife Club
-            
-            const card = (
+            return (
               <motion.div
                 key={service.id}
                 variants={itemVariants}
-                className={`group relative bg-gradient-to-br from-synthwave-dark to-synthwave-midnight border-2 border-synthwave-neon-pink/30 rounded-lg p-6 sm:p-8 hover:border-synthwave-neon-cyan transition-all duration-300 hover:shadow-lg hover:shadow-synthwave-neon-pink/20 overflow-hidden ${isClickable ? 'cursor-pointer' : ''}`}
+                className="group relative bg-gradient-to-br from-synthwave-dark to-synthwave-midnight border-2 border-synthwave-neon-pink/30 rounded-lg p-6 sm:p-8 hover:border-synthwave-neon-cyan transition-all duration-300 hover:shadow-lg hover:shadow-synthwave-neon-pink/20 overflow-hidden"
               >
                 {/* Background Gradient */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none`}></div>
@@ -141,14 +139,6 @@ export default function KnifeServicePage() {
                 {/* Hover Border Effect */}
                 <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-synthwave-neon-pink/10 to-synthwave-neon-cyan/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
               </motion.div>
-            );
-
-            return isClickable ? (
-              <Link key={service.id} to="/miami-knife-club">
-                {card}
-              </Link>
-            ) : (
-              card
             );
           })}
         </motion.div>
