@@ -11,6 +11,7 @@ export default function Header() {
   const navLinks = [
     { label: 'Before & After', href: '/before-after' },
     { label: 'Knives for Sale', href: '/knives-for-sale' },
+    { label: 'Sharpening Services', href: '/knife-service' },
     { label: 'Book Now', href: '/customer-info' },
   ];
 

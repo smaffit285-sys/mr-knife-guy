@@ -25,35 +25,7 @@ export default function HomePage() {
         {/* B2B FOCUS: Focus on kitchen efficiency and safety costs */}
         <PainPointSection />
         
-        {/* Sharpening Services Link */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="w-full px-4 sm:px-6 lg:px-8 py-12 bg-slate-950"
-        >
-          <div className="max-w-[100rem] mx-auto">
-            <Link to="/knife-service" className="flex justify-center">
-              <motion.div
-                className="group relative overflow-hidden rounded-lg border-2 border-synthwave-neon-blue/50 bg-gradient-to-r from-synthwave-neon-blue/10 to-synthwave-purple/10 p-4 cursor-pointer hover:border-synthwave-neon-blue transition-all duration-300 w-fit"
-                whileHover={{ scale: 1.02 }}
-              >
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-synthwave-neon-blue via-synthwave-purple to-synthwave-neon-cyan opacity-30 group-hover:opacity-50 transition-opacity duration-300"
-                />
-                <div className="relative z-10 text-center">
-                  <h3 className="font-heading text-3xl md:text-4xl font-bold text-synthwave-neon-blue group-hover:text-synthwave-neon-cyan transition-colors duration-300">
-                    Sharpening Services
-                  </h3>
-                  <p className="font-paragraph text-lg text-synthwave-light/70 mt-4 group-hover:text-synthwave-light transition-colors duration-300">
-                    Explore all our professional sharpening solutions
-                  </p>
-                </div>
-              </motion.div>
-            </Link>
-          </div>
-        </motion.div>
-        
+
         {/* Sharp After Dark Commercial Sharpening Service Link */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
