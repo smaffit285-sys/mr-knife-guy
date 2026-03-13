@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Zap, Users, Truck, Crown, Clock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -141,6 +142,63 @@ export default function KnifeServicePage() {
             );
           })}
         </motion.div>
+      </section>
+
+      {/* Featured Programs Section */}
+      <section className="w-full max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-synthwave-neon-cyan to-synthwave-neon-blue bg-clip-text text-transparent">
+            Explore Our Featured Programs
+          </h2>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          {/* Sharp After Dark Button */}
+          <Link to="/sharp-after-dark">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05 }}
+              className="group relative bg-gradient-to-br from-synthwave-neon-pink/20 to-synthwave-neon-cyan/20 border-2 border-synthwave-neon-pink rounded-lg p-8 sm:p-12 cursor-pointer hover:border-synthwave-neon-cyan transition-all duration-300 hover:shadow-lg hover:shadow-synthwave-neon-pink/30 h-full flex flex-col justify-center items-center text-center"
+            >
+              <Clock className="w-12 h-12 sm:w-16 sm:h-16 mb-4 text-synthwave-neon-pink group-hover:text-synthwave-neon-cyan transition-colors" />
+              <h3 className="font-heading text-2xl sm:text-3xl font-bold mb-3 text-synthwave-neon-pink group-hover:text-synthwave-neon-cyan transition-colors">
+                Sharp After Dark
+              </h3>
+              <p className="font-paragraph text-sm sm:text-base text-synthwave-light/80">
+                After-hours commercial sharpening service. Zero downtime for your kitchen.
+              </p>
+            </motion.div>
+          </Link>
+
+          {/* Miami Knife Club Button */}
+          <Link to="/miami-knife-club">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05 }}
+              className="group relative bg-gradient-to-br from-synthwave-purple/20 to-synthwave-neon-pink/20 border-2 border-synthwave-purple rounded-lg p-8 sm:p-12 cursor-pointer hover:border-synthwave-neon-cyan transition-all duration-300 hover:shadow-lg hover:shadow-synthwave-purple/30 h-full flex flex-col justify-center items-center text-center"
+            >
+              <Crown className="w-12 h-12 sm:w-16 sm:h-16 mb-4 text-synthwave-purple group-hover:text-synthwave-neon-cyan transition-colors" />
+              <h3 className="font-heading text-2xl sm:text-3xl font-bold mb-3 text-synthwave-purple group-hover:text-synthwave-neon-cyan transition-colors">
+                Miami Knife Club
+              </h3>
+              <p className="font-paragraph text-sm sm:text-base text-synthwave-light/80">
+                Exclusive membership program with monthly service and priority access.
+              </p>
+            </motion.div>
+          </Link>
+        </div>
       </section>
 
       {/* CTA Section */}
