@@ -79,7 +79,7 @@ export default function Header() {
         <motion.nav
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-synthwave-dark border-t border-synthwave-neon-cyan/20 px-3 py-3 flex flex-col gap-3"
+          className="md:hidden bg-synthwave-dark border-t border-synthwave-neon-cyan/20 px-3 py-3 flex flex-row gap-3 flex-wrap"
         >
           {navLinks.map((link) => (
             link.href.startsWith('/') ? (
