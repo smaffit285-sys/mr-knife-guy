@@ -128,11 +128,25 @@ export default function HeroSection() {
 
       {/* Content */}
       <motion.div
-        className="relative z-10 max-w-[100rem] mx-auto text-center"
+        className="relative z-10 max-w-[100rem] mx-auto text-center overflow-hidden"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
+        {/* Rotated Scrolling Backdrop */}
+        <motion.div
+          className="absolute inset-0 z-0 pointer-events-none"
+          animate={{ y: [0, 100, 0] }}
+          transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+        >
+          <Image 
+            src="https://static.wixstatic.com/media/37d64c_c26d92e0c01a495caeb57ac548ba7b8f~mv2.jpg"
+            alt="Scrolling backdrop"
+            width={400}
+            className="w-full h-auto object-cover"
+            style={{ transform: 'rotate(-90deg)', opacity: 0.08 }}
+          />
+        </motion.div>
         {/* Logo/Brand */}
         <motion.div variants={itemVariants} className="mb-8">
           <div className="inline-block relative">
