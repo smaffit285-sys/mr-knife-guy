@@ -4,6 +4,8 @@ import { Upload, Check } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Image } from '@/components/ui/image';
+import { BaseCrudService } from '@/integrations';
+import { Bookings } from '@/entities';
 
 export default function CustomerInfoPage() {
   const [formData, setFormData] = useState({
@@ -20,6 +22,7 @@ export default function CustomerInfoPage() {
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -48,11 +51,28 @@ export default function CustomerInfoPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setErrorMessage(null);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Prepare booking data for CMS
+      const bookingData: Bookings = {
+        _id: crypto.randomUUID(),
+        customerName: formData.nameOrBusiness,
+        service: `${formData.serviceType} - ${formData.knifeType} (${formData.knifeCondition})`,
+        quantity: parseInt(formData.knifeCount) || 0,
+        zipCode: '', // Not collected in form, can be added if needed
+        totalPrice: 0, // Can be calculated based on service type
+      };
+
+      // Save to CMS
+      await BaseCrudService.create('Bookings', bookingData);
+
+      // Simulate additional processing time
+      await new Promise(resolve => setTimeout(resolve, 500));
+
       setIsSubmitting(false);
       setSubmitSuccess(true);
+
       // Reset form after 3 seconds
       setTimeout(() => {
         setFormData({
@@ -68,7 +88,11 @@ export default function CustomerInfoPage() {
         setImagePreview(null);
         setSubmitSuccess(false);
       }, 3000);
-    }, 1500);
+    } catch (error) {
+      setIsSubmitting(false);
+      setErrorMessage('Failed to submit form. Please try again.');
+      console.error('Form submission error:', error);
+    }
   };
 
   return (
@@ -102,6 +126,15 @@ export default function CustomerInfoPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="bg-gradient-to-br from-slate-900/50 to-black border border-cyan-500/30 rounded-lg p-8 md:p-10 backdrop-blur-sm"
           >
+            {errorMessage && (
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="mb-6 p-4 bg-red-500/20 border border-red-500/50 rounded text-red-300 font-paragraph text-sm"
+              >
+                {errorMessage}
+              </motion.div>
+            )}
             {submitSuccess ? (
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
