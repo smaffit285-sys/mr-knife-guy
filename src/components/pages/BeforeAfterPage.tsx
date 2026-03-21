@@ -108,7 +108,7 @@ export default function BeforeAfterPage() {
                         />
                       </div>
                       <div className="absolute bottom-1 left-1 bg-synthwave-neon-pink/80 text-synthwave-midnight px-2 py-1 rounded text-xs font-heading font-bold">
-                        BEFORE
+                        {group.id === 0 ? 'AFTER' : 'BEFORE'}
                       </div>
                     </div>
                   </div>
