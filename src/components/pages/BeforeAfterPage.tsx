@@ -14,7 +14,7 @@ export default function BeforeAfterPage() {
   const placeholderImage = 'https://static.wixstatic.com/media/37d64c_460796e67a93440f96e0fd00d3861189~mv2.png?originWidth=192&originHeight=192';
   
   // User-provided before and after images
-  const beforeImage = 'https://static.wixstatic.com/media/37d64c_aeec82f451b34f6287b4813d206b1b4e~mv2.png';
+  const beforeImage = 'https://static.wixstatic.com/media/37d64c_4a5bb9b28ff3422f99adc41c849abf18~mv2.png';
   const afterImage = 'https://static.wixstatic.com/media/37d64c_83f0e7a8792a466a84b9bd37bfe81605~mv2.png';
   
   const navigate = useNavigate();
