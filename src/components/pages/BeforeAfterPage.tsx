@@ -17,12 +17,16 @@ export default function BeforeAfterPage() {
   const beforeImage = 'https://static.wixstatic.com/media/37d64c_aeec82f451b34f6287b4813d206b1b4e~mv2.png';
   const afterImage = 'https://static.wixstatic.com/media/37d64c_83f0e7a8792a466a84b9bd37bfe81605~mv2.png';
   
+  // Knife #2 images
+  const knife2BeforeImage = 'https://static.wixstatic.com/media/37d64c_f17b6eeae2774063844962a6be48e4f0~mv2.png';
+  const knife2AfterImage = 'https://static.wixstatic.com/media/37d64c_eeb38045722f42f2990807d81877d744~mv2.png';
+  
   const navigate = useNavigate();
 
   const knifeGroups = Array.from({ length: groupCount }, (_, i) => ({
     id: i,
-    beforeImage: i === 0 ? beforeImage : placeholderImage,
-    afterImage: i === 0 ? afterImage : placeholderImage,
+    beforeImage: i === 0 ? beforeImage : i === 1 ? knife2BeforeImage : placeholderImage,
+    afterImage: i === 0 ? afterImage : i === 1 ? knife2AfterImage : placeholderImage,
     beforeAlt: `Knife ${i + 1} - Before sharpening`,
     afterAlt: `Knife ${i + 1} - After sharpening`,
   }));
