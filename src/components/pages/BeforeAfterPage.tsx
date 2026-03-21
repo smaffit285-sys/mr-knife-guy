@@ -78,22 +78,6 @@ export default function BeforeAfterPage() {
 
                   {/* Images Container */}
                   <div className="grid grid-cols-2 gap-2 px-4 pb-4">
-                    {/* After Image */}
-                    <div className="relative">
-                      <div className="aspect-square rounded overflow-hidden bg-synthwave-dark border border-synthwave-neon-cyan/30 group-hover:border-synthwave-neon-cyan/60 transition-colors">
-                        <Image
-                          src={group.afterImage}
-                          alt={group.afterAlt}
-                          width={300}
-                          height={300}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <div className="absolute bottom-1 left-1 bg-synthwave-neon-cyan/80 text-synthwave-midnight px-2 py-1 rounded text-xs font-heading font-bold">
-                        AFTER
-                      </div>
-                    </div>
-
                     {/* Before Image */}
                     <div className="relative">
                       <div className="aspect-square rounded overflow-hidden bg-synthwave-dark border border-synthwave-neon-pink/30 group-hover:border-synthwave-neon-pink/60 transition-colors">
@@ -107,6 +91,22 @@ export default function BeforeAfterPage() {
                       </div>
                       <div className="absolute bottom-1 left-1 bg-synthwave-neon-pink/80 text-synthwave-midnight px-2 py-1 rounded text-xs font-heading font-bold">
                         BEFORE
+                      </div>
+                    </div>
+
+                    {/* After Image */}
+                    <div className="relative">
+                      <div className="aspect-square rounded overflow-hidden bg-synthwave-dark border border-synthwave-neon-cyan/30 group-hover:border-synthwave-neon-cyan/60 transition-colors">
+                        <Image
+                          src={group.afterImage}
+                          alt={group.afterAlt}
+                          width={300}
+                          height={300}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="absolute bottom-1 left-1 bg-synthwave-neon-cyan/80 text-synthwave-midnight px-2 py-1 rounded text-xs font-heading font-bold">
+                        AFTER
                       </div>
                     </div>
                   </div>
