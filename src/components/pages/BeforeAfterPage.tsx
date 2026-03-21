@@ -26,7 +26,7 @@ export default function BeforeAfterPage() {
   const knifeGroups = Array.from({ length: groupCount }, (_, i) => ({
     id: i,
     beforeImage: i === 0 ? beforeImage : i === 1 ? knife2BeforeImage : placeholderImage,
-    afterImage: i === 0 ? null : i === 1 ? knife2AfterImage : placeholderImage,
+    afterImage: i === 0 ? afterImage : i === 1 ? knife2AfterImage : placeholderImage,
     beforeAlt: `Knife ${i + 1} - Before sharpening`,
     afterAlt: `Knife ${i + 1} - After sharpening`,
   }));
@@ -77,24 +77,22 @@ export default function BeforeAfterPage() {
                   </div>
 
                   {/* Images Container */}
-                  <div className={`grid ${group.afterImage ? 'grid-cols-2' : 'grid-cols-1'} gap-2 px-4 pb-4`}>
+                  <div className="grid grid-cols-2 gap-2 px-4 pb-4">
                     {/* After Image */}
-                    {group.afterImage && (
-                      <div className="relative">
-                        <div className="aspect-square rounded overflow-hidden bg-synthwave-dark border border-synthwave-neon-cyan/30 group-hover:border-synthwave-neon-cyan/60 transition-colors">
-                          <Image
-                            src={group.afterImage}
-                            alt={group.afterAlt}
-                            width={300}
-                            height={300}
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <div className="absolute bottom-1 left-1 bg-synthwave-neon-cyan/80 text-synthwave-midnight px-2 py-1 rounded text-xs font-heading font-bold">
-                          AFTER
-                        </div>
+                    <div className="relative">
+                      <div className="aspect-square rounded overflow-hidden bg-synthwave-dark border border-synthwave-neon-cyan/30 group-hover:border-synthwave-neon-cyan/60 transition-colors">
+                        <Image
+                          src={group.afterImage}
+                          alt={group.afterAlt}
+                          width={300}
+                          height={300}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
-                    )}
+                      <div className="absolute bottom-1 left-1 bg-synthwave-neon-cyan/80 text-synthwave-midnight px-2 py-1 rounded text-xs font-heading font-bold">
+                        AFTER
+                      </div>
+                    </div>
 
                     {/* Before Image */}
                     <div className="relative">
@@ -108,7 +106,7 @@ export default function BeforeAfterPage() {
                         />
                       </div>
                       <div className="absolute bottom-1 left-1 bg-synthwave-neon-pink/80 text-synthwave-midnight px-2 py-1 rounded text-xs font-heading font-bold">
-                        {group.id === 0 ? 'AFTER' : 'BEFORE'}
+                        BEFORE
                       </div>
                     </div>
                   </div>
