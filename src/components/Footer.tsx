@@ -70,11 +70,11 @@ export default function Footer() {
             </h4>
             <div className="space-y-3">
               <a
-                href="tel:650-533-8361"
+                href="tel:305-909-5773"
                 className="flex items-center gap-2 text-synthwave-light/70 hover:text-synthwave-neon-cyan transition-colors font-paragraph text-xs sm:text-sm"
               >
                 <Phone size={14} className="flex-shrink-0" />
-                (650) 533-8361
+                (305) 909-5773
               </a>
               <p className="flex items-center gap-2 text-synthwave-light/70 font-paragraph text-xs sm:text-sm">
                 <MapPin size={14} className="flex-shrink-0" />

@@ -234,12 +234,12 @@ export default function HeroSection() {
               <ChevronDown className="w-6 h-6 text-synthwave-neon-blue" />
             </motion.div>
             <motion.a
-              href="tel:650-533-8361"
+              href="tel:305-909-5773"
               className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-synthwave-neon-blue text-synthwave-neon-blue font-heading font-bold text-sm sm:text-base rounded-lg hover:bg-synthwave-neon-blue/10 transition-all w-full sm:w-auto"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              CALL (650) 533-8361
+              CALL (305) 909-5773
             </motion.a>
           </div>
         </motion.div>
