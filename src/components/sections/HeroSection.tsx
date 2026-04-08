@@ -199,7 +199,7 @@ export default function HeroSection() {
         {/* Subheadline */}
         <motion.p
           variants={itemVariants}
-          className="font-paragraph text-base sm:text-lg md:text-2xl max-w-3xl mx-auto mb-6 sm:mb-8 neon-blue-glow"
+          className="font-paragraph text-base sm:text-lg md:text-2xl max-w-3xl mx-auto mb-6 sm:mb-8 neon-pink-flicker"
         >
           In North Miami Beach
         </motion.p>
