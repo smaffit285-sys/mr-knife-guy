@@ -194,7 +194,7 @@ export default function HeroSection() {
            variants={itemVariants}
            className="font-paragraph text-base sm:text-lg md:text-xl text-synthwave-light/80 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed"
          >
-           Expert knife sharpening services for home chefs and professionals. Experience the difference of precision hand-guided sharpening.
+           Restoring mirror edges to your culinary tools using high-end abrasives and specialized motorized equipment. No cheap pull-throughs. No ruined blades.
          </motion.p>
          {/* Subheadline */}
 
