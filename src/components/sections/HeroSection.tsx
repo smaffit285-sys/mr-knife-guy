@@ -185,17 +185,14 @@ export default function HeroSection() {
           className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight neon-pink-flicker"
           style={{ letterSpacing: '1.5px' }}
         >
-          <span className="neon-pink-flicker text-6xl">Precision Hand-Guided Knife Sharpening in North Miami Beach</span>
+          <span className="neon-pink-flicker text-6xl">Precision Hand-Guided Knife Sharpening</span>
           <br />
 
         </motion.h1>
          {/* Subtitle */}
          <motion.p
            variants={itemVariants}
-           className="font-paragraph text-base sm:text-lg md:text-xl text-synthwave-neon-cyan mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed"
-           style={{
-             textShadow: '0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4)',
-           }}
+           className="font-paragraph text-base sm:text-lg mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed text-synthwave-neon-cyan md:text-3xl"
          >
            Restoring mirror edges to your culinary tools using high-end abrasives and specialized equipment. No cheap pull-throughs. No ruined blades.
          </motion.p>
