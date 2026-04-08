@@ -109,9 +109,6 @@ export default function HeroSection() {
         }}
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
       />
-      
-
-
       {/* Content */}
       <motion.div
         className="relative z-10 max-w-[100rem] mx-auto text-center overflow-hidden"
@@ -193,7 +190,7 @@ export default function HeroSection() {
             Precision Hand-Guided
           </span>
           <br />
-          <span className="neon-cyan-glow">Knife Sharpening</span>
+          <span className="neon-cyan-glow text-synthwave-neon-pink">Knife Sharpening</span>
         </motion.h1>
 
         {/* Subheadline */}
