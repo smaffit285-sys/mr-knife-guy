@@ -179,25 +179,17 @@ export default function HeroSection() {
             </div>
           </div>
         </motion.div>
-
         {/* Main Headline */}
         <motion.h1
           variants={itemVariants}
           className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight neon-pink-flicker"
           style={{ letterSpacing: '1.5px' }}
         >
-          <span className="neon-pink-flicker">Precision Hand-Guided Knife Sharpening</span>
+          <span className="neon-pink-flicker text-6xl">Precision Hand-Guided Knife Sharpening in North Miami Beach</span>
           <br />
-          <span className="neon-cyan-glow text-synthwave-neon-pink">k</span>
-        </motion.h1>
 
+        </motion.h1>
         {/* Subheadline */}
-        <motion.p
-          variants={itemVariants}
-          className="font-paragraph text-base sm:text-lg md:text-2xl max-w-3xl mx-auto mb-6 sm:mb-8 neon-pink-flicker"
-        >
-          In North Miami Beach
-        </motion.p>
 
         <motion.div
           variants={itemVariants}
