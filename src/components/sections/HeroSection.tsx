@@ -189,12 +189,19 @@ export default function HeroSection() {
           <br />
 
         </motion.h1>
-        {/* Subheadline */}
+         {/* Subtitle */}
+         <motion.p
+           variants={itemVariants}
+           className="font-paragraph text-base sm:text-lg md:text-xl text-synthwave-light/80 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed"
+         >
+           Expert knife sharpening services for home chefs and professionals. Experience the difference of precision hand-guided sharpening.
+         </motion.p>
+         {/* Subheadline */}
 
-        <motion.div
-          variants={itemVariants}
-          className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center"
-        >
+         <motion.div
+           variants={itemVariants}
+           className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center"
+         >
           <div className="flex flex-col items-center w-full sm:w-auto">
             <motion.div
               animate={{ y: [0, 8, 0] }}
