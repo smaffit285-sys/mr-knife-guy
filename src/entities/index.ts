@@ -4,50 +4,6 @@
  */
 
 /**
- * Collection ID: Bookings
- * Interface for Bookings
- */
-export interface Bookings {
-  _id: string;
-  _createdDate?: Date;
-  _updatedDate?: Date;
-  /** @wixFieldType text */
-  customerName?: string;
-  /** @wixFieldType text */
-  service?: string;
-  /** @wixFieldType number */
-  quantity?: number;
-  /** @wixFieldType text */
-  zipCode?: string;
-  /** @wixFieldType number */
-  totalPrice?: number;
-  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
-  serviceImage?: string;
-}
-
-
-/**
- * Collection ID: Services
- * Interface for Services
- */
-export interface Services {
-  _id: string;
-  _createdDate?: Date;
-  _updatedDate?: Date;
-  /** @wixFieldType text */
-  title?: string;
-  /** @wixFieldType text */
-  category?: string;
-  /** @wixFieldType number */
-  basePrice?: number;
-  /** @wixFieldType text */
-  description?: string;
-  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
-  image?: string;
-}
-
-
-/**
  * Collection ID: blogposts
  * Interface for BlogPosts
  */
@@ -73,6 +29,29 @@ export interface BlogPosts {
   seoTitle?: string;
   /** @wixFieldType text */
   seoDescription?: string;
+}
+
+
+/**
+ * Collection ID: Bookings
+ * Interface for Bookings
+ */
+export interface Bookings {
+  _id: string;
+  _createdDate?: Date;
+  _updatedDate?: Date;
+  /** @wixFieldType text */
+  customerName?: string;
+  /** @wixFieldType text */
+  service?: string;
+  /** @wixFieldType number */
+  quantity?: number;
+  /** @wixFieldType text */
+  zipCode?: string;
+  /** @wixFieldType number */
+  totalPrice?: number;
+  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
+  serviceImage?: string;
 }
 
 
@@ -223,6 +202,27 @@ export interface PastGiveawayWinners {
   winnerPhoto?: string;
   /** @wixFieldType text */
   winnerQuote?: string;
+}
+
+
+/**
+ * Collection ID: Services
+ * Interface for Services
+ */
+export interface Services {
+  _id: string;
+  _createdDate?: Date;
+  _updatedDate?: Date;
+  /** @wixFieldType text */
+  title?: string;
+  /** @wixFieldType text */
+  category?: string;
+  /** @wixFieldType number */
+  basePrice?: number;
+  /** @wixFieldType text */
+  description?: string;
+  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
+  image?: string;
 }
 
 
