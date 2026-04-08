@@ -192,7 +192,10 @@ export default function HeroSection() {
          {/* Subtitle */}
          <motion.p
            variants={itemVariants}
-           className="font-paragraph text-base sm:text-lg md:text-xl text-synthwave-light/80 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed"
+           className="font-paragraph text-base sm:text-lg md:text-xl text-synthwave-neon-cyan mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed"
+           style={{
+             textShadow: '0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4)',
+           }}
          >
            Restoring mirror edges to your culinary tools using high-end abrasives and specialized equipment. No cheap pull-throughs. No ruined blades.
          </motion.p>
