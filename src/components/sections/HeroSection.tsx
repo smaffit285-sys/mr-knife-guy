@@ -199,6 +199,13 @@ export default function HeroSection() {
          >
            Restoring mirror edges to your culinary tools using high-end abrasives and specialized equipment. No cheap pull-throughs. No ruined blades.
          </motion.p>
+         {/* Service Details */}
+         <motion.p
+           variants={itemVariants}
+           className="font-paragraph text-lg sm:text-xl md:text-xl mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed text-synthwave-light"
+         >
+           Local Drop-Off & Pick-Up Service | Pricing Tiers Based on Knife Size
+         </motion.p>
          {/* Subheadline */}
 
          <motion.div
