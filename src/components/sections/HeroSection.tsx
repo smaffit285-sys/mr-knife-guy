@@ -186,11 +186,9 @@ export default function HeroSection() {
           className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight neon-pink-flicker"
           style={{ letterSpacing: '1.5px' }}
         >
-          <span className="neon-pink-flicker">
-            Precision Hand-Guided
-          </span>
+          <span className="neon-pink-flicker">Precision Hand-Guided Knife Sharpening</span>
           <br />
-          <span className="neon-cyan-glow text-synthwave-neon-pink">Knife Sharpening</span>
+          <span className="neon-cyan-glow text-synthwave-neon-pink">k</span>
         </motion.h1>
 
         {/* Subheadline */}
