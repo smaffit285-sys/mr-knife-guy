@@ -36,10 +36,10 @@ export default function BeforeAfterSlider() {
           viewport={{ once: true }}
           className="text-center mb-12 sm:mb-16 relative z-10"
         >
-          <h2 className="font-heading text-3xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4 neon-cyan-glow" style={{ letterSpacing: '1.5px' }}>
+          <h2 className="font-heading text-3xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4 neon-sign-cyan" style={{ letterSpacing: '1.5px' }}>
             TRANSFORMATION
           </h2>
-          <p className="font-paragraph text-base sm:text-xl text-synthwave-neon-pink neon-pink-glow">
+          <p className="font-heading text-base sm:text-xl text-synthwave-neon-pink neon-sign-pink">
             See the difference our master sharpening makes
           </p>
         </motion.div>

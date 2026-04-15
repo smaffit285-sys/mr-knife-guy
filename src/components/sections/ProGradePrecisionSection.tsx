@@ -38,10 +38,10 @@ export default function ProGradePrecisionSection() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="font-heading text-3xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 neon-cyan-flicker" style={{ letterSpacing: '1.5px' }}>
+            <h2 className="font-heading text-3xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 neon-sign-cyan" style={{ letterSpacing: '1.5px' }}>
               PRO-GRADE PRECISION
             </h2>
-            <p className="font-paragraph text-base sm:text-xl neon-pink-glow max-w-2xl mx-auto">
+            <p className="font-heading text-base sm:text-xl neon-sign-pink max-w-2xl mx-auto">
               We use the same high-end mechanized abrasives as the world's leading knife factories, but with a Master Technician's precision.
             </p>
           </motion.div>

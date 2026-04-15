@@ -43,13 +43,13 @@ export default function HomePage() {
                   className="absolute inset-0 bg-gradient-to-r from-synthwave-neon-pink via-synthwave-purple to-synthwave-neon-cyan opacity-30 group-hover:opacity-50 transition-opacity duration-300"
                 />
                 <div className="relative z-10 text-center">
-                  <h3 className="font-heading text-3xl md:text-4xl font-bold text-synthwave-neon-pink group-hover:text-synthwave-neon-cyan transition-colors duration-300">
+                  <h3 className="font-heading text-3xl md:text-4xl font-bold neon-sign-pink group-hover:text-synthwave-neon-cyan transition-colors duration-300">
                     Sharp After Dark:
                   </h3>
-                  <p className="font-paragraph text-xl md:text-2xl text-synthwave-neon-cyan mt-2 group-hover:text-synthwave-light transition-colors duration-300 font-semibold">
+                  <p className="font-heading text-xl md:text-2xl neon-sign-cyan mt-2 group-hover:text-synthwave-light transition-colors duration-300 font-semibold">
                     Commercial Sharpening Service
                   </p>
-                  <p className="font-paragraph text-lg text-synthwave-light/70 mt-4 group-hover:text-synthwave-light transition-colors duration-300">
+                  <p className="font-heading text-lg text-synthwave-light/70 mt-4 group-hover:text-synthwave-light transition-colors duration-300">
                     Your kitchen doesn't sleep. Neither do your blades.
                   </p>
                   <div className="absolute -bottom-3 -right-3">
@@ -80,10 +80,10 @@ export default function HomePage() {
                   className="absolute inset-0 bg-gradient-to-r from-synthwave-neon-cyan via-synthwave-purple to-synthwave-neon-pink opacity-30 group-hover:opacity-50 transition-opacity duration-300"
                 />
                 <div className="relative z-10 text-center">
-                  <h3 className="font-heading text-3xl md:text-4xl font-bold text-synthwave-neon-cyan group-hover:text-synthwave-neon-pink transition-colors duration-300">
+                  <h3 className="font-heading text-3xl md:text-4xl font-bold neon-sign-cyan group-hover:text-synthwave-neon-pink transition-colors duration-300">
                     Knives for Sale
                   </h3>
-                  <p className="font-paragraph text-lg text-synthwave-light/70 mt-4 group-hover:text-synthwave-light transition-colors duration-300">
+                  <p className="font-heading text-lg text-synthwave-light/70 mt-4 group-hover:text-synthwave-light transition-colors duration-300">
                     Explore our premium blade collection
                   </p>
                 </div>

@@ -134,7 +134,7 @@ export default function SocialLinksSection() {
           <h3 className="font-heading text-2xl md:text-3xl font-bold text-synthwave-neon-cyan mb-1">
             CONNECT WITH US
           </h3>
-          <p className="font-paragraph text-synthwave-light/70">
+          <p className="font-heading text-synthwave-light/70">
             Follow Miami Knife Guy across all platforms
           </p>
         </motion.div>
@@ -175,7 +175,7 @@ export default function SocialLinksSection() {
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
         >
-          <p className="font-paragraph text-synthwave-light/60 text-sm">
+          <p className="font-heading text-synthwave-light/60 text-sm">
             Don't see your favorite platform? <span className="text-synthwave-neon-cyan font-bold">Contact us directly</span> for more information.
           </p>
         </motion.div>
