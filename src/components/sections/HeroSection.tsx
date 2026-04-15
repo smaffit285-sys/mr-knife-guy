@@ -194,7 +194,7 @@ export default function HeroSection() {
            variants={itemVariants}
            className="font-paragraph text-2xl sm:text-2xl md:text-2xl mb-2 sm:mb-3 max-w-2xl mx-auto leading-relaxed text-synthwave-neon-cyan"
            style={{
-             textShadow: '0 0 8px #00FFFF, 0 0 16px #00FFFF, 0 0 24px #00FFFF, 0 0 32px #0080FF'
+             textShadow: '0 0 4.8px #00FFFF, 0 0 9.6px #00FFFF, 0 0 14.4px #00FFFF, 0 0 19.2px #0080FF'
            }}
          >
            Restoring mirror edges to your culinary tools using high-end abrasives and specialized equipment. No cheap pull-throughs. No ruined blades.
