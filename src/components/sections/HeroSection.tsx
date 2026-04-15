@@ -192,7 +192,7 @@ export default function HeroSection() {
          {/* Subtitle */}
          <motion.p
            variants={itemVariants}
-           className="font-paragraph text-2xl sm:text-2xl md:text-2xl mb-2 sm:mb-3 max-w-2xl mx-auto leading-relaxed text-synthwave-neon-cyan font-semibold"
+           className="font-paragraph text-2xl sm:text-2xl md:text-2xl mb-2 sm:mb-3 max-w-2xl mx-auto leading-relaxed font-semibold neon-sign-cyan"
          >
            Restoring mirror edges to your culinary tools using high-end abrasives and specialized equipment. No cheap pull-throughs. No ruined blades.
          </motion.p>

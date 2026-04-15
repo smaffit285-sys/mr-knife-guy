@@ -337,6 +337,66 @@
   font-weight: 700;
 }
 
+/* ===== NEON SIGN EFFECT ===== */
+/* Proper neon sign with lighter interior and darker outer stroke */
+
+@keyframes neon-sign-glow {
+  0%, 100% {
+    text-shadow:
+      /* Dark outer stroke for definition */
+      -1px -1px 0 rgba(0, 100, 100, 0.6),
+      1px -1px 0 rgba(0, 100, 100, 0.6),
+      -1px 1px 0 rgba(0, 100, 100, 0.6),
+      1px 1px 0 rgba(0, 100, 100, 0.6),
+      -2px 0 0 rgba(0, 80, 80, 0.5),
+      2px 0 0 rgba(0, 80, 80, 0.5),
+      0 -2px 0 rgba(0, 80, 80, 0.5),
+      0 2px 0 rgba(0, 80, 80, 0.5),
+      /* Bright inner glow - lighter shade */
+      0 0 2px rgba(100, 255, 255, 0.8),
+      0 0 5px rgba(100, 255, 255, 0.6),
+      /* Medium glow layer */
+      0 0 10px rgba(0, 255, 255, 0.5),
+      0 0 15px rgba(0, 255, 255, 0.4),
+      /* Outer glow - background halo */
+      0 0 25px rgba(0, 255, 255, 0.3),
+      0 0 40px rgba(0, 255, 255, 0.15),
+      0 0 60px rgba(0, 200, 255, 0.1);
+    filter: drop-shadow(0 0 12px rgba(0, 255, 255, 0.4));
+  }
+  50% {
+    text-shadow:
+      /* Dark outer stroke for definition */
+      -1px -1px 0 rgba(0, 120, 120, 0.7),
+      1px -1px 0 rgba(0, 120, 120, 0.7),
+      -1px 1px 0 rgba(0, 120, 120, 0.7),
+      1px 1px 0 rgba(0, 120, 120, 0.7),
+      -2px 0 0 rgba(0, 100, 100, 0.6),
+      2px 0 0 rgba(0, 100, 100, 0.6),
+      0 -2px 0 rgba(0, 100, 100, 0.6),
+      0 2px 0 rgba(0, 100, 100, 0.6),
+      /* Bright inner glow - lighter shade */
+      0 0 3px rgba(150, 255, 255, 0.9),
+      0 0 8px rgba(120, 255, 255, 0.7),
+      /* Medium glow layer */
+      0 0 15px rgba(0, 255, 255, 0.6),
+      0 0 20px rgba(0, 255, 255, 0.5),
+      /* Outer glow - background halo */
+      0 0 35px rgba(0, 255, 255, 0.4),
+      0 0 50px rgba(0, 255, 255, 0.2),
+      0 0 80px rgba(0, 200, 255, 0.15);
+    filter: drop-shadow(0 0 18px rgba(0, 255, 255, 0.6));
+  }
+}
+
+.neon-sign-cyan {
+  animation: neon-sign-glow 6s ease-in-out infinite;
+  color: #E0FFFF !important;
+  font-family: 'Orbitron', 'Syncopate', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
 /* Synthwave Typography Overrides */
 h1, h2 {
   font-family: 'Orbitron', 'Syncopate', sans-serif;
