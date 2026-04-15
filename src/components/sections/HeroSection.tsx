@@ -182,10 +182,10 @@ export default function HeroSection() {
         {/* Main Headline */}
         <motion.h1
           variants={itemVariants}
-          className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight neon-pink-flicker"
+          className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight neon-sign-pink"
           style={{ letterSpacing: '1.5px' }}
         >
-          <span className="neon-pink-flicker text-6xl">Precision Hand-Guided Knife Sharpening</span>
+          <span className="neon-sign-pink text-6xl">Precision Hand-Guided Knife Sharpening</span>
           <br />
 
         </motion.h1>
@@ -199,7 +199,7 @@ export default function HeroSection() {
          {/* Service Details */}
          <motion.p
            variants={itemVariants}
-           className="font-paragraph text-lg sm:text-xl md:text-xl mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed text-synthwave-light"
+           className="font-paragraph text-lg sm:text-xl md:text-xl mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed neon-sign-light"
          >
            Local Drop-Off & Pick-Up Service | Pricing Tiers Based on Knife Size
          </motion.p>
