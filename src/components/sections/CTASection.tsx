@@ -25,11 +25,11 @@ export default function CTASection() {
           className="relative z-10 text-center max-w-3xl mx-auto"
         >
           <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight neon-sign-pink" style={{ letterSpacing: '1.5px' }}>
-            READY FOR THE REVOLUTION?
+            LET THE EDGE<br />SELL ITSELF.
           </h2>
 
           <p className="font-heading text-lg neon-sign-cyan mb-12 max-w-xl mx-auto">
-            Transform your kitchen with factory-fresh edges. Book your sharpening service today and experience the difference.
+            One knife. Sharpened free. In exchange for your honest review. No strings, no pressure, no pitch. Just feel what a real edge feels like — and then decide.
           </p>
 
           {/* Primary CTA Button */}
@@ -41,14 +41,12 @@ export default function CTASection() {
             className="mb-8"
           >
             <motion.a
-              href="https://calendly.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-10 py-5 bg-synthwave-neon-blue text-synthwave-midnight font-heading font-bold text-lg rounded-lg hover:shadow-2xl hover:shadow-synthwave-neon-blue/50 transition-all"
+              href="sms:3059095773?body=SHARP"
+              className="inline-flex items-center gap-3 px-10 py-5 bg-synthwave-neon-cyan text-synthwave-midnight font-heading font-bold text-lg rounded-lg hover:shadow-2xl hover:shadow-synthwave-neon-cyan/50 transition-all"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              BOOK MY SHARPENING
+              TEXT 'SHARP' TO (305) 909-5773
               <ArrowRight className="w-5 h-5" />
             </motion.a>
           </motion.div>
@@ -61,10 +59,9 @@ export default function CTASection() {
             transition={{ delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            {/* Call Button */}
             <motion.a
-              href="tel:305-909-5773"
-              className="flex items-center gap-2 px-6 py-3 border-2 border-synthwave-neon-blue text-synthwave-neon-blue font-heading font-bold rounded-lg hover:bg-synthwave-neon-blue/10 transition-all"
+              href="tel:3059095773"
+              className="flex items-center gap-2 px-6 py-3 border-2 border-synthwave-neon-pink text-synthwave-neon-pink font-heading font-bold rounded-lg hover:bg-synthwave-neon-pink/10 transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -72,15 +69,14 @@ export default function CTASection() {
               CALL (305) 909-5773
             </motion.a>
 
-            {/* Text Button */}
             <motion.a
-              href="sms:305-909-5773?body=SHARP"
-              className="flex items-center gap-2 px-6 py-3 border-2 border-synthwave-neon-blue text-synthwave-neon-blue font-heading font-bold rounded-lg hover:bg-synthwave-neon-blue/10 transition-all"
+              href="/customer-info"
+              className="flex items-center gap-2 px-6 py-3 border-2 border-synthwave-neon-cyan text-synthwave-neon-cyan font-heading font-bold rounded-lg hover:bg-synthwave-neon-cyan/10 transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <MessageSquare className="w-5 h-5" />
-              TEXT 'SHARP'
+              BOOK ONLINE
             </motion.a>
           </motion.div>
 
@@ -93,10 +89,10 @@ export default function CTASection() {
             className="mt-12 pt-12 border-t border-synthwave-neon-cyan/20"
           >
             <p className="font-paragraph text-sm text-synthwave-light/60 mb-6">
-              TRUSTED BY MIAMI'S ELITE CHEFS & HOME COOKS
+              17 YEARS · GARY DANKO · THE FRENCH LAUNDRY · HOTEL NIKKO · NOW IN MIAMI
             </p>
             <div className="flex justify-center gap-8 flex-wrap">
-              {['5★ Rated', 'Same-Day Service', 'Master Certified'].map((badge, index) => (
+              {['5★ Google Rated', 'Kosher & Halal Available', 'Free First Knife', '17 Years Experience'].map((badge, index) => (
                 <motion.div
                   key={index}
                   className="px-4 py-2 bg-synthwave-dark/50 border border-synthwave-neon-cyan/30 rounded-full"
