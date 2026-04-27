@@ -33,4 +33,59 @@ export default function Header() {
               height={40}
               className="h-8 w-8 sm:h-10 sm:w-10 rounded-full"
             />
-            <span classNa
+            <span className="font-heading text-lg sm:text-xl font-bold text-synthwave-neon-cyan hidden sm:inline">
+              Miami Knife Guy
+            </span>
+          </motion.div>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden lg:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              to={link.href}
+              className="font-paragraph text-sm text-synthwave-light hover:text-synthwave-neon-cyan transition-colors duration-300"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="lg:hidden p-2 hover:bg-synthwave-neon-cyan/10 rounded-lg transition-colors"
+          aria-label="Toggle menu"
+        >
+          {isOpen ? (
+            <X className="w-6 h-6 text-synthwave-neon-cyan" />
+          ) : (
+            <Menu className="w-6 h-6 text-synthwave-neon-cyan" />
+          )}
+        </button>
+      </div>
+
+      {/* Mobile Navigation */}
+      {isOpen && (
+        <motion.nav
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          className="lg:hidden bg-synthwave-dark border-t border-synthwave-neon-cyan/20 px-3 sm:px-6 py-4 space-y-3"
+        >
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              to={link.href}
+              onClick={() => setIsOpen(false)}
+              className="block font-paragraph text-sm text-synthwave-light hover:text-synthwave-neon-cyan transition-colors duration-300 py-2"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </motion.nav>
+      )}
+    </header>
+  );
+}
