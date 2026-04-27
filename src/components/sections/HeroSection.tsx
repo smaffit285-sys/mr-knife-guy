@@ -38,7 +38,7 @@ const socialLogos = [
     name: 'Twitter',
     icon: () => (
       <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417a9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
       </svg>
     ),
     url: 'https://twitter.com/miamiknifeguy',
@@ -50,14 +50,13 @@ export default function HeroSection() {
   const navigate = useNavigate();
 
   const handleImageClick = (e: React.MouseEvent) => {
-    // Check if the click target is a link (social media)
     const target = e.target as HTMLElement;
     if (target.closest('a')) {
-      return; // Allow link clicks to proceed
+      return;
     }
-    // Navigate to brand story page for any other click in the container
     navigate('/brand-story');
   };
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -92,23 +91,19 @@ export default function HeroSection() {
           <rect width="100%" height="100%" fill="url(#grid)" />
         </svg>
       </div>
+
       {/* Animated Gradient Orbs */}
       <motion.div
         className="absolute top-20 left-10 w-40 sm:w-72 h-40 sm:h-72 bg-synthwave-neon-pink/20 rounded-full blur-3xl"
-        animate={{
-          y: [0, 30, 0],
-          x: [0, 20, 0],
-        }}
+        animate={{ y: [0, 30, 0], x: [0, 20, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
       />
       <motion.div
         className="absolute bottom-20 right-10 w-40 sm:w-72 h-40 sm:h-72 bg-synthwave-neon-cyan/20 rounded-full blur-3xl"
-        animate={{
-          y: [0, -30, 0],
-          x: [0, -20, 0],
-        }}
+        animate={{ y: [0, -30, 0], x: [0, -20, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
       />
+
       {/* Content */}
       <motion.div
         className="relative z-10 max-w-[100rem] mx-auto text-center overflow-hidden"
@@ -122,7 +117,7 @@ export default function HeroSection() {
           animate={{ y: [0, 100, 0] }}
           transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
         >
-          <Image 
+          <Image
             src="https://static.wixstatic.com/media/37d64c_c26d92e0c01a495caeb57ac548ba7b8f~mv2.jpg"
             alt="Scrolling backdrop"
             width={400}
@@ -130,6 +125,7 @@ export default function HeroSection() {
             style={{ transform: 'rotate(-90deg)', opacity: 0.08 }}
           />
         </motion.div>
+
         {/* Logo/Brand */}
         <motion.div variants={itemVariants} className="mb-8">
           <div className="inline-block relative">
@@ -145,19 +141,19 @@ export default function HeroSection() {
               transition={{ duration: 3, repeat: Infinity }}
               onClick={handleImageClick}
             >
-              <Image 
+              <Image
                 src="https://static.wixstatic.com/media/37d64c_c26d92e0c01a495caeb57ac548ba7b8f~mv2.jpg"
                 alt="Miami Knife Guy logo"
                 width={320}
                 className="w-full h-full object-cover object-center"
                 style={{ objectPosition: 'center top' }}
               />
-              {/* Shape icon - bottom right */}
               <div className="absolute bottom-2 right-2">
                 <MousePointer2 className="w-5 h-5 text-synthwave-neon-cyan" />
               </div>
             </motion.div>
-            {/* Social Icons Overlay - Centered below glow */}
+
+            {/* Social Icons */}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-12 flex gap-2 sm:gap-3 bg-synthwave-midnight/90 rounded-full px-3 sm:px-4 py-2 border border-synthwave-neon-cyan/50 backdrop-blur-sm">
               {socialLogos.map((social, index) => {
                 const IconComponent = social.icon;
@@ -179,79 +175,84 @@ export default function HeroSection() {
             </div>
           </div>
         </motion.div>
+
         {/* Main Headline */}
         <motion.h1
           variants={itemVariants}
-          className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight neon-sign-pink"
+          className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight"
           style={{ letterSpacing: '1.5px' }}
         >
-          <span className="neon-sign-pink text-6xl">Precision Hand-Guided Knife Sharpening</span>
+          <span className="neon-sign-pink">Dull Knives Are</span>
           <br />
-
+          <span className="neon-sign-cyan">Slowing Your Kitchen Down.</span>
+          <br />
+          <span className="neon-sign-pink">We Fix That Overnight.</span>
         </motion.h1>
-         {/* Subtitle */}
-         <motion.p
-           variants={itemVariants}
-           className="font-paragraph text-2xl sm:text-2xl md:text-2xl mb-2 sm:mb-3 max-w-2xl mx-auto leading-relaxed font-semibold neon-sign-cyan"
-         >
-           Restoring mirror edges to your culinary tools using high-end abrasives and specialized equipment. No cheap pull-throughs. No ruined blades.
-         </motion.p>
-         {/* Service Details */}
-         <motion.p
-           variants={itemVariants}
-           className="font-paragraph text-lg sm:text-xl md:text-xl mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed neon-sign-light"
-         >
-           Local Drop-Off & Pick-Up Service | Pricing Tiers Based on Knife Size
-         </motion.p>
-         {/* Subheadline */}
 
-         <motion.div
-           variants={itemVariants}
-           className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center"
-         >
+        {/* Credibility line */}
+        <motion.p
+          variants={itemVariants}
+          className="font-heading text-sm sm:text-base mb-3 max-w-2xl mx-auto neon-sign-light opacity-80 tracking-widest uppercase"
+        >
+          17 Years · Gary Danko · The French Laundry · Hotel Nikko · Acquerello · Now in Miami.
+        </motion.p>
+
+        {/* Subtitle */}
+        <motion.p
+          variants={itemVariants}
+          className="font-paragraph text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3 max-w-2xl mx-auto leading-relaxed font-semibold neon-sign-cyan"
+        >
+          Industrial-grade sharpening for Miami's top kitchens and serious home cooks. Pickup at last call. Back before first prep. No cheap pull-throughs. No ruined blades.
+        </motion.p>
+
+        {/* Service Details */}
+        <motion.p
+          variants={itemVariants}
+          className="font-paragraph text-base sm:text-lg mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed neon-sign-light"
+        >
+          Free pickup & delivery · Kosher & halal sharpening available · Serving Miami-Dade & Broward
+        </motion.p>
+
+        {/* CTAs */}
+        <motion.div
+          variants={itemVariants}
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center"
+        >
           <div className="flex flex-col items-center w-full sm:w-auto">
             <motion.div
               animate={{ y: [0, 8, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
               className="mb-2"
             >
-              <ChevronDown className="w-6 h-6 text-synthwave-neon-blue" />
+              <ChevronDown className="w-6 h-6 text-synthwave-neon-cyan" />
+            </motion.div>
+            <motion.a
+              href="sms:3059095773?body=SHARP"
+              className="px-6 sm:px-8 py-3 sm:py-4 bg-synthwave-neon-cyan text-synthwave-midnight font-heading font-bold text-sm sm:text-base rounded-lg hover:shadow-lg hover:shadow-synthwave-neon-cyan/50 transition-all w-full sm:w-auto"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              TEXT 'SHARP' TO (305) 909-5773
+            </motion.a>
+          </div>
+          <div className="flex flex-col items-center w-full sm:w-auto">
+            <motion.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
+              className="mb-2"
+            >
+              <ChevronDown className="w-6 h-6 text-synthwave-neon-pink" />
             </motion.div>
             <motion.a
               href="/customer-info"
-              className="px-6 sm:px-8 py-3 sm:py-4 bg-synthwave-neon-blue text-synthwave-midnight font-heading font-bold text-sm sm:text-base rounded-lg hover:shadow-lg hover:shadow-synthwave-neon-blue/50 transition-all w-full sm:w-auto"
+              className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-synthwave-neon-pink text-synthwave-neon-pink font-heading font-bold text-sm sm:text-base rounded-lg hover:bg-synthwave-neon-pink/10 transition-all w-full sm:w-auto"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              BOOK NOW
-            </motion.a>
-          </div>
-          <div className="flex flex-col items-center w-full sm:w-auto">
-            <motion.div
-              animate={{ y: [0, 8, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="mb-2"
-            >
-              <ChevronDown className="w-6 h-6 text-synthwave-neon-blue" />
-            </motion.div>
-            <motion.a
-              href="tel:305-909-5773"
-              className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-synthwave-neon-blue text-synthwave-neon-blue font-heading font-bold text-sm sm:text-base rounded-lg hover:bg-synthwave-neon-blue/10 transition-all w-full sm:w-auto"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              CALL (305) 909-5773
+              GET YOUR FIRST KNIFE FREE
             </motion.a>
           </div>
         </motion.div>
-      </motion.div>
-      {/* Scroll Indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      >
-
       </motion.div>
     </section>
   );
