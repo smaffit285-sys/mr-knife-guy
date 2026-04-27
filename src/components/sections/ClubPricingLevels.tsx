@@ -8,7 +8,7 @@ export default function ClubPricingLevels() {
       icon: Eye,
       price: 'FREE',
       priceSubtext: '(with honest review)',
-      benefits: ['1 Knife (Any size)'],
+      benefits: ['1 knife any size', 'One-time, no commitment', 'Let the edge sell itself'],
       color: 'from-blue-500 to-cyan-500',
       borderColor: 'border-blue-500/50',
       bgColor: 'bg-blue-500/10',
@@ -27,8 +27,8 @@ export default function ClubPricingLevels() {
     {
       name: 'Club Regular',
       icon: Users,
-      price: '$55',
-      benefits: ['2 Large OR', '1 Large + 1 Medium + 2 Small OR', '10 Large + 5 Small'],
+      price: '$60',
+      benefits: ['1 Large + 1 Medium + 3 Small OR', '3 Medium + 4 Small'],
       color: 'from-green-500 to-emerald-500',
       borderColor: 'border-green-500/50',
       bgColor: 'bg-green-500/10',
@@ -37,8 +37,8 @@ export default function ClubPricingLevels() {
     {
       name: 'VIP',
       icon: Crown,
-      price: '$100',
-      benefits: ['4 Large OR', '2 Large + 3 Medium + 4 Small OR', '5 Medium + 6 Small OR', '15 Small'],
+      price: '$105',
+      benefits: ['4 Large + 2 Medium + 2 Small OR', '6 Medium + 6 Small'],
       color: 'from-yellow-500 to-orange-500',
       borderColor: 'border-yellow-500/50',
       bgColor: 'bg-yellow-500/10',
@@ -47,8 +47,8 @@ export default function ClubPricingLevels() {
     {
       name: 'All Access',
       icon: Infinity,
-      price: '$250',
-      benefits: ['3 Large + 8 Medium + 10 Small OR', '10 Large OR', '15 Medium OR', '45 Small'],
+      price: '$200',
+      benefits: ['Up to 20 knives any size OR', '30 small knives'],
       color: 'from-red-500 to-pink-500',
       borderColor: 'border-red-500/50',
       bgColor: 'bg-red-500/10',
@@ -57,8 +57,8 @@ export default function ClubPricingLevels() {
     {
       name: 'Club Benefactor',
       icon: Gem,
-      price: 'PLEASE INQUIRE',
-      benefits: ['Custom packages', 'Exclusive perks', 'Priority service'],
+      price: 'BY INQUIRY',
+      benefits: ['Unlimited priority service', 'White-glove logistics', '1-on-1 masterclasses', 'Curated collection access'],
       color: 'from-violet-500 to-fuchsia-500',
       borderColor: 'border-violet-500/50',
       bgColor: 'bg-violet-500/10',
@@ -92,14 +92,17 @@ export default function ClubPricingLevels() {
             MIAMI KNIFE CLUB
           </h2>
           <p className="font-heading text-xl neon-sign-pink">
-            Sharpening on a Schedule<br />
-            Pay a Little Less and Never Struggle With Your Food Again!
+            Recurring sharpening on your schedule.<br />
+            Never fight your food again.
+          </p>
+          <p className="font-paragraph text-sm text-synthwave-light/50 mt-3">
+            Small = up to 5" · Medium = 5–9" · Large = 9"+
           </p>
         </motion.div>
 
         {/* Pricing Level Boxes */}
         <div className="relative z-10 mb-16 space-y-6">
-          {/* Middle Four Boxes - Single Row */}
+          {/* Middle Four Boxes */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
             {levels.slice(1, 5).map((level, index) => {
               const IconComponent = level.icon;
@@ -116,209 +119,18 @@ export default function ClubPricingLevels() {
                     className={`relative h-full rounded-xl border-2 ${level.borderColor} ${level.bgColor} backdrop-blur-sm p-4 transition-all duration-300 hover:border-opacity-100 border-opacity-50 overflow-hidden`}
                     whileHover={{ scale: 1.05, y: -5 }}
                   >
-                    {/* Gradient Background on Hover */}
                     <motion.div
                       className={`absolute inset-0 bg-gradient-to-br ${level.color} opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-300 -z-10`}
                     />
-
-                    {/* Icon */}
                     <div className={`mb-4 inline-block p-3 rounded-lg ${level.bgColor}`}>
                       <IconComponent className={`w-6 h-6 ${level.accentColor}`} />
                     </div>
-
-                    {/* Title */}
                     <h3 className="font-heading text-base font-bold text-synthwave-light mb-2">
                       {level.name}
                     </h3>
-
-                    {/* Price */}
                     <div className="mb-3">
                       <p className={`font-heading text-lg font-bold ${level.accentColor}`}>
                         {level.price}
                       </p>
                       {level.priceSubtext && (
                         <p className="font-paragraph text-synthwave-light/60 text-xs">
-                          {level.priceSubtext}
-                        </p>
-                      )}
-                    </div>
-
-                    {/* Benefits */}
-                    <ul className="font-paragraph text-synthwave-light/70 text-xs space-y-1">
-                      {level.benefits.map((benefit, idx) => (
-                        <li key={idx} className="flex items-start gap-2">
-                          <span className={`${level.accentColor} mt-1 flex-shrink-0`}>•</span>
-                          <span>{benefit}</span>
-                        </li>
-                      ))}
-                    </ul>
-
-                    {/* Bottom Accent Line */}
-                    <motion.div
-                      className={`absolute bottom-0 left-0 h-1 bg-gradient-to-r ${level.color}`}
-                      initial={{ width: 0 }}
-                      whileInView={{ width: '100%' }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.1 + 0.3, duration: 0.6 }}
-                    />
-                  </motion.div>
-                </motion.div>
-              );
-            })}
-          </div>
-
-          {/* Bottom Row - Scope the Scene and Club Benefactor (Half Screen Each) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            {/* Scope the Scene - Half Width */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-              className="group"
-            >
-              <motion.div
-                className={`relative rounded-xl border-2 ${levels[0].borderColor} ${levels[0].bgColor} backdrop-blur-sm p-4 transition-all duration-300 hover:border-opacity-100 border-opacity-50 overflow-hidden max-h-[180px]`}
-                whileHover={{ scale: 1.05, y: -5 }}
-              >
-                {/* Gradient Background on Hover */}
-                <motion.div
-                  className={`absolute inset-0 bg-gradient-to-br ${levels[0].color} opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-300 -z-10`}
-                />
-
-                {/* Icon */}
-                <div className={`mb-4 inline-block p-3 rounded-lg ${levels[0].bgColor}`}>
-                  {(() => {
-                    const IconComponent = levels[0].icon;
-                    return <IconComponent className={`w-6 h-6 ${levels[0].accentColor}`} />;
-                  })()}
-                </div>
-
-                {/* Title */}
-                <h3 className="font-heading text-base font-bold text-synthwave-light mb-2">
-                  {levels[0].name}
-                </h3>
-
-                {/* Price */}
-                <div className="mb-3">
-                  <p className={`font-heading text-lg font-bold ${levels[0].accentColor}`}>
-                    {levels[0].price}
-                  </p>
-                  {levels[0].priceSubtext && (
-                    <p className="font-paragraph text-synthwave-light/60 text-xs">
-                      {levels[0].priceSubtext}
-                    </p>
-                  )}
-                </div>
-
-                {/* Benefits */}
-                <ul className="font-paragraph text-synthwave-light/70 text-xs space-y-1">
-                  {levels[0].benefits.map((benefit, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <span className={`${levels[0].accentColor} mt-1 flex-shrink-0`}>•</span>
-                      <span>{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                {/* Bottom Accent Line */}
-                <motion.div
-                  className={`absolute bottom-0 left-0 h-1 bg-gradient-to-r ${levels[0].color}`}
-                  initial={{ width: 0 }}
-                  whileInView={{ width: '100%' }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.7, duration: 0.6 }}
-                />
-              </motion.div>
-            </motion.div>
-
-            {/* Club Benefactor - Half Width */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5 }}
-              className="group"
-            >
-              <motion.div
-                className={`relative rounded-xl border-2 ${levels[5].borderColor} ${levels[5].bgColor} backdrop-blur-sm p-4 transition-all duration-300 hover:border-opacity-100 border-opacity-50 overflow-hidden max-h-[180px]`}
-                whileHover={{ scale: 1.05, y: -5 }}
-              >
-                {/* Gradient Background on Hover */}
-                <motion.div
-                  className={`absolute inset-0 bg-gradient-to-br ${levels[5].color} opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-300 -z-10`}
-                />
-
-                {/* Icon */}
-                <div className={`mb-4 inline-block p-3 rounded-lg ${levels[5].bgColor}`}>
-                  {(() => {
-                    const IconComponent = levels[5].icon;
-                    return <IconComponent className={`w-6 h-6 ${levels[5].accentColor}`} />;
-                  })()}
-                </div>
-
-                {/* Title */}
-                <h3 className="font-heading text-base font-bold text-synthwave-light mb-2">
-                  {levels[5].name}
-                </h3>
-
-                {/* Price */}
-                <div className="mb-3">
-                  <p className={`font-heading text-lg font-bold ${levels[5].accentColor}`}>
-                    {levels[5].price}
-                  </p>
-                  {levels[5].priceSubtext && (
-                    <p className="font-paragraph text-synthwave-light/60 text-xs">
-                      {levels[5].priceSubtext}
-                    </p>
-                  )}
-                </div>
-
-                {/* Benefits */}
-                <ul className="font-paragraph text-synthwave-light/70 text-xs space-y-1">
-                  {levels[5].benefits.map((benefit, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <span className={`${levels[5].accentColor} mt-1 flex-shrink-0`}>•</span>
-                      <span>{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                {/* Bottom Accent Line */}
-                <motion.div
-                  className={`absolute bottom-0 left-0 h-1 bg-gradient-to-r ${levels[5].color}`}
-                  initial={{ width: 0 }}
-                  whileInView={{ width: '100%' }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.8, duration: 0.6 }}
-                />
-              </motion.div>
-            </motion.div>
-          </div>
-        </div>
-
-        {/* Small Print */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.6 }}
-          className="relative z-10 text-center mb-8"
-        >
-          <p className="font-paragraph text-xs text-synthwave-light/50">
-            all quoted prices are assessed at Semi-Annual reoccurrence
-          </p>
-        </motion.div>
-
-        {/* Divider */}
-        <motion.div
-          initial={{ opacity: 0, scaleX: 0 }}
-          whileInView={{ opacity: 1, scaleX: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.5 }}
-          className="h-px bg-gradient-to-r from-transparent via-synthwave-neon-cyan to-transparent relative z-10 mb-16"
-        />
-      </div>
-    </section>
-  );
-}
